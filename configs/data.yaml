@@ -1,0 +1,131 @@
+# =============================================================================
+# configs/data.yaml
+# Data pipeline configuration
+# CLUSTER SAFETY: All paths relative to project root or $SCRATCH
+# =============================================================================
+
+project_root: ${SCRATCH:-$HOME}/projects/qwen-arabic-kd
+
+paths:
+  raw_data:      ${SCRATCH:-$HOME}/projects/qwen-arabic-kd/data/raw
+  processed:     ${SCRATCH:-$HOME}/projects/qwen-arabic-kd/data/processed
+  kd_dataset:    ${SCRATCH:-$HOME}/projects/qwen-arabic-kd/data/kd_dataset
+  teacher_cache: ${SCRATCH:-$HOME}/projects/qwen-arabic-kd/data/teacher_outputs
+  logs:          ${SCRATCH:-$HOME}/projects/qwen-arabic-kd/data/logs
+
+# ⚠️ DISK ESTIMATES (approximate, confirm before downloading):
+# - ArabicMMLU:    ~50MB
+# - ORCA-Ar:       ~800MB
+# - MMLU subset:   ~200MB
+# - GSM8K:         ~10MB
+# - TruthfulQA:    ~5MB
+# Total raw:       ~1.1GB
+# After teacher generation (100k×512 tokens): ~3-5GB
+# Total budget:    ~6-7GB — confirm $SCRATCH has capacity
+
+sources:
+  arabic:
+    - name: ArabicMMLU
+      hf_path: MBZUAI/ArabicMMLU
+      split: test
+      max_samples: 5000
+      language: ar
+      task_type: mcqa
+
+    - name: ORCA_Arabic
+      hf_path: Open-Orca/OpenOrca
+      split: train
+      max_samples: 50000
+      language: ar
+      filter_field: system_prompt
+      filter_value: arabic
+      task_type: instruction
+
+    - name: ArabicAlpaca
+      hf_path: HassanAlik/Arabic-Alpaca-Instructions
+      split: train
+      max_samples: 20000
+      language: ar
+      task_type: instruction
+
+  english:
+    - name: MMLU_subset
+      hf_path: cais/mmlu
+      config: all
+      split: test
+      max_samples: 10000
+      language: en
+      task_type: mcqa
+
+    - name: GSM8K
+      hf_path: openai/gsm8k
+      config: main
+      split: train
+      max_samples: 7473
+      language: en
+      task_type: math
+
+    - name: Alpaca_EN
+      hf_path: tatsu-lab/alpaca
+      split: train
+      max_samples: 30000
+      language: en
+      task_type: instruction
+
+    - name: TruthfulQA
+      hf_path: truthful_qa
+      config: generation
+      split: validation
+      max_samples: 817
+      language: en
+      task_type: qa
+
+  parallel:
+    # 200 parallel EN↔AR pairs for Pillar 3
+    - name: XQuAD_AR_EN
+      hf_path: google/xquad
+      config_ar: xquad.ar
+      config_en: xquad.en
+      max_samples: 200
+      task_type: parallel_qa
+
+processing:
+  # Teacher generation batch settings
+  generation_batch_size: 8              # Tune to GPU memory
+  max_instruction_length: 512
+  max_response_length: 512
+  min_response_length: 20
+  
+  # Deduplication
+  dedup_threshold: 0.95                 # Jaccard similarity
+  
+  # Train/val split
+  val_fraction: 0.02
+  seed: 42
+
+  # Dataset target sizes (final, post-filter)
+  target_total: 100000                  # Conservative start — expand if disk allows
+  arabic_fraction: 0.45
+  english_fraction: 0.45
+  parallel_fraction: 0.10
+
+# Schema for KD dataset records
+output_schema:
+  required_fields:
+    - instruction
+    - teacher_response
+    - language                          # "ar" | "en"
+    - source                            # dataset name
+  optional_fields:
+    - input                             # context if present
+    - teacher_logits_path               # path to saved logits file (token-level KD)
+    - difficulty                        # heuristic score
+
+# Logits storage (for token-level KD)
+# ⚠️  DISK WARNING: Storing full logits (vocab=32k) for 100k samples = ~100GB+
+# Use top-k logits compression instead:
+logits:
+  store_logits: true
+  top_k: 50                            # Store only top-50 logits per token
+  dtype: float16                       # Half precision to save space
+  # Estimated size with top_k=50: ~5GB for 100k samples ✓

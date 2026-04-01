@@ -1,0 +1,88 @@
+# =============================================================================
+# configs/models.yaml
+# Model configurations for KD pipeline
+# CLUSTER SAFETY: All paths use $HOME or $SCRATCH — never hardcoded /
+# =============================================================================
+
+teacher:
+  name: Qwen/Qwen2.5-32B-Instruct
+  short_name: qwen32b
+  quantization: 4bit                    # bitsandbytes NF4 — required for 32B on single node
+  dtype: float16
+  max_memory_per_gpu: "40GiB"           # Adjust to your GPU specs
+  device_map: auto
+  # ⚠️  DISK WARNING: ~18GB download. Confirm $SCRATCH space before loading.
+  cache_dir: ${SCRATCH:-$HOME}/model_cache/qwen32b
+  generation:
+    max_new_tokens: 512
+    temperature: 0.7
+    top_p: 0.9
+    do_sample: true
+    repetition_penalty: 1.1
+
+students:
+  medium:
+    name: Qwen/Qwen2.5-7B-Instruct
+    short_name: qwen7b
+    dtype: bfloat16
+    # ⚠️  DISK WARNING: ~14GB. Confirm space before loading.
+    cache_dir: ${SCRATCH:-$HOME}/model_cache/qwen7b
+    training:
+      per_device_train_batch_size: 2
+      gradient_accumulation_steps: 8    # effective batch = 16
+      learning_rate: 2.0e-5
+      num_train_epochs: 3
+      warmup_ratio: 0.05
+      lr_scheduler_type: cosine
+      max_seq_length: 2048
+      bf16: true
+      gradient_checkpointing: true
+      save_strategy: epoch
+      save_total_limit: 2               # ⚠️ Keep low to save disk
+      logging_steps: 50
+      report_to: none                   # Safe default — no wandb required
+    lora:
+      r: 16
+      lora_alpha: 32
+      lora_dropout: 0.05
+      target_modules: ["q_proj","k_proj","v_proj","o_proj","gate_proj","up_proj","down_proj"]
+      bias: none
+      task_type: CAUSAL_LM
+
+  small:
+    name: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+    short_name: tinyllama
+    dtype: bfloat16
+    # ⚠️  DISK WARNING: ~2.2GB. Low risk, but still check quota.
+    cache_dir: ${SCRATCH:-$HOME}/model_cache/tinyllama
+    training:
+      per_device_train_batch_size: 4
+      gradient_accumulation_steps: 4    # effective batch = 16
+      learning_rate: 3.0e-5
+      num_train_epochs: 3
+      warmup_ratio: 0.05
+      lr_scheduler_type: cosine
+      max_seq_length: 2048
+      bf16: true
+      gradient_checkpointing: false     # Small model — not needed
+      save_strategy: epoch
+      save_total_limit: 2
+      logging_steps: 50
+      report_to: none
+    lora:
+      r: 8
+      lora_alpha: 16
+      lora_dropout: 0.05
+      target_modules: ["q_proj","k_proj","v_proj","o_proj"]
+      bias: none
+      task_type: CAUSAL_LM
+
+# KD hyperparameter grid
+kd:
+  temperatures: [1, 2, 4]
+  alphas: [0.3, 0.5, 0.7]             # α for CE; (1-α) for KL
+  default_temperature: 2
+  default_alpha: 0.5
+
+# Checkpoint output paths — always under $SCRATCH or $HOME/projects
+checkpoint_root: ${SCRATCH:-$HOME}/projects/qwen-arabic-kd/checkpoints

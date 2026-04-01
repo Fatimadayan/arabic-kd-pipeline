@@ -1,0 +1,31 @@
+Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]Generating test split:   0%|          | 0/2000 [00:00<?, ? examples/s]
+Traceback (most recent call last):
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/builder.py", line 1863, in _prepare_split_single
+    writer = writer_class(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/arrow_writer.py", line 442, in __init__
+    self.stream = self._fs.open(path, "wb")
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/fsspec/spec.py", line 1349, in open
+    f = self._open(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/fsspec/implementations/local.py", line 214, in _open
+    return LocalFileOpener(path, mode, fs=self, **kwargs)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/fsspec/implementations/local.py", line 391, in __init__
+    self._open()
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/fsspec/implementations/local.py", line 396, in _open
+    self.f = open(self.path, mode=self.mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/data/datasets/user151/.cache/huggingface/datasets/Helsinki-NLP___opus-100/ar-en/0.0.0/805090dc28bf78897da9641cdf08b61287580df9.incomplete/opus-100-test-00000-00000-of-NNNNN.arrow'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<stdin>", line 13, in <module>
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/load.py", line 1505, in load_dataset
+    builder_instance.download_and_prepare(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/builder.py", line 884, in download_and_prepare
+    self._download_and_prepare(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/builder.py", line 947, in _download_and_prepare
+    self._prepare_split(split_generator, **prepare_split_kwargs)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/builder.py", line 1739, in _prepare_split
+    for job_id, done, content in self._prepare_split_single(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/builder.py", line 1922, in _prepare_split_single
+    raise DatasetGenerationError("An error occurred while generating the dataset") from e
+datasets.exceptions.DatasetGenerationError: An error occurred while generating the dataset

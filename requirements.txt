@@ -1,0 +1,44 @@
+# =============================================================================
+# requirements.txt
+# Arabic KD Pipeline — Python dependencies
+#
+# INSTALL COMMAND (cluster-safe):
+#   pip install -r requirements.txt --break-system-packages
+# Or inside a venv (recommended):
+#   python -m venv ~/.venvs/kd_env
+#   source ~/.venvs/kd_env/bin/activate
+#   pip install -r requirements.txt
+#
+# DISK ESTIMATE: ~3-5 GB for full install
+# =============================================================================
+
+# Core ML
+torch>=2.1.0
+transformers>=4.40.0
+datasets>=2.18.0
+accelerate>=0.28.0
+peft>=0.10.0
+trl>=0.8.6
+bitsandbytes>=0.43.0          # 4-bit quantization for 32B teacher
+tokenizers>=0.15.0
+
+# Data processing
+numpy>=1.26.0
+scipy>=1.12.0                  # McNemar test, Cohen's d
+pandas>=2.0.0
+
+# Config
+PyYAML>=6.0
+
+# Evaluation
+rouge-score>=0.1.2
+sacrebleu>=2.4.0               # Optional: for BLEU on cross-lingual eval
+sentencepiece>=0.2.0           # Some Arabic tokenizers need this
+
+# Visualisation (non-interactive — safe for cluster)
+matplotlib>=3.8.0
+
+# Utilities
+tqdm>=4.66.0
+huggingface-hub>=0.22.0
+einops>=0.7.0                  # Some Qwen variants require this

@@ -1,0 +1,152 @@
+{
+  "sft_7b": [
+    {
+      "id": "en1",
+      "lang": "en",
+      "prompt": "What is the capital of France?",
+      "response": " The capital of France is Paris. \n\nParis is not only the capital but also the most populous city in France, with a population of over 2 million people within its administrative limits and more than 10 million in the surrounding Île-de-France region. It's known for its rich history, culture, art, fashion, cuisine, and architecture, including iconic landmarks such as the Eiffel Tower, Notre-Dame Cathedral, and the Louvre Museum. \n\nSo, to directly answer your question: **Paris** is the capital of France. \n\nIf you need any specific information about Paris or France, feel free to ask! 😊🌍🇫🇷✨\n\n---\n\nIf you have any other questions or need further details, just let"
+    },
+    {
+      "id": "en2",
+      "lang": "en",
+      "prompt": "Explain the water cycle in simple terms.",
+      "response": " The water cycle is a natural process where water moves through different states and locations on Earth. Here's a simple explanation:\n\n1. **Evaporation**: Water from oceans, lakes, rivers, and other bodies of water heats up by the sun and turns into vapor or steam. This process is called evaporation.\n\n2. **Condensation**: As the water vapor rises into the air, it cools down and turns back into liquid droplets, forming clouds. This process is called condensation.\n\n3. **Precipitation**: When these droplets get heavy enough, they fall back to the ground as rain, snow, sleet, or hail. This is known as precipitation.\n\n4. **Collection**: The fallen water collects in bodies of water"
+    },
+    {
+      "id": "en3",
+      "lang": "en",
+      "prompt": "What is 15 multiplied by 7?",
+      "response": " To find the product of 15 and 7, we can break it down into simpler steps:\n\n1. Multiply 15 by 7.\n2. We can use the distributive property to make this easier: \\(15 \\times 7 = (10 + 5) \\times 7\\).\n3. Distribute the multiplication over the addition: \\((10 + 5) \\times 7 = 10 \\times 7 + 5 \\times 7\\).\n4. Calculate each part separately: \\(10 \\times 7 = 70\\) and \\(5 \\times 7 = 35\\).\n5. Add the results together: \\(70 + 3"
+    },
+    {
+      "id": "ar1",
+      "lang": "ar",
+      "prompt": "ما هي عاصمة فرنسا؟",
+      "response": "\n\nعاصمة فرنسا هي باريس. تقع باريس في شمال غرب فرنسا وتعد من أكبر المدن الأوروبية وأهمها ثقافياً واقتصادياً وسياسياً. تحتوي على العديد من المعالم السياحية الشهيرة مثل إيفيل برج، متحف اللوفر، وشارع شانزليزيه."
+    },
+    {
+      "id": "ar2",
+      "lang": "ar",
+      "prompt": "اشرح دورة الماء بعبارات بسيطة.",
+      "response": " دورة الماء هي عملية دائمة تتضمن توزيع المياه على الأرض وتجددها من خلال العديد من الخطوات. إليك شرح بسيط:\n\n1. **الاستخراج**: يبدأ الدورة عندما يتم استخراج المياه من الأنهار والبحيرات والجداول.\n\n2. **التساقط**: بعد ذلك، تسقط المياه كฝน أو ثلج أو جليد على الأرض.\n\n3. **التصريف**: تقوم المياه بالتصريف عبر التربة وتنساب إلى الأنهار والمحيطات.\n\n4. **التبخر**: تحت تأثير الحرارة الشمسية، تتبخر المياه من الأنهار والمحيطات وتتحول إلى غ"
+    },
+    {
+      "id": "ar3",
+      "lang": "ar",
+      "prompt": "ما هو ناتج ضرب 15 في 7؟",
+      "response": "\n\nناتج ضرب 15 في 7 هو 105."
+    },
+    {
+      "id": "ar4",
+      "lang": "ar",
+      "prompt": "ما هي أهمية اللغة العربية في العالم؟",
+      "response": " - سؤال وجواب\nالرئيسية/التعليم/ما هي أهمية اللغة العربية في العالم؟\nما هي أهمية اللغة العربية في العالم؟\nاللغة العربية هي واحدة من أكثر اللغات انتشاراً في العالم، حيث تتحدث بها حوالي 420 مليون شخص في جميع أنحاء العالم. كما أنها لغة رسمية في 26 دولة، وتعتبر اللغة الرسمية للعديد من المنظمات الدولية مثل الأمم المتحدة والاتحاد الأفريقي والاتحاد الأوروبي.\nمن أهمية اللغة العربية في العالم:\n\n1. التراث الثقافي: تحتوي اللغة العربية على ثقافة غنية وتراث ثقافي عظيم، حيث تحتوي على"
+    },
+    {
+      "id": "en4",
+      "lang": "en",
+      "prompt": "What is the importance of the Arabic language in the world?",
+      "response": " The Arabic language holds significant importance in the world for several reasons:\n\n1. **Cultural and Historical Significance**: Arabic is one of the world's oldest languages, with a rich history dating back to ancient times. It has been a medium for expressing cultural, literary, and scientific knowledge across centuries.\n\n2. **Religious Importance**: Arabic is the liturgical language of Islam and the language in which the Quran, the holy book of Muslims, was revealed. This makes it essential for religious practices and education among Muslims worldwide.\n\n3. **Political Influence**: Many countries in the Middle East and North Africa use Arabic as their official language, making it influential in politics and international relations in these regions.\n\n4. **Economic Impact**: With over 3"
+    }
+  ],
+  "seq_kd_7b": [
+    {
+      "id": "en1",
+      "lang": "en",
+      "prompt": "What is the capital of France?",
+      "response": " The capital of France is Paris. \n\nParis is not only the capital but also the most populous city in France, with a population of over 2 million people within its administrative limits and around 10 million in the surrounding Île-de-France region. It's known for its rich history, culture, art, fashion, cuisine, and architecture, including iconic landmarks such as the Eiffel Tower, Notre-Dame Cathedral, and the Louvre Museum. \n\nSo, to directly answer your question: **Paris** is the capital of France. \n\nIf you need more information or have any other questions about Paris or France, feel free to ask! 😊🌍🇫🇷✨\n\n---\n\nIf you're looking for additional details or want to"
+    },
+    {
+      "id": "en2",
+      "lang": "en",
+      "prompt": "Explain the water cycle in simple terms.",
+      "response": " The water cycle is a natural process where water moves through different states and locations on Earth. Here's a simple explanation:\n\n1. **Evaporation**: Water from oceans, lakes, rivers, and other bodies of water heats up by the sun and turns into vapor or steam. This process is called evaporation.\n\n2. **Condensation**: As the water vapor rises into the air, it cools down and turns back into liquid droplets, forming clouds. This process is called condensation.\n\n3. **Precipitation**: When these droplets get heavy enough, they fall back to the ground as rain, snow, sleet, or hail. This is known as precipitation.\n\n4. **Collection**: The fallen water collects in bodies of water"
+    },
+    {
+      "id": "en3",
+      "lang": "en",
+      "prompt": "What is 15 multiplied by 7?",
+      "response": " To find the product of 15 and 7, we can break it down into simpler steps:\n\n1. Multiply 15 by 7.\n2. We can use the distributive property to make this easier: \\(15 \\times 7 = (10 + 5) \\times 7\\).\n3. Distribute the multiplication over the addition: \\((10 + 5) \\times 7 = 10 \\times 7 + 5 \\times 7\\).\n4. Calculate each part separately:\n   - \\(10 \\times 7 = 70\\)\n   - \\(5 \\times 7 = 35\\)\n5. Add the results together: \\(7"
+    },
+    {
+      "id": "ar1",
+      "lang": "ar",
+      "prompt": "ما هي عاصمة فرنسا؟",
+      "response": "\n\nعاصمة فرنسا هي باريس."
+    },
+    {
+      "id": "ar2",
+      "lang": "ar",
+      "prompt": "اشرح دورة الماء بعبارات بسيطة.",
+      "response": " دورة الماء هي عملية دائمة تتضمن تحويل الماء من صورته المختلفة (البخار، السائل، الجليد) بين الأرض والسماء. تبدأ هذه العملية عندما يتبخر الماء من الأنهار والمحيطات والبحيرات بسبب الحرارة، مما يشكل بخار مائي. هذا البخار يصعد إلى الغلاف الجوي ويبرد، مما يجعله يتحول إلى قطرات مائية صغيرة تشكل السحب. عندما تصبح السحب ثقيلة بما يكفي، تسقط كمطر أو ثلج أو�بَرَّدُتْ في الجو.\n\nعندما يتساقط المطر أو الثلوج"
+    },
+    {
+      "id": "ar3",
+      "lang": "ar",
+      "prompt": "ما هو ناتج ضرب 15 في 7؟",
+      "response": "\n\nناتج ضرب 15 في 7 هو 105."
+    },
+    {
+      "id": "ar4",
+      "lang": "ar",
+      "prompt": "ما هي أهمية اللغة العربية في العالم؟",
+      "response": " - سؤال وجواب\nالرئيسية/التعليم/ما هي أهمية اللغة العربية في العالم؟\nما هي أهمية اللغة العربية في العالم؟\nاللغة العربية هي واحدة من أكثر اللغات انتشاراً في العالم، حيث تتحدث بها حوالي 420 مليون شخص في جميع أنحاء العالم. كما أنها لغة رسمية في 22 دولة، وتعتبر لغة رسمية في المنظمات الدولية مثل الأمم المتحدة والاتحاد الأفريقي والاتحاد الأوروبي.\nمن أهمية اللغة العربية في العالم:\n\n1. التراث الثقافي: تحتوي اللغة العربية على ثقافة غنية وتاريخ طويل، مما يجعلها ذات أهمية كبيرة للتراث الثقافي"
+    },
+    {
+      "id": "en4",
+      "lang": "en",
+      "prompt": "What is the importance of the Arabic language in the world?",
+      "response": " The Arabic language holds significant importance in the world for several reasons:\n\n1. **Cultural and Historical Significance**: Arabic is one of the world's oldest languages, with a rich history dating back to the 7th century CE. It has played a crucial role in the development of Islamic civilization and has been a medium for the transmission of knowledge, literature, and culture.\n\n2. **Religious Importance**: Arabic is the language of the Quran, the holy book of Islam. As such, it is essential for Muslims around the world who seek to understand their faith deeply. Many religious texts, prayers, and rituals are conducted in Arabic.\n\n3. **Political Influence**: Historically, Arab countries have had significant political influence on regional and international affairs."
+    }
+  ],
+  "token_kd_7b": [
+    {
+      "id": "en1",
+      "lang": "en",
+      "prompt": "What is the capital of France?",
+      "response": " The capital of France is Paris. \n\nParis is a major European city and is known for its rich history, culture, and art. It is home to many famous landmarks such as the Eiffel Tower, Louvre Museum, and Notre-Dame Cathedral. It is also a center of business, finance, and fashion. \n\nSome other notable facts about Paris include:\n\n- It is the most visited city in the world, with over 30 million visitors each year.\n- It is known for its cuisine, including dishes like croissants, macarons, and coq au vin.\n- It has a population of around 2.2 million people in the city proper, and over 10 million people in the greater metropolitan area"
+    },
+    {
+      "id": "en2",
+      "lang": "en",
+      "prompt": "Explain the water cycle in simple terms.",
+      "response": " The water cycle is a natural process where water moves through the environment, changing between liquid, gas, and solid forms. Here's a simple explanation:\n\n1. **Evaporation**: Water from oceans, lakes, rivers, and other bodies of water heats up by the sun and turns into vapor or steam.\n\n2. **Condensation**: As the water vapor rises higher into the air, it cools down and turns back into tiny droplets of water, forming clouds.\n\n3. **Precipitation**: When these droplets combine and become heavy enough, they fall back to Earth as rain, snow, sleet, or hail.\n\n4. **Collection**: The fallen water collects in bodies of water like rivers, lakes, and oceans. Some of"
+    },
+    {
+      "id": "en3",
+      "lang": "en",
+      "prompt": "What is 15 multiplied by 7?",
+      "response": " To find the product of 15 and 7, we can break it down into simpler steps:\n\n1. Multiply 15 by 7.\n2. We can use the distributive property to make this easier: \\(15 \\times 7 = (10 + 5) \\times 7\\).\n3. Distribute the 7 to both terms inside the parentheses: \\(15 \\times 7 = 10 \\times 7 + 5 \\times 7\\).\n4. Calculate each term separately: \\(10 \\times 7 = 70\\) and \\(5 \\times 7 = 35\\).\n5. Add the two results together: \\(70 + 3"
+    },
+    {
+      "id": "ar1",
+      "lang": "ar",
+      "prompt": "ما هي عاصمة فرنسا؟",
+      "response": "\n\nعاصمة فرنسا هي باريس. \n\nباريس هي أكبر مدينة في فرنسا وتعتبر من أكبر المدن في أوروبا، وتعد مركزاً ثقافياً وسياسياً واقتصادياً وسياحياً هاماً. \n\nبعض المعلومات الإضافية عن باريس:\n- تقع على نهر السين\n- تضم العديد من المعالم التاريخية والثقافية مثل الأوروار، والجناح الأعلى، وبرج إيفيل\n- هي عاصمة منطقة إيل دو فرانس\n- يبلغ عدد سكانها حوالي 2.2 مليون نسمة (في المنطقة الحضر"
+    },
+    {
+      "id": "ar2",
+      "lang": "ar",
+      "prompt": "اشرح دورة الماء بعبارات بسيطة.",
+      "response": " دورة الماء هي عملية مستمرة تشمل التحول المستمر للماء بين أشكاله الثلاثة (البخار، الصلب، السائل) في البيئة. تتضمن هذه الدورة:\n\n1. التبخر: يتبخر الماء من الأنهار والبحار والمحيطات وسطح الأرض إلى الغلاف الجوي.\n\n2. التجمد: عندما يبرد الماء، يتحول إلى الجليد.\n\n3. التساقط: تسقط الأمطار أو الثلوج من السماء.\n\n4. التراكم: يتم تجميع الماء في الأنهار والبحيرات والمحيطات.\n\n5. التدفق: يتدفق الماء"
+    },
+    {
+      "id": "ar3",
+      "lang": "ar",
+      "prompt": "ما هو ناتج ضرب 15 في 7؟",
+      "response": "\n\nناتج ضرب 15 في 7 هو 105. يمكن حساب ذلك بسهولة من خلال الضرب:\n\n\\( 15 \\times 7 = 105 \\)\n\nيمكنك التحقق من هذا الناتج باستخدام طرق مختلفة مثل الجمع المتكرر أو استخدام جدول الضرب."
+    },
+    {
+      "id": "ar4",
+      "lang": "ar",
+      "prompt": "ما هي أهمية اللغة العربية في العالم؟",
+      "response": " - سطور\nآخر تحديث: ١٢:٣٤ ، ٢٦ أغسطس ٢٠٢١\n٢ أهمية اللغة العربية في العالم\n٣ أسباب أهمية اللغة العربية\n٤ استخدام اللغة العربية في العالم\n٥ التحديات التي تواجه اللغة العربية\n٦ اللغات الأخرى التي تستخدم في العالم\nاللغة العربية هي لغة عريقة وشائعة في العالم، وهي اللغة الرسمية في أكثر من 20 دولة، كما أنها اللغة الرسمية في المنظمات الدولية مثل جامعة الدول العربية والاتحاد الإسلامي للعلوم والتكنولوجيا، بالإضافة إلى أن العديد من الدول غير العربية تع"
+    },
+    {
+      "id": "en4",
+      "lang": "en",
+      "prompt": "What is the importance of the Arabic language in the world?",
+      "response": " The Arabic language holds significant importance in the world for several reasons:\n\n1. **Geographical Spread**: Arabic is spoken across a vast region that spans from North Africa to the Middle East and parts of Central Asia, including countries like Morocco, Egypt, Saudi Arabia, Iraq, Syria, and beyond.\n\n2. **Religious Significance**: Arabic is the liturgical language of Islam and the language in which the Quran, the holy book of Islam, is written. This makes it essential for Muslims around the world to understand their faith.\n\n3. **Cultural Impact**: Arabic has a rich cultural heritage with contributions to literature, poetry, philosophy, science, and art. Many famous works of literature and poetry are originally in Arabic.\n\n4. **Economic"
+    }
+  ]
+}

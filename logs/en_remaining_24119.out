@@ -1,0 +1,65 @@
+==========================================
+SLURM_CLUSTER_NAME = linux
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = pgstudents
+SLURM_JOB_ID = 24119
+SLURM_JOB_NAME = kd_en_remaining
+SLURM_JOB_NODELIST = gpu02
+SLURM_JOB_USER = user151
+SLURM_JOB_UID = 4254
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 3709122
+SLURM_SUBMIT_DIR = /scratch-beegfs/datasets/user151/qwen-arabic-kd
+SLURM_CPUS_ON_NODE = 192
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 3709122
+==========================================
+Tue Mar 31 02:34:37 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-PCIE-40GB          Off |   00000000:21:00.0 Off |                    0 |
+| N/A   26C    P0             33W /  250W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA A100-PCIE-40GB          Off |   00000000:81:00.0 Off |                    0 |
+| N/A   24C    P0             32W /  250W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Generating remaining English samples at: Tue Mar 31 02:34:38 +03 2026
+Loading existing data...
+Already have: 1900 English samples
+Need: 600 more
+Missing samples to generate: 599
+Loading Qwen2.5-32B in 4-bit...
+Model loaded!
+Appended 50 new samples
+Appended 100 new samples
+Appended 150 new samples
+Appended 200 new samples
+Appended 250 new samples
+Appended 300 new samples
+Appended 350 new samples
+Appended 400 new samples
+Appended 450 new samples
+Appended 500 new samples
+Appended 550 new samples
+
+DONE!
+Previous: 4328 | New: 599 | Total: 4927

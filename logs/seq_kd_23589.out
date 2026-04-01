@@ -1,0 +1,52 @@
+==========================================
+SLURM_CLUSTER_NAME = linux
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = pgstudents
+SLURM_JOB_ID = 23589
+SLURM_JOB_NAME = kd_seq_kd
+SLURM_JOB_NODELIST = gpu01
+SLURM_JOB_USER = user151
+SLURM_JOB_UID = 4254
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 1218335
+SLURM_SUBMIT_DIR = /scratch-beegfs/datasets/user151/qwen-arabic-kd
+SLURM_CPUS_ON_NODE = 192
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 1218335
+==========================================
+Mon Mar 16 03:28:34 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-PCIE-40GB          Off |   00000000:21:00.0 Off |                    0 |
+| N/A   40C    P0            224W /  250W |   38129MiB /  40960MiB |     85%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA A100-PCIE-40GB          Off |   00000000:81:00.0 Off |                    0 |
+| N/A   28C    P0             33W /  250W |       4MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A         1218182      C   python                                38120MiB |
++-----------------------------------------------------------------------------------------+
+Starting Sequence KD at: Mon Mar 16 03:28:34 +03 2026
+Loading data...
+Samples: 500
+Loading tokenizer...
+Loading base model in 4-bit...
+Loading SFT LoRA weights...
+trainable params: 5,046,272 || all params: 7,620,662,784 || trainable%: 0.0662
+Starting Sequence KD training...

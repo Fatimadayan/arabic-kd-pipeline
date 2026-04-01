@@ -1,0 +1,26 @@
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:01<05:52,  1.04s/it]Loading weights:   1%|          | 4/339 [00:01<02:22,  2.35it/s]Loading weights:   1%|▏         | 5/339 [00:02<02:47,  1.99it/s]Loading weights:  12%|█▏        | 40/339 [00:03<00:15, 19.85it/s]Loading weights:  13%|█▎        | 43/339 [00:04<00:24, 12.30it/s]Loading weights:  13%|█▎        | 45/339 [00:05<00:32,  8.99it/s]Loading weights:  14%|█▍        | 47/339 [00:05<00:39,  7.31it/s]Loading weights:  14%|█▍        | 48/339 [00:06<00:56,  5.16it/s]Loading weights:  15%|█▍        | 50/339 [00:07<01:05,  4.43it/s]Loading weights:  15%|█▌        | 52/339 [00:08<01:19,  3.60it/s]Loading weights:  16%|█▌        | 53/339 [00:09<01:35,  2.99it/s]Loading weights:  16%|█▌        | 54/339 [00:09<01:46,  2.68it/s]Loading weights:  17%|█▋        | 57/339 [00:10<01:42,  2.75it/s]Loading weights:  17%|█▋        | 58/339 [00:11<01:53,  2.49it/s]Loading weights:  18%|█▊        | 60/339 [00:12<02:00,  2.32it/s]Loading weights:  18%|█▊        | 62/339 [00:12<01:47,  2.57it/s]Loading weights:  19%|█▉        | 64/339 [00:13<01:57,  2.35it/s]Loading weights:  19%|█▉        | 65/339 [00:14<02:21,  1.94it/s]Loading weights:  19%|█▉        | 66/339 [00:15<02:31,  1.80it/s]Loading weights:  20%|██        | 69/339 [00:16<01:46,  2.54it/s]Loading weights:  66%|██████▋   | 225/339 [00:16<00:01, 85.75it/s]Loading weights: 100%|██████████| 339/339 [00:16<00:00, 20.65it/s]
+Adding EOS to train dataset:   0%|          | 0/500 [00:00<?, ? examples/s]Adding EOS to train dataset: 100%|██████████| 500/500 [00:00<00:00, 23731.76 examples/s]
+Tokenizing train dataset:   0%|          | 0/500 [00:00<?, ? examples/s]Tokenizing train dataset:  20%|██        | 100/500 [00:00<00:00, 986.61 examples/s]Tokenizing train dataset:  56%|█████▋    | 282/500 [00:00<00:00, 1469.72 examples/s]Tokenizing train dataset:  92%|█████████▏| 461/500 [00:00<00:00, 1609.16 examples/s]Tokenizing train dataset: 100%|██████████| 500/500 [00:00<00:00, 1462.72 examples/s]
+Truncating train dataset:   0%|          | 0/500 [00:00<?, ? examples/s]Truncating train dataset: 100%|██████████| 500/500 [00:00<00:00, 234083.27 examples/s]
+[RANK 0] Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None, 'pad_token_id': 151645}.
+  0%|          | 0/189 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "<stdin>", line 65, in <module>
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/trainer.py", line 1424, in train
+    return inner_training_loop(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/trainer.py", line 1506, in _inner_training_loop
+    self._run_epoch(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/trainer.py", line 1756, in _run_epoch
+    grad_norm = self._clip_grad_norm(model)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/trainer.py", line 2493, in _clip_grad_norm
+    return self.accelerator.clip_grad_norm_(model.parameters(), self.args.max_grad_norm)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/accelerate/accelerator.py", line 2994, in clip_grad_norm_
+    self.unscale_gradients()
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/accelerate/accelerator.py", line 2932, in unscale_gradients
+    self.scaler.unscale_(opt)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/torch/amp/grad_scaler.py", line 343, in unscale_
+    optimizer_state["found_inf_per_device"] = self._unscale_grads_(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/torch/amp/grad_scaler.py", line 280, in _unscale_grads_
+    torch._amp_foreach_non_finite_check_and_unscale_(
+NotImplementedError: "_amp_foreach_non_finite_check_and_unscale_cuda" not implemented for 'BFloat16'
+  0%|          | 0/189 [00:04<?, ?it/s]

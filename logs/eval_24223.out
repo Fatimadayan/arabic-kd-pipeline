@@ -1,0 +1,213 @@
+==========================================
+SLURM_CLUSTER_NAME = linux
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = pgstudents
+SLURM_JOB_ID = 24223
+SLURM_JOB_NAME = kd_eval
+SLURM_JOB_NODELIST = gpu01
+SLURM_JOB_USER = user151
+SLURM_JOB_UID = 4254
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 743963
+SLURM_SUBMIT_DIR = /scratch-beegfs/datasets/user151/qwen-arabic-kd
+SLURM_CPUS_ON_NODE = 192
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 743963
+==========================================
+Tue Mar 31 23:16:07 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-PCIE-40GB          Off |   00000000:21:00.0 Off |                    0 |
+| N/A   27C    P0             33W /  250W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA A100-PCIE-40GB          Off |   00000000:81:00.0 Off |                    0 |
+| N/A   26C    P0             32W /  250W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Starting evaluation at: Tue Mar 31 23:16:08 +03 2026
+
+==================================================
+Evaluating: sft_7b
+==================================================
+
+[en1] What is the capital of France?
+→  The capital of France is Paris. 
+
+Paris is not only the capital but also the most populous city in France, with a population of over 2 million people
+
+[en2] Explain the water cycle in simple terms.
+→  The water cycle is a natural process where water moves through different states and locations on Earth. Here's a simple explanation:
+
+1. **Evaporatio
+
+[en3] What is 15 multiplied by 7?
+→  To find the product of 15 and 7, we can break it down into simpler steps:
+
+1. Multiply 15 by 7.
+2. We can use the distributive property to make this 
+
+[ar1] ما هي عاصمة فرنسا؟
+→ 
+
+عاصمة فرنسا هي باريس. تقع باريس في شمال غرب فرنسا وتعد من أكبر المدن الأوروبية وأهمها ثقافياً واقتصادياً وسياسياً. تحتوي على العديد من المعالم السيا
+
+[ar2] اشرح دورة الماء بعبارات بسيطة.
+→  دورة الماء هي عملية دائمة تتضمن توزيع المياه على الأرض وتجددها من خلال العديد من الخطوات. إليك شرح بسيط:
+
+1. **الاستخراج**: يبدأ الدورة عندما يتم است
+
+[ar3] ما هو ناتج ضرب 15 في 7؟
+→ 
+
+ناتج ضرب 15 في 7 هو 105.
+
+[ar4] ما هي أهمية اللغة العربية في العالم؟
+→  - سؤال وجواب
+الرئيسية/التعليم/ما هي أهمية اللغة العربية في العالم؟
+ما هي أهمية اللغة العربية في العالم؟
+اللغة العربية هي واحدة من أكثر اللغات انتشارا
+
+[en4] What is the importance of the Arabic language in t
+→  The Arabic language holds significant importance in the world for several reasons:
+
+1. **Cultural and Historical Significance**: Arabic is one of the
+
+==================================================
+Evaluating: seq_kd_7b
+==================================================
+
+[en1] What is the capital of France?
+→  The capital of France is Paris. 
+
+Paris is not only the capital but also the most populous city in France, with a population of over 2 million people
+
+[en2] Explain the water cycle in simple terms.
+→  The water cycle is a natural process where water moves through different states and locations on Earth. Here's a simple explanation:
+
+1. **Evaporatio
+
+[en3] What is 15 multiplied by 7?
+→  To find the product of 15 and 7, we can break it down into simpler steps:
+
+1. Multiply 15 by 7.
+2. We can use the distributive property to make this 
+
+[ar1] ما هي عاصمة فرنسا؟
+→ 
+
+عاصمة فرنسا هي باريس.
+
+[ar2] اشرح دورة الماء بعبارات بسيطة.
+→  دورة الماء هي عملية دائمة تتضمن تحويل الماء من صورته المختلفة (البخار، السائل، الجليد) بين الأرض والسماء. تبدأ هذه العملية عندما يتبخر الماء من الأنه
+
+[ar3] ما هو ناتج ضرب 15 في 7؟
+→ 
+
+ناتج ضرب 15 في 7 هو 105.
+
+[ar4] ما هي أهمية اللغة العربية في العالم؟
+→  - سؤال وجواب
+الرئيسية/التعليم/ما هي أهمية اللغة العربية في العالم؟
+ما هي أهمية اللغة العربية في العالم؟
+اللغة العربية هي واحدة من أكثر اللغات انتشارا
+
+[en4] What is the importance of the Arabic language in t
+→  The Arabic language holds significant importance in the world for several reasons:
+
+1. **Cultural and Historical Significance**: Arabic is one of the
+
+==================================================
+Evaluating: token_kd_7b
+==================================================
+
+[en1] What is the capital of France?
+→  The capital of France is Paris. 
+
+Paris is a major European city and is known for its rich history, culture, and art. It is home to many famous landm
+
+[en2] Explain the water cycle in simple terms.
+→  The water cycle is a natural process where water moves through the environment, changing between liquid, gas, and solid forms. Here's a simple explan
+
+[en3] What is 15 multiplied by 7?
+→  To find the product of 15 and 7, we can break it down into simpler steps:
+
+1. Multiply 15 by 7.
+2. We can use the distributive property to make this 
+
+[ar1] ما هي عاصمة فرنسا؟
+→ 
+
+عاصمة فرنسا هي باريس. 
+
+باريس هي أكبر مدينة في فرنسا وتعتبر من أكبر المدن في أوروبا، وتعد مركزاً ثقافياً وسياسياً واقتصادياً وسياحياً هاماً. 
+
+بعض ا
+
+[ar2] اشرح دورة الماء بعبارات بسيطة.
+→  دورة الماء هي عملية مستمرة تشمل التحول المستمر للماء بين أشكاله الثلاثة (البخار، الصلب، السائل) في البيئة. تتضمن هذه الدورة:
+
+1. التبخر: يتبخر الماء 
+
+[ar3] ما هو ناتج ضرب 15 في 7؟
+→ 
+
+ناتج ضرب 15 في 7 هو 105. يمكن حساب ذلك بسهولة من خلال الضرب:
+
+\( 15 \times 7 = 105 \)
+
+يمكنك التحقق من هذا الناتج باستخدام طرق مختلفة مثل الجمع المت
+
+[ar4] ما هي أهمية اللغة العربية في العالم؟
+→  - سطور
+آخر تحديث: ١٢:٣٤ ، ٢٦ أغسطس ٢٠٢١
+٢ أهمية اللغة العربية في العالم
+٣ أسباب أهمية اللغة العربية
+٤ استخدام اللغة العربية في العالم
+٥ التحديات التي
+
+[en4] What is the importance of the Arabic language in t
+→  The Arabic language holds significant importance in the world for several reasons:
+
+1. **Geographical Spread**: Arabic is spoken across a vast region
+
+
+DONE! Results saved to /data/datasets/user151/qwen-arabic-kd/results/eval_results.json
+
+==================================================
+SUMMARY — Arabic response check:
+
+sft_7b:
+  ar1: ✅ Arabic
+  ar2: ✅ Arabic
+  ar3: ✅ Arabic
+  ar4: ✅ Arabic
+
+seq_kd_7b:
+  ar1: ✅ Arabic
+  ar2: ✅ Arabic
+  ar3: ✅ Arabic
+  ar4: ✅ Arabic
+
+token_kd_7b:
+  ar1: ✅ Arabic
+  ar2: ✅ Arabic
+  ar3: ✅ Arabic
+  ar4: ✅ Arabic

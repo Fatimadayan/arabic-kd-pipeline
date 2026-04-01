@@ -1,0 +1,154 @@
+# =============================================================================
+# configs/experiment_config.yaml
+# Master experiment configuration for run_experiment.py
+#
+# BENEFIT LAB PATHS: All paths use /data/datasets/$USER
+# =============================================================================
+
+# ── Experiment Identity ───────────────────────────────────────────────────────
+experiment:
+  name: "arabic_kd_qwen32b"
+  description: "Knowledge Distillation from Qwen2.5-32B to 7B/1.1B — Arabic/Bilingual"
+  seed: 42
+
+# ── Benefit Lab Paths (all under /data/datasets/$USER) ───────────────────────
+paths:
+  project_root:     /data/datasets/${USER}/qwen-arabic-kd
+  data_root:        /data/datasets/${USER}/qwen-arabic-kd/data
+  checkpoint_root:  /data/datasets/${USER}/qwen-arabic-kd/checkpoints
+  results_root:     /data/datasets/${USER}/qwen-arabic-kd/results
+  analysis_root:    /data/datasets/${USER}/qwen-arabic-kd/analysis
+  logs_root:        /data/datasets/${USER}/qwen-arabic-kd/logs
+  hf_cache:         /data/datasets/${USER}/.cache/huggingface
+
+# ── Models ────────────────────────────────────────────────────────────────────
+models:
+  - index: 0
+    name: teacher
+    hf_name: Qwen/Qwen2.5-32B-Instruct
+    role: teacher
+    size: 32B
+    quantization: 4bit
+    disk_gb: 20
+    description: "32B teacher for KD data generation"
+
+  - index: 1
+    name: qwen7b_sft
+    hf_name: Qwen/Qwen2.5-7B-Instruct
+    role: student_medium
+    size: 7B
+    stage: baseline_sft
+    disk_gb: 15
+    checkpoint_subdir: qwen7b_baseline_sft/final
+
+  - index: 2
+    name: qwen7b_seq_kd
+    hf_name: Qwen/Qwen2.5-7B-Instruct
+    role: student_medium
+    size: 7B
+    stage: seq_kd
+    disk_gb: 15
+    checkpoint_subdir: qwen7b_seq_kd/final
+
+  - index: 3
+    name: qwen7b_token_kd_T2_a05
+    hf_name: Qwen/Qwen2.5-7B-Instruct
+    role: student_medium
+    size: 7B
+    stage: token_kd
+    kd_temperature: 2
+    kd_alpha: 0.5
+    disk_gb: 15
+    checkpoint_subdir: qwen7b_token_kd_T2_a05/final
+
+  - index: 4
+    name: tinyllama_sft
+    hf_name: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+    role: student_small
+    size: 1.1B
+    stage: baseline_sft
+    disk_gb: 3
+    checkpoint_subdir: tinyllama_baseline_sft/final
+
+  - index: 5
+    name: tinyllama_seq_kd
+    hf_name: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+    role: student_small
+    size: 1.1B
+    stage: seq_kd
+    disk_gb: 3
+    checkpoint_subdir: tinyllama_seq_kd/final
+
+  - index: 6
+    name: tinyllama_token_kd_T2_a05
+    hf_name: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+    role: student_small
+    size: 1.1B
+    stage: token_kd
+    kd_temperature: 2
+    kd_alpha: 0.5
+    disk_gb: 3
+    checkpoint_subdir: tinyllama_token_kd_T2_a05/final
+
+# ── KD ablation grid ──────────────────────────────────────────────────────────
+kd_ablation:
+  temperatures: [1, 2, 4]
+  alphas: [0.3, 0.5, 0.7]
+  # Full grid = 9 token-KD runs per student = 18 total
+  # Run default (T=2, α=0.5) first, then expand if compute allows
+
+# ── Pipeline stages ───────────────────────────────────────────────────────────
+pipeline:
+  stage_1_generate_teacher_data:
+    script: scripts/01_generate_teacher_data.py
+    slurm: slurm/teacher_gen.slurm
+    output: data/teacher_responses.jsonl
+    est_hours: 10
+    requires_gpu: true
+
+  stage_2_train_sft:
+    script: scripts/02_train_baseline_sft.py
+    slurm: slurm/train_7b.slurm
+    slurm_env: {STUDENT: medium, STAGE: sft}
+    est_hours: 12
+    requires_gpu: true
+
+  stage_3_train_seq_kd:
+    script: scripts/03_train_sequence_kd.py
+    slurm: slurm/train_7b.slurm
+    slurm_env: {STUDENT: medium, STAGE: seq_kd}
+    est_hours: 12
+    requires_gpu: true
+
+  stage_4_train_token_kd:
+    script: scripts/04_train_token_kd.py
+    slurm: slurm/train_kd_7b.slurm
+    est_hours: 16
+    requires_gpu: true
+
+  stage_5_evaluate:
+    script: scripts/05_eval_4pillars.py
+    slurm: null                           # Can run interactively or via sbatch
+    est_hours: 2
+    requires_gpu: true
+
+  stage_6_analysis:
+    script: scripts/06_analysis.py
+    slurm: null
+    est_hours: 0.5
+    requires_gpu: false
+
+# ── Test-run settings (--test-run flag) ──────────────────────────────────────
+test_run:
+  max_samples: 50
+  max_new_tokens: 64
+  num_train_steps: 10
+  eval_n_samples: 10
+  description: "Quick validation run — does NOT produce meaningful results"
+
+# ── Safety thresholds ─────────────────────────────────────────────────────────
+safety:
+  min_free_disk_gb: 5
+  warn_free_disk_gb: 20
+  max_home_used_gb: 4
+  max_queued_jobs: 10

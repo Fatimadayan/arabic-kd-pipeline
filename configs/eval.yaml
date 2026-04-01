@@ -1,0 +1,170 @@
+# =============================================================================
+# configs/eval.yaml
+# 4-Pillar evaluation configuration
+# =============================================================================
+
+output_dir: ${SCRATCH:-$HOME}/projects/qwen-arabic-kd/results
+log_dir:    ${SCRATCH:-$HOME}/projects/qwen-arabic-kd/results/logs
+
+# Models to evaluate (populated at runtime from checkpoint_root)
+models_to_eval:
+  - teacher_baseline
+  - qwen7b_sft
+  - qwen7b_seq_kd
+  - qwen7b_token_kd_T1_a0.5
+  - qwen7b_token_kd_T2_a0.5
+  - qwen7b_token_kd_T4_a0.5
+  - tinyllama_sft
+  - tinyllama_seq_kd
+  - tinyllama_token_kd_T2_a0.5
+
+eval_batch_size: 8
+max_new_tokens: 256
+seed: 42
+
+# =============================================================================
+# PILLAR 1: English Ceiling
+# =============================================================================
+pillar1_english:
+  enabled: true
+  benchmarks:
+    mmlu:
+      hf_path: cais/mmlu
+      config: all
+      split: test
+      n_samples: 100
+      n_shot: 5
+      metric: accuracy
+      
+    gsm8k:
+      hf_path: openai/gsm8k
+      config: main
+      split: test
+      n_samples: 50
+      n_shot: 0
+      metric: exact_match
+      answer_extraction_regex: "####\\s*([0-9,]+)"
+      
+    truthfulqa:
+      hf_path: truthful_qa
+      config: generation
+      split: validation
+      n_samples: 50
+      n_shot: 0
+      metric: rouge_l                  # Proxy when no judge model
+
+# =============================================================================
+# PILLAR 2: Native Arabic
+# =============================================================================
+pillar2_arabic:
+  enabled: true
+  benchmarks:
+    arabic_mmlu:
+      hf_path: MBZUAI/ArabicMMLU
+      split: test
+      n_samples: 100
+      n_shot: 5
+      metric: accuracy
+      language: ar
+      
+    arabic_qa:
+      hf_path: google/xquad
+      config: xquad.ar
+      split: validation
+      n_samples: 100
+      n_shot: 0
+      metric: f1_em                    # F1 + Exact Match
+      language: ar
+      
+    orca_arabic:
+      hf_path: Open-Orca/OpenOrca
+      split: train
+      n_samples: 100
+      n_shot: 0
+      metric: rouge_l
+      language: ar
+      filter_arabic: true
+
+# =============================================================================
+# PILLAR 3: Cross-Lingual Symmetry (CORE)
+# =============================================================================
+pillar3_symmetry:
+  enabled: true
+  n_parallel_pairs: 200
+  parallel_dataset:
+    hf_path: google/xquad
+    config_ar: xquad.ar
+    config_en: xquad.en
+    
+  metrics:
+    lpg:
+      formula: "abs(accuracy_en - accuracy_ar)"
+      description: "Language Performance Gap — lower is better"
+      
+    clcs:
+      formula: "count(both_correct OR both_wrong) / total_pairs"
+      description: "Cross-Lingual Consistency Score — higher is better"
+      threshold: 0.70                  # Target CLCS ≥ 0.70
+      
+    ifs:
+      formula: "0.5 * ar2en_quality + 0.5 * en2ar_quality"
+      quality_metric: rouge_l
+      description: "Instruction Fidelity Score"
+      
+    rdi:
+      formula: "reasoning_steps_ar / reasoning_steps_en"
+      step_detection_regex: "\\b(أولاً|ثانياً|\\d+[.)]|Step \\d|First|Second|Therefore|Thus)\\b"
+      description: "Reasoning Depth Index — target ≈ 1.0"
+      
+  statistical_tests:
+    mcnemar:
+      description: "Paired test on EN vs AR correctness"
+      alpha: 0.05
+    cohens_d:
+      description: "Effect size for performance gap"
+      pooled: true
+
+# =============================================================================
+# PILLAR 4: Transfer Stress Tests
+# =============================================================================
+pillar4_stress:
+  enabled: true
+  
+  cross_lingual_transfer:
+    ar2en:
+      description: "Arabic input → English output requested"
+      n_samples: 50
+      metric: language_adherence       # % responses in correct language
+    en2ar:
+      description: "English input → Arabic output requested"
+      n_samples: 50
+      metric: language_adherence
+      
+  code_switching:
+    description: "Mixed Arabic/English prompt"
+    n_samples: 30
+    # e.g. "What is رأس المال الطبيعي and why does it matter?"
+    metric: coherence_score
+    
+  dialectal_arabic:
+    dialects: [gulf, levantine, egyptian, msa]
+    n_samples_per_dialect: 20
+    metric: accuracy
+    
+  cultural_reasoning:
+    description: "Arabic-specific cultural knowledge questions"
+    n_samples: 40
+    topics: [islamic_calendar, arabic_literature, mena_geography, social_norms]
+    metric: factual_accuracy
+
+# =============================================================================
+# Output formats
+# =============================================================================
+output:
+  formats: [json, csv, latex]
+  latex_table_style: booktabs
+  decimal_places: 4
+  include_confidence_intervals: true
+  ci_method: bootstrap
+  n_bootstrap: 1000
+  save_per_sample_results: true        # For detailed error analysis

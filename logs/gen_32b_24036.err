@@ -1,0 +1,29 @@
+Fetching 17 files:   0%|          | 0/17 [00:00<?, ?it/s]Fetching 17 files:   6%|▌         | 1/17 [09:02<2:24:41, 542.58s/it]Fetching 17 files: 100%|██████████| 17/17 [09:02<00:00, 31.92s/it]  
+Loading weights:   0%|          | 0/771 [00:00<?, ?it/s]Loading weights:   0%|          | 1/771 [00:01<22:56,  1.79s/it]Loading weights:   0%|          | 2/771 [00:03<25:10,  1.96s/it]Loading weights:   1%|          | 4/771 [00:08<27:13,  2.13s/it]Loading weights:   1%|          | 5/771 [00:11<29:54,  2.34s/it]Loading weights:   1%|          | 6/771 [00:13<31:00,  2.43s/it]Loading weights:   1%|          | 9/771 [00:16<19:07,  1.51s/it]Loading weights:   1%|▏         | 10/771 [00:18<21:37,  1.70s/it]Loading weights:   2%|▏         | 12/771 [00:22<21:30,  1.70s/it]Loading weights:   2%|▏         | 14/771 [00:24<20:16,  1.61s/it]Loading weights:   2%|▏         | 16/771 [00:27<18:49,  1.50s/it]Loading weights:   2%|▏         | 17/771 [00:29<20:43,  1.65s/it]Loading weights:   2%|▏         | 18/771 [00:31<22:08,  1.76s/it]Loading weights:   3%|▎         | 21/771 [00:33<15:16,  1.22s/it]Loading weights:   7%|▋         | 52/771 [00:35<02:21,  5.08it/s]Loading weights:   7%|▋         | 53/771 [00:35<02:27,  4.87it/s]Loading weights:   7%|▋         | 54/771 [00:36<02:40,  4.46it/s]Loading weights:  11%|█▏        | 88/771 [00:36<00:44, 15.33it/s]Loading weights:  18%|█▊        | 136/771 [00:36<00:17, 35.83it/s]Loading weights:  22%|██▏       | 173/771 [00:36<00:10, 55.49it/s]Loading weights:  26%|██▋       | 204/771 [00:36<00:07, 75.28it/s]Loading weights:  36%|███▋      | 280/771 [00:36<00:03, 143.39it/s]Loading weights:  41%|████      | 317/771 [00:36<00:52,  8.57it/s] 
+Traceback (most recent call last):
+  File "<stdin>", line 33, in <module>
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 374, in from_pretrained
+    return model_class.from_pretrained(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4137, in from_pretrained
+    loading_info, disk_offload_index = cls._load_pretrained_model(model, state_dict, checkpoint_files, load_config)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4256, in _load_pretrained_model
+    loading_info, disk_offload_index = convert_and_load_state_dict_in_model(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/core_model_loading.py", line 1212, in convert_and_load_state_dict_in_model
+    realized_value = mapping.convert(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/core_model_loading.py", line 678, in convert
+    collected_tensors = self.materialize_tensors()
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/core_model_loading.py", line 654, in materialize_tensors
+    tensors = [future.result() for future in tensors if future.result() is not None]
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/core_model_loading.py", line 654, in <listcomp>
+    tensors = [future.result() for future in tensors if future.result() is not None]
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/core_model_loading.py", line 800, in _job
+    return _materialize_copy(tensor, device, dtype)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/core_model_loading.py", line 789, in _materialize_copy
+    tensor = tensor.to(device=device, dtype=dtype)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 270.00 MiB. GPU 0 has a total capacity of 39.49 GiB of which 250.94 MiB is free. Including non-PyTorch memory, this process has 26.29 GiB memory in use. Process 3060083 has 12.94 GiB memory in use. Of the allocated memory 25.79 GiB is allocated by PyTorch, and 29.69 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

@@ -1,0 +1,30 @@
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:02<12:45,  2.26s/it]Loading weights:   1%|          | 2/339 [00:04<13:12,  2.35s/it]Loading weights:   1%|          | 4/339 [00:06<07:34,  1.36s/it]Loading weights:   1%|▏         | 5/339 [00:07<06:47,  1.22s/it]Loading weights:   2%|▏         | 6/339 [00:07<06:08,  1.11s/it]Loading weights:   3%|▎         | 9/339 [00:08<03:31,  1.56it/s]Loading weights:   3%|▎         | 10/339 [00:10<04:20,  1.26it/s]Loading weights:   4%|▎         | 12/339 [00:11<04:01,  1.35it/s]Loading weights:   4%|▍         | 14/339 [00:12<03:24,  1.59it/s]Loading weights:   5%|▍         | 16/339 [00:13<03:00,  1.79it/s]Loading weights:   5%|▌         | 17/339 [00:14<03:49,  1.40it/s]Loading weights:   5%|▌         | 18/339 [00:15<04:33,  1.17it/s]Loading weights:   6%|▌         | 21/339 [00:16<03:10,  1.67it/s]Loading weights:   6%|▋         | 22/339 [00:17<03:37,  1.46it/s]Loading weights:   7%|▋         | 24/339 [00:19<03:25,  1.53it/s]Loading weights:   8%|▊         | 26/339 [00:20<03:07,  1.67it/s]Loading weights:   8%|▊         | 28/339 [00:21<03:24,  1.52it/s]Loading weights:   9%|▊         | 29/339 [00:23<04:19,  1.19it/s]Loading weights:   9%|▉         | 30/339 [00:24<04:55,  1.05it/s]Loading weights:  10%|▉         | 33/339 [00:26<03:43,  1.37it/s]Loading weights:  10%|█         | 34/339 [00:26<03:36,  1.41it/s]Loading weights:  11%|█         | 36/339 [00:28<03:31,  1.43it/s]Loading weights:  11%|█         | 38/339 [00:28<03:04,  1.63it/s]Loading weights:  12%|█▏        | 40/339 [00:29<02:51,  1.74it/s]Loading weights:  12%|█▏        | 41/339 [00:30<03:02,  1.63it/s]Loading weights:  55%|█████▍    | 186/339 [00:30<00:02, 61.96it/s]Loading weights: 100%|██████████| 339/339 [00:30<00:00, 10.96it/s]
+Adding EOS to train dataset:   0%|          | 0/500 [00:00<?, ? examples/s]Adding EOS to train dataset: 100%|██████████| 500/500 [00:00<00:00, 15920.80 examples/s]
+Tokenizing train dataset:   0%|          | 0/500 [00:00<?, ? examples/s]Tokenizing train dataset:  17%|█▋        | 83/500 [00:00<00:00, 670.32 examples/s]Tokenizing train dataset:  53%|█████▎    | 263/500 [00:00<00:00, 1269.75 examples/s]Tokenizing train dataset:  88%|████████▊ | 442/500 [00:00<00:00, 1490.46 examples/s]Tokenizing train dataset: 100%|██████████| 500/500 [00:00<00:00, 1326.13 examples/s]
+Truncating train dataset:   0%|          | 0/500 [00:00<?, ? examples/s]Truncating train dataset: 100%|██████████| 500/500 [00:00<00:00, 229699.01 examples/s]
+[RANK 0] Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None, 'pad_token_id': 151645}.
+  0%|          | 0/96 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "<stdin>", line 60, in <module>
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/trainer.py", line 1424, in train
+    return inner_training_loop(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/trainer.py", line 1506, in _inner_training_loop
+    self._run_epoch(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/trainer.py", line 1734, in _run_epoch
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/trl/trainer/sft_trainer.py", line 1320, in training_step
+    return super().training_step(*args, **kwargs)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/trainer.py", line 1906, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/trl/trainer/sft_trainer.py", line 1216, in compute_loss
+    (loss, outputs) = super().compute_loss(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/trainer.py", line 1978, in compute_loss
+    outputs = model(**inputs)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/torch/nn/parallel/data_parallel.py", line 181, in forward
+    raise RuntimeError(
+RuntimeError: module must have its parameters and buffers on device cuda:0 (device_ids[0]) but found one of them on device: cuda:1
+  0%|          | 0/96 [00:00<?, ?it/s]

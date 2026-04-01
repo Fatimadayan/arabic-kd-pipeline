@@ -1,0 +1,6 @@
+2026-03-09 21:54:32,624 [INFO] ============================================================
+2026-03-09 21:54:32,625 [INFO] 01_generate_teacher_data.py
+2026-03-09 21:54:32,626 [INFO] Dry run: True
+2026-03-09 21:54:32,626 [INFO] ============================================================
+2026-03-09 21:54:32,756 [ERROR] SAFETY BLOCK: Output directory $HOME/projects/qwen-arabic-kd/data/teacher_outputs is outside approved paths.
+Approved: $HOME (/home/nfs/202200527) or $SCRATCH (not set)

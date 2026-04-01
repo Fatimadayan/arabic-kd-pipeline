@@ -1,0 +1,137 @@
+==========================================
+SLURM_CLUSTER_NAME = linux
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = pgstudents
+SLURM_JOB_ID = 23609
+SLURM_JOB_NAME = kd_token_kd
+SLURM_JOB_NODELIST = gpu01
+SLURM_JOB_USER = user151
+SLURM_JOB_UID = 4254
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 1241029
+SLURM_SUBMIT_DIR = /scratch-beegfs/datasets/user151/qwen-arabic-kd
+SLURM_CPUS_ON_NODE = 192
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 1241029
+==========================================
+Mon Mar 16 15:23:27 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-PCIE-40GB          Off |   00000000:21:00.0 Off |                    0 |
+| N/A   28C    P0             33W /  250W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA A100-PCIE-40GB          Off |   00000000:81:00.0 Off |                    0 |
+| N/A   26C    P0             32W /  250W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Starting Token-KD at: Mon Mar 16 15:23:28 +03 2026
+Loading data...
+Samples: 500
+Loading tokenizer...
+Encoding dataset...
+Loading teacher model in 4-bit...
+Teacher loaded on cuda:0
+Loading student model...
+Loading LoRA from: /data/datasets/user151/qwen-arabic-kd/checkpoints/sft_7b
+trainable params: 5,046,272 || all params: 7,620,662,784 || trainable%: 0.0662
+Starting Token-KD: T=2.0, alpha=0.5, epochs=3
+Epoch 1 step 10 loss: 497.0000
+Epoch 1 step 20 loss: 408.0500
+Epoch 1 step 30 loss: 359.0000
+Epoch 1 step 40 loss: 319.3125
+Epoch 1 step 50 loss: 293.2500
+Epoch 1 step 60 loss: 273.8917
+Epoch 1 step 70 loss: 251.2250
+Epoch 1 step 80 loss: 233.8406
+Epoch 1 step 90 loss: 219.9472
+Epoch 1 step 100 loss: 206.5137
+Epoch 1 step 110 loss: 192.5693
+Epoch 1 step 120 loss: 180.6687
+Epoch 1 step 130 loss: 169.6394
+Epoch 1 step 140 loss: 160.0643
+Epoch 1 step 150 loss: 150.7650
+Epoch 1 step 160 loss: 143.2590
+Epoch 1 step 170 loss: 136.4857
+Epoch 1 step 180 loss: 130.5007
+Epoch 1 step 190 loss: 124.6178
+Epoch 1 step 200 loss: 119.2472
+Epoch 1 step 210 loss: 114.4997
+Epoch 1 step 220 loss: 110.1514
+Epoch 1 step 230 loss: 106.0144
+Epoch 1 step 240 loss: 102.2488
+Epoch 1 step 250 loss: 98.8296
+Epoch 1 avg loss: 98.8296
+Saved epoch 1 to /data/datasets/user151/qwen-arabic-kd/checkpoints/token_kd_7b/epoch_1
+Epoch 2 step 10 loss: 27.6875
+Epoch 2 step 20 loss: 21.3578
+Epoch 2 step 30 loss: 18.2323
+Epoch 2 step 40 loss: 16.6383
+Epoch 2 step 50 loss: 16.2200
+Epoch 2 step 60 loss: 16.8906
+Epoch 2 step 70 loss: 16.0842
+Epoch 2 step 80 loss: 16.1502
+Epoch 2 step 90 loss: 16.1064
+Epoch 2 step 100 loss: 15.5727
+Epoch 2 step 110 loss: 15.5155
+Epoch 2 step 120 loss: 15.3191
+Epoch 2 step 130 loss: 14.8013
+Epoch 2 step 140 loss: 14.5581
+Epoch 2 step 150 loss: 14.4653
+Epoch 2 step 160 loss: 14.1278
+Epoch 2 step 170 loss: 13.8863
+Epoch 2 step 180 loss: 13.8308
+Epoch 2 step 190 loss: 13.7456
+Epoch 2 step 200 loss: 13.7649
+Epoch 2 step 210 loss: 14.0169
+Epoch 2 step 220 loss: 14.2251
+Epoch 2 step 230 loss: 14.3207
+Epoch 2 step 240 loss: 14.2558
+Epoch 2 step 250 loss: 14.2421
+Epoch 2 avg loss: 14.2421
+Saved epoch 2 to /data/datasets/user151/qwen-arabic-kd/checkpoints/token_kd_7b/epoch_2
+Epoch 3 step 10 loss: 10.3781
+Epoch 3 step 20 loss: 12.6297
+Epoch 3 step 30 loss: 10.8333
+Epoch 3 step 40 loss: 11.6570
+Epoch 3 step 50 loss: 12.2413
+Epoch 3 step 60 loss: 11.4906
+Epoch 3 step 70 loss: 12.0241
+Epoch 3 step 80 loss: 12.1836
+Epoch 3 step 90 loss: 12.0738
+Epoch 3 step 100 loss: 13.0611
+Epoch 3 step 110 loss: 13.0415
+Epoch 3 step 120 loss: 13.6948
+Epoch 3 step 130 loss: 13.3392
+Epoch 3 step 140 loss: 13.3451
+Epoch 3 step 150 loss: 13.4958
+Epoch 3 step 160 loss: 13.3500
+Epoch 3 step 170 loss: 13.3221
+Epoch 3 step 180 loss: 13.3108
+Epoch 3 step 190 loss: 13.4000
+Epoch 3 step 200 loss: 13.1680
+Epoch 3 step 210 loss: 13.0429
+Epoch 3 step 220 loss: 12.9155
+Epoch 3 step 230 loss: 12.6062
+Epoch 3 step 240 loss: 12.5633
+Epoch 3 step 250 loss: 12.4857
+Epoch 3 avg loss: 12.4857
+Saved epoch 3 to /data/datasets/user151/qwen-arabic-kd/checkpoints/token_kd_7b/epoch_3
+DONE! Token-KD model saved to /data/datasets/user151/qwen-arabic-kd/checkpoints/token_kd_7b

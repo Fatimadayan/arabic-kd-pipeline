@@ -1,0 +1,14 @@
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'Helsinki-NLP/tatoeba_mt' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+Traceback (most recent call last):
+  File "<stdin>", line 13, in <module>
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/load.py", line 1485, in load_dataset
+    builder_instance = load_dataset_builder(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/load.py", line 1130, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/load.py", line 1029, in dataset_module_factory
+    raise e1 from None
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/load.py", line 989, in dataset_module_factory
+    raise RuntimeError(f"Dataset scripts are no longer supported, but found {filename}")
+RuntimeError: Dataset scripts are no longer supported, but found tatoeba_mt.py

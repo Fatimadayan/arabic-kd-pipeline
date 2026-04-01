@@ -1,0 +1,51 @@
+==========================================
+SLURM_CLUSTER_NAME = linux
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = pgstudents
+SLURM_JOB_ID = 23546
+SLURM_JOB_NAME = kd_arabic_data
+SLURM_JOB_NODELIST = gpu01
+SLURM_JOB_USER = user151
+SLURM_JOB_UID = 4254
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 4172059
+SLURM_SUBMIT_DIR = /scratch-beegfs/datasets/user151/qwen-arabic-kd
+SLURM_CPUS_ON_NODE = 192
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 4172059
+==========================================
+Fri Mar 13 17:44:04 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-PCIE-40GB          Off |   00000000:21:00.0 Off |                    0 |
+| N/A   59C    P0            210W /  250W |   11195MiB /  40960MiB |     94%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA A100-PCIE-40GB          Off |   00000000:81:00.0 Off |                    0 |
+| N/A   29C    P0             33W /  250W |       4MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A         4098155      C   ...sets/202201045/env/bin/python       1822MiB |
+|    0   N/A  N/A         4098169      C   ...sets/202201045/env/bin/python       1988MiB |
+|    0   N/A  N/A         4098310      C   ...sets/202201045/env/bin/python       1692MiB |
+|    0   N/A  N/A         4098453      C   ...sets/202201045/env/bin/python       1822MiB |
+|    0   N/A  N/A         4098594      C   ...sets/202201045/env/bin/python       1952MiB |
+|    0   N/A  N/A         4098749      C   ...sets/202201045/env/bin/python       1852MiB |
++-----------------------------------------------------------------------------------------+
+Generating Arabic+English data at: Fri Mar 13 17:44:05 +03 2026
+Loading Arabic + English datasets...

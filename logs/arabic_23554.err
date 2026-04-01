@@ -1,0 +1,73 @@
+Could not set the permissions on the file '/data/datasets/user151/.cache/huggingface/hub/datasets--Helsinki-NLP--opus-100/blobs/c8e6b1a3fbe57fbdd126dedc7d16d1142fd8a9534ae4d76141d478ab78431369.incomplete'. Error: [Errno 2] No such file or directory: '/data/datasets/user151/.cache/huggingface/hub/datasets--Helsinki-NLP--opus-100/blobs/c8e6b1a3fbe57fbdd126dedc7d16d1142fd8a9534ae4d76141d478ab78431369.incomplete'.
+Continuing without setting permissions.
+Traceback (most recent call last):
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/shutil.py", line 816, in move
+    os.rename(src, real_dst)
+FileNotFoundError: [Errno 2] No such file or directory: '/data/datasets/user151/.cache/huggingface/hub/datasets--Helsinki-NLP--opus-100/blobs/c8e6b1a3fbe57fbdd126dedc7d16d1142fd8a9534ae4d76141d478ab78431369.incomplete' -> '/data/datasets/user151/.cache/huggingface/hub/datasets--Helsinki-NLP--opus-100/blobs/c8e6b1a3fbe57fbdd126dedc7d16d1142fd8a9534ae4d76141d478ab78431369'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1904, in _copy_no_matter_what
+    shutil.copy2(src, dst)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/shutil.py", line 434, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/shutil.py", line 254, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: '/data/datasets/user151/.cache/huggingface/hub/datasets--Helsinki-NLP--opus-100/blobs/c8e6b1a3fbe57fbdd126dedc7d16d1142fd8a9534ae4d76141d478ab78431369.incomplete'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<stdin>", line 13, in <module>
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/load.py", line 1505, in load_dataset
+    builder_instance.download_and_prepare(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/builder.py", line 884, in download_and_prepare
+    self._download_and_prepare(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/builder.py", line 925, in _download_and_prepare
+    split_generators: list[SplitGenerator] = self._split_generators(dl_manager, **split_generators_kwargs)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/packaged_modules/parquet/parquet.py", line 110, in _split_generators
+    data_files = dl_manager.download(self.config.data_files)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/download/download_manager.py", line 159, in download
+    downloaded_path_or_paths = map_nested(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/utils/py_utils.py", line 520, in map_nested
+    mapped = [
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/utils/py_utils.py", line 521, in <listcomp>
+    _single_map_nested((function, obj, batched, batch_size, types, None, True, None))
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/utils/py_utils.py", line 408, in _single_map_nested
+    mapped = [_single_map_nested((function, v, batched, batch_size, types, None, True, None)) for v in pbar]
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/utils/py_utils.py", line 408, in <listcomp>
+    mapped = [_single_map_nested((function, v, batched, batch_size, types, None, True, None)) for v in pbar]
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/utils/py_utils.py", line 389, in _single_map_nested
+    return [mapped_item for batch in iter_batched(data_struct, batch_size) for mapped_item in function(batch)]
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/utils/py_utils.py", line 389, in <listcomp>
+    return [mapped_item for batch in iter_batched(data_struct, batch_size) for mapped_item in function(batch)]
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/download/download_manager.py", line 219, in _download_batched
+    return [
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/download/download_manager.py", line 220, in <listcomp>
+    self._download_single(url_or_filename, download_config=download_config)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/download/download_manager.py", line 229, in _download_single
+    out = cached_path(url_or_filename, download_config=download_config)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/datasets/utils/file_utils.py", line 182, in cached_path
+    output_path = huggingface_hub.HfApi(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/huggingface_hub/HF_TOKEN_REMOVED.py", line 5720, in HF_TOKEN_REMOVED_download
+    return HF_TOKEN_REMOVED_download(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 986, in HF_TOKEN_REMOVED_download
+    return _HF_TOKEN_REMOVED_download_to_cache_dir(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1202, in _HF_TOKEN_REMOVED_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1852, in _download_to_tmp_and_move
+    _chmod_and_move(incomplete_path, destination_path)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1893, in _chmod_and_move
+    shutil.move(str(src), str(dst), copy_function=_copy_no_matter_what)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/shutil.py", line 836, in move
+    copy_function(src, real_dst)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1907, in _copy_no_matter_what
+    shutil.copyfile(src, dst)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/shutil.py", line 254, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: '/data/datasets/user151/.cache/huggingface/hub/datasets--Helsinki-NLP--opus-100/blobs/c8e6b1a3fbe57fbdd126dedc7d16d1142fd8a9534ae4d76141d478ab78431369.incomplete'
