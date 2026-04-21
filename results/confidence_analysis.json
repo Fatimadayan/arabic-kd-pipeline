@@ -1,0 +1,25 @@
+{
+  "arabic": {
+    "n_tokens": 2995,
+    "mean_conf": 70.94,
+    "median_conf": 80.47,
+    "std_conf": 28.93,
+    "pct_above_07": 57.46,
+    "pct_above_05": 71.12,
+    "pct_above_09": 41.6
+  },
+  "english": {
+    "n_tokens": 9225,
+    "mean_conf": 76.54,
+    "median_conf": 87.5,
+    "std_conf": 25.76,
+    "pct_above_07": 64.09,
+    "pct_above_05": 79.33,
+    "pct_above_09": 47.27
+  },
+  "gap": {
+    "mean_conf_gap": 5.6,
+    "selection_gap_at_07": 6.62,
+    "ratio_en_over_ar": 1.12
+  }
+}

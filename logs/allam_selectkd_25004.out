@@ -1,0 +1,26 @@
+==========================================
+SLURM_CLUSTER_NAME = linux
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = pgstudents
+SLURM_JOB_ID = 25004
+SLURM_JOB_NAME = allam_selectkd
+SLURM_JOB_NODELIST = gpu01
+SLURM_JOB_USER = user151
+SLURM_JOB_UID = 4254
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 1286877
+SLURM_SUBMIT_DIR = /scratch-beegfs/datasets/user151/qwen-arabic-kd
+SLURM_CPUS_ON_NODE = 192
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 1286877
+==========================================
+Starting ALLaM SelecTKD at: Sun Apr 19 02:54:31 +03 2026
+ALLaM SelecTKD: T=2.0, alpha=0.5, theta=0.7
+Student: ALLaM-7B (Arabic-native)
+Teacher: Qwen2.5-7B (for comparison)
+Samples: 4927
+Loading ALLaM tokenizer...

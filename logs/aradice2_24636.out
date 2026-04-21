@@ -1,0 +1,80 @@
+==========================================
+SLURM_CLUSTER_NAME = linux
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = pgstudents
+SLURM_JOB_ID = 24636
+SLURM_JOB_NAME = kd_aradice2
+SLURM_JOB_NODELIST = gpu01
+SLURM_JOB_USER = user151
+SLURM_JOB_UID = 4254
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 624486
+SLURM_SUBMIT_DIR = /scratch-beegfs/datasets/user151/qwen-arabic-kd
+SLURM_CPUS_ON_NODE = 192
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 624486
+==========================================
+Loading AraDiCE-Culture (Qatar)...
+Qatar failed: Unknown split "train". Should be one of ['test'].
+
+==================================================
+Evaluating: base_7b
+==================================================
+Running custom GCC dialect evaluation...
+
+  AraDiCE-Culture Qatar: None%
+  AraDiCE-Culture Egypt: None%
+  Overall GCC Dialect:   60.0%
+    dialect_comp: 100.0%
+    dialect_meaning: 0.0%
+    cultural: 100.0%
+    code_switch: 100.0%
+    normalization: 33.3%
+    dialect_id: 33.3%
+    gcc_domain: 100.0%
+
+==================================================
+Evaluating: token_kd_7b
+==================================================
+Running custom GCC dialect evaluation...
+
+  AraDiCE-Culture Qatar: None%
+  AraDiCE-Culture Egypt: None%
+  Overall GCC Dialect:   55.0%
+    dialect_comp: 66.7%
+    dialect_meaning: 0.0%
+    cultural: 100.0%
+    code_switch: 100.0%
+    normalization: 33.3%
+    dialect_id: 33.3%
+    gcc_domain: 100.0%
+
+==================================================
+Evaluating: selectkd_7b
+==================================================
+Running custom GCC dialect evaluation...
+
+  AraDiCE-Culture Qatar: None%
+  AraDiCE-Culture Egypt: None%
+  Overall GCC Dialect:   65.0%
+    dialect_comp: 33.3%
+    dialect_meaning: 50.0%
+    cultural: 100.0%
+    code_switch: 100.0%
+    normalization: 66.7%
+    dialect_id: 33.3%
+    gcc_domain: 100.0%
+
+
+TABLE 2 — ARABIC & GCC CAPABILITY:
+Model             AraDiCE-QA  Dialect%  Cultural%  Normalize%  CodeSwitch%
+------------------------------------------------------------------------
+base_7b                    —     60.0%     100.0%       33.3%       100.0%
+token_kd_7b                —     55.0%     100.0%       33.3%       100.0%
+selectkd_7b                —     65.0%     100.0%       66.7%       100.0%
+
+Results saved to /data/datasets/user151/qwen-arabic-kd/results/aradice_results.json

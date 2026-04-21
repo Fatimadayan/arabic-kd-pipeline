@@ -1,0 +1,27 @@
+{
+  "base_7b": {
+    "accuracy": 63.0,
+    "correct": 63,
+    "total": 100
+  },
+  "sft_7b": {
+    "accuracy": 64.0,
+    "correct": 64,
+    "total": 100
+  },
+  "seq_kd_7b": {
+    "accuracy": 60.0,
+    "correct": 60,
+    "total": 100
+  },
+  "token_kd_7b": {
+    "accuracy": 63.0,
+    "correct": 63,
+    "total": 100
+  },
+  "selectkd_7b": {
+    "accuracy": 61.0,
+    "correct": 61,
+    "total": 100
+  }
+}

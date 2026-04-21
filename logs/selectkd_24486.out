@@ -1,0 +1,199 @@
+==========================================
+SLURM_CLUSTER_NAME = linux
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = pgstudents
+SLURM_JOB_ID = 24486
+SLURM_JOB_NAME = kd_selectkd
+SLURM_JOB_NODELIST = gpu01
+SLURM_JOB_USER = user151
+SLURM_JOB_UID = 4254
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 2886450
+SLURM_SUBMIT_DIR = /scratch-beegfs/datasets/user151/qwen-arabic-kd
+SLURM_CPUS_ON_NODE = 192
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 2886450
+==========================================
+Starting SelecTKD at: Wed Apr  8 12:56:50 +03 2026
+SelecTKD config: T=2.0, alpha=0.5, theta=0.7
+Hypothesis: filtering low-confidence tokens improves Arabic more than English
+Samples: 4927
+trainable params: 5,046,272 || all params: 7,620,662,784 || trainable%: 0.0662
+
+Starting SelecTKD training...
+  Step 50: loss=0.6471 ce=0.7922 kd=0.5021 masked=89.4%
+  Step 100: loss=0.6688 ce=0.8246 kd=0.5130 masked=90.6%
+  Step 150: loss=0.6582 ce=0.8357 kd=0.4806 masked=90.9%
+  Step 200: loss=0.6446 ce=0.8481 kd=0.4412 masked=91.0%
+  Step 250: loss=0.6297 ce=0.8444 kd=0.4149 masked=90.8%
+  Step 300: loss=0.6211 ce=0.8530 kd=0.3891 masked=90.9%
+  Step 350: loss=0.6106 ce=0.8617 kd=0.3594 masked=91.1%
+  Step 400: loss=0.6079 ce=0.8680 kd=0.3477 masked=91.2%
+  Step 450: loss=0.6006 ce=0.8659 kd=0.3352 masked=91.2%
+  Step 500: loss=0.5954 ce=0.8643 kd=0.3264 masked=91.2%
+  Step 550: loss=0.5886 ce=0.8642 kd=0.3130 masked=91.3%
+  Step 600: loss=0.5853 ce=0.8696 kd=0.3009 masked=91.3%
+  Step 650: loss=0.5817 ce=0.8712 kd=0.2923 masked=91.3%
+  Step 700: loss=0.5777 ce=0.8720 kd=0.2834 masked=91.4%
+  Step 750: loss=0.5795 ce=0.8742 kd=0.2848 masked=91.5%
+  Step 800: loss=0.5784 ce=0.8782 kd=0.2786 masked=91.5%
+  Step 850: loss=0.5769 ce=0.8818 kd=0.2719 masked=91.6%
+  Step 900: loss=0.5777 ce=0.8822 kd=0.2733 masked=91.5%
+  Step 950: loss=0.5781 ce=0.8836 kd=0.2727 masked=91.6%
+  Step 1000: loss=0.5761 ce=0.8847 kd=0.2675 masked=91.6%
+  Step 1050: loss=0.5741 ce=0.8850 kd=0.2631 masked=91.6%
+  Step 1100: loss=0.5745 ce=0.8863 kd=0.2627 masked=91.6%
+  Step 1150: loss=0.5719 ce=0.8862 kd=0.2577 masked=91.6%
+  Step 1200: loss=0.5683 ce=0.8838 kd=0.2529 masked=91.5%
+  Step 1250: loss=0.5668 ce=0.8832 kd=0.2505 masked=91.5%
+  Step 1300: loss=0.5665 ce=0.8844 kd=0.2487 masked=91.5%
+  Step 1350: loss=0.5642 ce=0.8842 kd=0.2442 masked=91.5%
+  Step 1400: loss=0.5636 ce=0.8855 kd=0.2417 masked=91.5%
+  Step 1450: loss=0.5616 ce=0.8856 kd=0.2376 masked=91.5%
+  Step 1500: loss=0.5600 ce=0.8864 kd=0.2336 masked=91.5%
+  Step 1550: loss=0.5601 ce=0.8861 kd=0.2342 masked=91.5%
+  Step 1600: loss=0.5616 ce=0.8872 kd=0.2360 masked=91.5%
+  Step 1650: loss=0.5625 ce=0.8878 kd=0.2372 masked=91.6%
+  Step 1700: loss=0.5614 ce=0.8885 kd=0.2342 masked=91.6%
+  Step 1750: loss=0.5622 ce=0.8899 kd=0.2344 masked=91.6%
+  Step 1800: loss=0.5608 ce=0.8895 kd=0.2322 masked=91.6%
+  Step 1850: loss=0.5599 ce=0.8886 kd=0.2312 masked=91.6%
+  Step 1900: loss=0.5581 ce=0.8883 kd=0.2280 masked=91.6%
+  Step 1950: loss=0.5571 ce=0.8872 kd=0.2269 masked=91.5%
+  Step 2000: loss=0.5565 ce=0.8866 kd=0.2264 masked=91.5%
+  Step 2050: loss=0.5571 ce=0.8867 kd=0.2275 masked=91.6%
+  Step 2100: loss=0.5574 ce=0.8866 kd=0.2281 masked=91.6%
+  Step 2150: loss=0.5576 ce=0.8882 kd=0.2270 masked=91.6%
+  Step 2200: loss=0.5569 ce=0.8887 kd=0.2250 masked=91.6%
+  Step 2250: loss=0.5559 ce=0.8878 kd=0.2241 masked=91.5%
+  Step 2300: loss=0.5552 ce=0.8869 kd=0.2234 masked=91.5%
+  Step 2350: loss=0.5552 ce=0.8883 kd=0.2222 masked=91.5%
+  Step 2400: loss=0.5544 ce=0.8883 kd=0.2205 masked=91.6%
+  Step 2450: loss=0.5538 ce=0.8884 kd=0.2193 masked=91.6%
+
+Epoch 1 avg loss: 0.5534
+Tokens masked (low confidence): 91.5%
+  EN token selection rate: 14.9%
+  AR token selection rate: 1.8%
+Saved epoch 1
+  Step 50: loss=0.5185 ce=0.9243 kd=0.1126 masked=93.2%
+  Step 100: loss=0.5289 ce=0.9153 kd=0.1425 masked=93.0%
+  Step 150: loss=0.5063 ce=0.8883 kd=0.1243 masked=92.0%
+  Step 200: loss=0.5048 ce=0.8806 kd=0.1291 masked=91.9%
+  Step 250: loss=0.4996 ce=0.8696 kd=0.1295 masked=91.6%
+  Step 300: loss=0.4961 ce=0.8625 kd=0.1297 masked=91.4%
+  Step 350: loss=0.4919 ce=0.8577 kd=0.1262 masked=91.1%
+  Step 400: loss=0.4877 ce=0.8544 kd=0.1210 masked=91.1%
+  Step 450: loss=0.4907 ce=0.8568 kd=0.1246 masked=91.1%
+  Step 500: loss=0.4928 ce=0.8619 kd=0.1237 masked=91.1%
+  Step 550: loss=0.4907 ce=0.8576 kd=0.1238 masked=91.0%
+  Step 600: loss=0.4888 ce=0.8551 kd=0.1225 masked=91.0%
+  Step 650: loss=0.4936 ce=0.8544 kd=0.1329 masked=91.0%
+  Step 700: loss=0.4973 ce=0.8551 kd=0.1396 masked=91.0%
+  Step 750: loss=0.4966 ce=0.8552 kd=0.1381 masked=91.0%
+  Step 800: loss=0.4976 ce=0.8580 kd=0.1371 masked=91.1%
+  Step 850: loss=0.4986 ce=0.8600 kd=0.1372 masked=91.2%
+  Step 900: loss=0.4976 ce=0.8594 kd=0.1358 masked=91.1%
+  Step 950: loss=0.4990 ce=0.8611 kd=0.1370 masked=91.2%
+  Step 1000: loss=0.4999 ce=0.8645 kd=0.1352 masked=91.2%
+  Step 1050: loss=0.5014 ce=0.8671 kd=0.1357 masked=91.3%
+  Step 1100: loss=0.5031 ce=0.8700 kd=0.1362 masked=91.3%
+  Step 1150: loss=0.5023 ce=0.8685 kd=0.1361 masked=91.3%
+  Step 1200: loss=0.5029 ce=0.8704 kd=0.1353 masked=91.3%
+  Step 1250: loss=0.5033 ce=0.8717 kd=0.1349 masked=91.3%
+  Step 1300: loss=0.5029 ce=0.8707 kd=0.1352 masked=91.3%
+  Step 1350: loss=0.5038 ce=0.8731 kd=0.1345 masked=91.3%
+  Step 1400: loss=0.5052 ce=0.8741 kd=0.1363 masked=91.3%
+  Step 1450: loss=0.5071 ce=0.8757 kd=0.1386 masked=91.4%
+  Step 1500: loss=0.5067 ce=0.8736 kd=0.1397 masked=91.3%
+  Step 1550: loss=0.5080 ce=0.8756 kd=0.1404 masked=91.4%
+  Step 1600: loss=0.5092 ce=0.8769 kd=0.1414 masked=91.4%
+  Step 1650: loss=0.5084 ce=0.8762 kd=0.1406 masked=91.4%
+  Step 1700: loss=0.5078 ce=0.8762 kd=0.1394 masked=91.4%
+  Step 1750: loss=0.5072 ce=0.8751 kd=0.1393 masked=91.4%
+  Step 1800: loss=0.5098 ce=0.8770 kd=0.1426 masked=91.5%
+  Step 1850: loss=0.5093 ce=0.8759 kd=0.1426 masked=91.5%
+  Step 1900: loss=0.5092 ce=0.8758 kd=0.1426 masked=91.5%
+  Step 1950: loss=0.5089 ce=0.8761 kd=0.1417 masked=91.4%
+  Step 2000: loss=0.5089 ce=0.8761 kd=0.1417 masked=91.4%
+  Step 2050: loss=0.5089 ce=0.8767 kd=0.1412 masked=91.4%
+  Step 2100: loss=0.5081 ce=0.8758 kd=0.1404 masked=91.4%
+  Step 2150: loss=0.5080 ce=0.8766 kd=0.1394 masked=91.4%
+  Step 2200: loss=0.5083 ce=0.8774 kd=0.1392 masked=91.4%
+  Step 2250: loss=0.5083 ce=0.8780 kd=0.1386 masked=91.5%
+  Step 2300: loss=0.5078 ce=0.8765 kd=0.1391 masked=91.5%
+  Step 2350: loss=0.5078 ce=0.8769 kd=0.1387 masked=91.5%
+  Step 2400: loss=0.5088 ce=0.8782 kd=0.1394 masked=91.5%
+  Step 2450: loss=0.5087 ce=0.8787 kd=0.1387 masked=91.6%
+
+Epoch 2 avg loss: 0.5087
+Tokens masked (low confidence): 91.6%
+  EN token selection rate: 14.9%
+  AR token selection rate: 1.8%
+Saved epoch 2
+  Step 50: loss=0.4982 ce=0.8915 kd=0.1049 masked=92.9%
+  Step 100: loss=0.5000 ce=0.8822 kd=0.1179 masked=92.8%
+  Step 150: loss=0.4950 ce=0.8685 kd=0.1214 masked=92.5%
+  Step 200: loss=0.4927 ce=0.8618 kd=0.1236 masked=92.1%
+  Step 250: loss=0.4842 ce=0.8495 kd=0.1189 masked=91.9%
+  Step 300: loss=0.4874 ce=0.8583 kd=0.1165 masked=92.0%
+  Step 350: loss=0.4869 ce=0.8575 kd=0.1163 masked=91.9%
+  Step 400: loss=0.4859 ce=0.8583 kd=0.1134 masked=91.8%
+  Step 450: loss=0.4829 ce=0.8561 kd=0.1097 masked=91.5%
+  Step 500: loss=0.4861 ce=0.8545 kd=0.1177 masked=91.4%
+  Step 550: loss=0.4851 ce=0.8539 kd=0.1164 masked=91.4%
+  Step 600: loss=0.4836 ce=0.8524 kd=0.1148 masked=91.4%
+  Step 650: loss=0.4858 ce=0.8542 kd=0.1174 masked=91.4%
+  Step 700: loss=0.4859 ce=0.8539 kd=0.1180 masked=91.5%
+  Step 750: loss=0.4854 ce=0.8541 kd=0.1167 masked=91.5%
+  Step 800: loss=0.4843 ce=0.8539 kd=0.1147 masked=91.6%
+  Step 850: loss=0.4846 ce=0.8527 kd=0.1164 masked=91.6%
+  Step 900: loss=0.4858 ce=0.8528 kd=0.1187 masked=91.6%
+  Step 950: loss=0.4850 ce=0.8528 kd=0.1172 masked=91.6%
+  Step 1000: loss=0.4861 ce=0.8552 kd=0.1171 masked=91.7%
+  Step 1050: loss=0.4870 ce=0.8564 kd=0.1175 masked=91.7%
+  Step 1100: loss=0.4881 ce=0.8569 kd=0.1193 masked=91.8%
+  Step 1150: loss=0.4903 ce=0.8564 kd=0.1242 masked=91.8%
+  Step 1200: loss=0.4902 ce=0.8572 kd=0.1233 masked=91.8%
+  Step 1250: loss=0.4903 ce=0.8573 kd=0.1233 masked=91.8%
+  Step 1300: loss=0.4910 ce=0.8568 kd=0.1253 masked=91.8%
+  Step 1350: loss=0.4927 ce=0.8568 kd=0.1286 masked=91.8%
+  Step 1400: loss=0.4932 ce=0.8560 kd=0.1305 masked=91.8%
+  Step 1450: loss=0.4948 ce=0.8576 kd=0.1321 masked=91.8%
+  Step 1500: loss=0.4935 ce=0.8562 kd=0.1308 masked=91.7%
+  Step 1550: loss=0.4940 ce=0.8572 kd=0.1308 masked=91.7%
+  Step 1600: loss=0.4935 ce=0.8570 kd=0.1301 masked=91.7%
+  Step 1650: loss=0.4944 ce=0.8586 kd=0.1302 masked=91.7%
+  Step 1700: loss=0.4952 ce=0.8591 kd=0.1312 masked=91.8%
+  Step 1750: loss=0.4950 ce=0.8591 kd=0.1309 masked=91.8%
+  Step 1800: loss=0.4955 ce=0.8589 kd=0.1320 masked=91.7%
+  Step 1850: loss=0.4950 ce=0.8591 kd=0.1308 masked=91.7%
+  Step 1900: loss=0.4955 ce=0.8592 kd=0.1318 masked=91.7%
+  Step 1950: loss=0.4945 ce=0.8577 kd=0.1314 masked=91.7%
+  Step 2000: loss=0.4942 ce=0.8574 kd=0.1309 masked=91.7%
+  Step 2050: loss=0.4948 ce=0.8585 kd=0.1310 masked=91.7%
+  Step 2100: loss=0.4941 ce=0.8573 kd=0.1308 masked=91.7%
+  Step 2150: loss=0.4931 ce=0.8564 kd=0.1298 masked=91.7%
+  Step 2200: loss=0.4915 ce=0.8546 kd=0.1284 masked=91.6%
+  Step 2250: loss=0.4914 ce=0.8555 kd=0.1272 masked=91.6%
+  Step 2300: loss=0.4911 ce=0.8554 kd=0.1268 masked=91.6%
+  Step 2350: loss=0.4903 ce=0.8541 kd=0.1265 masked=91.5%
+  Step 2400: loss=0.4902 ce=0.8547 kd=0.1257 masked=91.6%
+  Step 2450: loss=0.4903 ce=0.8556 kd=0.1250 masked=91.6%
+
+Epoch 3 avg loss: 0.4905
+Tokens masked (low confidence): 91.6%
+  EN token selection rate: 14.9%
+  AR token selection rate: 1.8%
+Saved epoch 3
+
+DONE! SelecTKD model saved to /data/datasets/user151/qwen-arabic-kd/checkpoints/selectkd_7b
+
+Key finding: Compare AR vs EN token selection rates
+If AR rate < EN rate → Arabic tokens are less confident → SelecTKD filters more Arabic noise
+This motivates: SelecTKD should improve Arabic accuracy more than English
+Stats saved to /data/datasets/user151/qwen-arabic-kd/results/selectkd_stats.json

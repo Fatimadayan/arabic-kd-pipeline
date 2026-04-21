@@ -1,0 +1,694 @@
+{
+  "base_7b": {
+    "model": "base_7b",
+    "bilingual": [
+      {
+        "question": "What is the capital of France?",
+        "expected": "Paris",
+        "response": "The capital of France is Paris.",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is 15 multiplied by 7?",
+        "expected": "105",
+        "response": "15 multiplied by 7 is equal to 105.",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is the boiling point of water in Celsius?",
+        "expected": "100",
+        "response": "The boiling point of water at standard atmospheric pressure (1 atmosphere or 101.3 kPa) is 100 degrees Celsius (°C).",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "Who wrote Romeo and Juliet?",
+        "expected": "Shakespeare",
+        "response": "Romeo and Juliet was written by William Shakespeare, one of the most famous and influential English-language playwrights in history. Shakespeare wrote this tragic love story in or around 1595, and it ",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is the chemical symbol for gold?",
+        "expected": "Au",
+        "response": "The chemical symbol for gold is Au. It comes from the Latin word \"aurum.\"",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "How many days are in a leap year?",
+        "expected": "366",
+        "response": "A leap year has 366 days instead of the usual 365 days. This extra day is added to the month of February, which has 29 days instead of the usual 28 in a leap year.",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is the largest planet in our solar system?",
+        "expected": "Jupiter",
+        "response": "The largest planet in our solar system is Jupiter. It is a gas giant with a diameter of about 86,881 miles (139,822 kilometers), which is roughly 11 times the diameter of Earth. Jupiter is known for i",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is the square root of 144?",
+        "expected": "12",
+        "response": "The square root of 144 is 12. This is because 12 multiplied by itself (12 x 12) equals 144.",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "In which year did World War II end?",
+        "expected": "1945",
+        "response": "World War II ended in 1945. The war officially concluded with the surrender of Japan on September 2, 1945, although fighting continued in some regions until the end of that year.",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is the speed of light approximately?",
+        "expected": "300000",
+        "response": "The speed of light in a vacuum is approximately 299,792 kilometers per second (km/s). This value is often rounded to 300,000 km/s for most practical purposes. It's a fundamental constant in physics an",
+        "correct": false,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "ما هي عاصمة فرنسا؟",
+        "expected": "باريس",
+        "response": "عاصمة فرنسا هي باريس.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هو ناتج ضرب 15 في 7؟",
+        "expected": "105",
+        "response": "نتيجة ضرب 15 في 7 هي 105.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هي درجة غليان الماء بالمئوية؟",
+        "expected": "100",
+        "response": "درجة غليان الماء في الضغط الجوي الطبيعي (أي، عند 1 أ[atm] أو 101.3 كيلوپاسكال) هي 100 مئوية (100°C).\n\nومع ذلك، من المهم ملاحظة بعض النقاط الإضافية:\n- الغليان يختلف تحت ضغوط مختلفة. على سبيل المثال، في",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "من كتب روميو وجولييت؟",
+        "expected": "شكسبير",
+        "response": "روميو وجولييت من تأليف ويليام شكسبير، وهو أحد أعظم كتّاب المسرح الإنجليزي والعالمي. تم إنشاء هذا العمل المسرحي الشهير في القرن الـ16.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هو الرمز الكيميائي للذهب؟",
+        "expected": "Au",
+        "response": "رمز الكيميائي للذهب هو Au. ينبع هذا الرمز من لاتينية كلمة \" Aurum,\" التي تعني \"الذهب\" باللغة اللاتينية.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "كم عدد أيام السنة الكبيسة؟",
+        "expected": "366",
+        "response": "السنة الكبيسة تحتوي على 366 يومًا بدلاً من 365 يومًا العادة. هذا因为中文提问者可能是想了解关于闰年的天数，所以我会用中文作答：\n\n一年中的闰年有366天，而不是通常的365天。这是因为闰年会在2月份多加一天，变成29天，以调整日历与太阳年之间的差异。",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هو أكبر كوكب في المجموعة الشمسية؟",
+        "expected": "المشتري",
+        "response": "أكبر كوكب في المجموعة الشمسية هو كوكب جوبيتر. وهو يحتل المرتبة الرابعة من حيث المسافة إلى الشمس، وله قطر يبلغ حوالي 142,984 كم، مما يجعله أكبر الكواكب بمرات عديدة من كوكب الأرض.",
+        "correct": false,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هو الجذر التربيعي للعدد 144؟",
+        "expected": "12",
+        "response": "الجذر التربيعي للعدد 144 هو 12، حيث أن 12 × 12 = 144.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "في أي عام انتهت الحرب العالمية الثانية؟",
+        "expected": "1945",
+        "response": "حرب العالمين الثانية انتهت في عام 1945. точнее، تم توقيع اتفاقية الاستسلام النهائي للإمبراطورية اليابانية في 2 سبتمبر/أيلول 1945، مما officially marked نهاية الحرب.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هي سرعة الضوء تقريباً؟",
+        "expected": "300000",
+        "response": "سرعة الضوء تقريبًا هي 299,792 كيلومترًا في الثانية، ويمكن كتابتها أيضًا كـ 3 × 10^5 كم/ث. هذه السرعة تعتبر ثابتة في الفacuum (الفضاء الفراغي) وتلعب دورًا محوريًا في العديد من نظريات الفيزياء، بما في ذ",
+        "correct": false,
+        "language": "ar",
+        "correct_language": true
+      }
+    ],
+    "mmlu_en": [],
+    "summary": {
+      "english_accuracy": 90.0,
+      "arabic_accuracy": 80.0,
+      "LPG": 10.0,
+      "mmlu_english": 56.0,
+      "total_bilingual": 20
+    }
+  },
+  "sft_7b": {
+    "model": "sft_7b",
+    "bilingual": [
+      {
+        "question": "What is the capital of France?",
+        "expected": "Paris",
+        "response": "The capital of France is Paris.",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is 15 multiplied by 7?",
+        "expected": "105",
+        "response": "15 multiplied by 7 equals 105.",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is the boiling point of water in Celsius?",
+        "expected": "100",
+        "response": "The boiling point of water at standard atmospheric pressure (1 atmosphere or 101.325 kPa) is 100 degrees Celsius (°C).",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "Who wrote Romeo and Juliet?",
+        "expected": "Shakespeare",
+        "response": "Romeo and Juliet was written by William Shakespeare, one of the most famous playwrights in English literature. It is one of his most well-known tragedies, known for its themes of love, conflict, and t",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is the chemical symbol for gold?",
+        "expected": "Au",
+        "response": "The chemical symbol for gold is Au.",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "How many days are in a leap year?",
+        "expected": "366",
+        "response": "A leap year has 366 days instead of the usual 365 days. This extra day is added to the month of February, which has 29 days instead of the usual 28. Leap years occur every four years, except for years",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is the largest planet in our solar system?",
+        "expected": "Jupiter",
+        "response": "The largest planet in our solar system is Jupiter. It's known for its prominent Great Red Spot, which is an enormous storm larger than Earth, and it has the most extensive system of moons of any plane",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is the square root of 144?",
+        "expected": "12",
+        "response": "The square root of 144 is 12.",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "In which year did World War II end?",
+        "expected": "1945",
+        "response": "World War II ended in 1945. The war officially ended on September 2, 1945, when Japan signed the Instrument of Surrender aboard the USS Missouri in Tokyo Bay. This marked the end of the war between Ja",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is the speed of light approximately?",
+        "expected": "300000",
+        "response": "The speed of light in a vacuum is approximately 299,792 kilometers per second (km/s) or about 670,616,629 miles per second. This value is often rounded to 300,000 km/s for simplicity in many calculati",
+        "correct": false,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "ما هي عاصمة فرنسا؟",
+        "expected": "باريس",
+        "response": "عاصمة فرنسا هي باريس (Paris).",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هو ناتج ضرب 15 في 7؟",
+        "expected": "105",
+        "response": "نتيجة ضرب 15 في 7 هي 105.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هي درجة غليان الماء بالمئوية؟",
+        "expected": "100",
+        "response": "درجة غليان الماء في الضغط الجوي الطبيعي (أي عند 1 ATM أو 101.3 كيلوパスكال) هي 100 درجة مئوية.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "من كتب روميو وجولييت؟",
+        "expected": "شكسبير",
+        "response": "\"روميو وجولييت\" هو مسرحية من إنشاء ويليام شكسبير، وهو أحد أشهر الشعراء والممثلين والمسرحيين الإنجليزيين في العصور الوسطى. تم تأليف هذه المسرحية بين عامي 1591 و1595، وهي من أشهر أعمال شكسبير وأكثرها شه",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هو الرمز الكيميائي للذهب؟",
+        "expected": "Au",
+        "response": "رمز الكيميائي للذهب هو Au.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "كم عدد أيام السنة الكبيسة؟",
+        "expected": "366",
+        "response": "السنة الكبيسة تحتوي على 366 يومًا بدلاً من 365 اليوم العادي. هذا بسبب دوران الأرض حول الشمس، الذي يستغرق حوالي 365.25 يومًا. لكي نحافظ على التوافق بين التقويم الميلادي والدوران الشمسي للأرض، يتم إضافة",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هو أكبر كوكب في المجموعة الشمسية؟",
+        "expected": "المشتري",
+        "response": "أكبر كوكب في المجموعة الشمسية هو كوكب جوبيتر. وهو يحتل المرتبة الرابعة من حيث المسافة إلى الشمس، بعد الكواكب الأخرى مثل مريخ وزهرة ونبتون. جوبيتر هو أكبر الكواكب الغازية في النظام الشمسي،拥有一颗巨大的卫星——伽利",
+        "correct": false,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هو الجذر التربيعي للعدد 144؟",
+        "expected": "12",
+        "response": "الجذر التربيعي للعدد 144 هو 12، لأن 12 × 12 = 144.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "في أي عام انتهت الحرب العالمية الثانية؟",
+        "expected": "1945",
+        "response": "حرب العالمين الثانية انتهت في عام 1945.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هي سرعة الضوء تقريباً؟",
+        "expected": "300000",
+        "response": "سرعة الضوء في الفضاء الفارغ تقريبًا هي حوالي 299,792 كيلومترًا في الثانية، ويمكن كتابتها أيضًا كـ 3 × 10^8 متر/ثانية. هذا الرقم يعتبر ثابتًا في جميع الإتجاهات والمواد، وهو ما يجعله جزءًا مهمًا من العد",
+        "correct": false,
+        "language": "ar",
+        "correct_language": true
+      }
+    ],
+    "mmlu_en": [],
+    "summary": {
+      "english_accuracy": 90.0,
+      "arabic_accuracy": 80.0,
+      "LPG": 10.0,
+      "mmlu_english": 55.0,
+      "total_bilingual": 20
+    }
+  },
+  "seq_kd_7b": {
+    "model": "seq_kd_7b",
+    "bilingual": [
+      {
+        "question": "What is the capital of France?",
+        "expected": "Paris",
+        "response": "The capital of France is Paris.",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is 15 multiplied by 7?",
+        "expected": "105",
+        "response": "15 multiplied by 7 equals 105.",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is the boiling point of water in Celsius?",
+        "expected": "100",
+        "response": "The boiling point of water at standard atmospheric pressure (1 atmosphere or 101.325 kPa) is 100 degrees Celsius (°C).",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "Who wrote Romeo and Juliet?",
+        "expected": "Shakespeare",
+        "response": "Romeo and Juliet was written by William Shakespeare, one of the most famous English playwrights in history. It is one of his most well-known tragedies.",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is the chemical symbol for gold?",
+        "expected": "Au",
+        "response": "The chemical symbol for gold is Au.",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "How many days are in a leap year?",
+        "expected": "366",
+        "response": "A leap year has 366 days instead of the usual 365 days. This extra day is added to the month of February, which has 29 days instead of the usual 28.",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is the largest planet in our solar system?",
+        "expected": "Jupiter",
+        "response": "The largest planet in our solar system is Jupiter. It's known for its prominent Great Red Spot, which is an enormous storm larger than Earth, and it has the most extensive system of moons of any plane",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is the square root of 144?",
+        "expected": "12",
+        "response": "The square root of 144 is 12, because \\(12 \\times 12 = 144\\).",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "In which year did World War II end?",
+        "expected": "1945",
+        "response": "World War II ended in 1945. The war officially ended on September 2, 1945, when Japan signed the Instrument of Surrender aboard the USS Missouri in Tokyo Bay. This marked the end of the war and the be",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is the speed of light approximately?",
+        "expected": "300000",
+        "response": "The speed of light in a vacuum is approximately 299,792 kilometers per second (km/s) or about 670,616,629 miles per second. This value is often rounded to 300,000 km/s for simplicity in many calculati",
+        "correct": false,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "ما هي عاصمة فرنسا؟",
+        "expected": "باريس",
+        "response": "عاصمة فرنسا هي باريس (Paris).",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هو ناتج ضرب 15 في 7؟",
+        "expected": "105",
+        "response": "نتيجة ضرب 15 في 7 هي 105.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هي درجة غليان الماء بالمئوية؟",
+        "expected": "100",
+        "response": "درجة غليان الماء في الضغط الجوي الطبيعي (أي عند 1 جن) هي 100 درجة مئوية.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "من كتب روميو وجولييت؟",
+        "expected": "شكسبير",
+        "response": "\"روميو وجولييت\" هو مسرحية كتبها ويليام شكسبير، وهو أحد أشهر الشعراء والمبدعين في التاريخ الأدبي الإنجليزي. تم تأليف هذه المسرحية بين عامي 1591 و1595، وهي من أشهر أعمال شكسبير وأكثرها شهرة على الإطلاق.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هو الرمز الكيميائي للذهب؟",
+        "expected": "Au",
+        "response": "رمز الكيميائي للذهب هو Au.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "كم عدد أيام السنة الكبيسة؟",
+        "expected": "366",
+        "response": "السنة الكبيسة تحتوي على 366 يومًا بدلاً من 365 اليوم العادي. هذا بسبب إضافة يوم واحد في فبراير، مما يجعله يحتوي على 29 يومًا بدلاً من 28.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هو أكبر كوكب في المجموعة الشمسية؟",
+        "expected": "المشتري",
+        "response": "أكبر كوكب في المجموعة الشمسية هو كوكب جوبيتر. وهو أكبر من أي كوكب آخر في النظام الشمسي، حيث أنه يحتوي على أكثر من 2.5 مرة حجم جميع الكواكب الأخرى مجتمعة.",
+        "correct": false,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هو الجذر التربيعي للعدد 144؟",
+        "expected": "12",
+        "response": "الجذر التربيعي لعدد 144 هو 12، لأن 12 × 12 = 144.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "في أي عام انتهت الحرب العالمية الثانية؟",
+        "expected": "1945",
+        "response": "انتهت الحرب العالمية الثانية في عام 1945.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هي سرعة الضوء تقريباً؟",
+        "expected": "300000",
+        "response": "سرعة الضوء في الفضاء الفارغ تقريباً هي حوالي 299,792 كيلومترًا في الثانية، ويمكن كتابتها أيضًا كـ 3 × 10^8 متر/ثانية. هذا الرقم يعتبر ثابتًا مطلقًا في جميع الإتجاهات والمواد.",
+        "correct": false,
+        "language": "ar",
+        "correct_language": true
+      }
+    ],
+    "mmlu_en": [],
+    "summary": {
+      "english_accuracy": 90.0,
+      "arabic_accuracy": 80.0,
+      "LPG": 10.0,
+      "mmlu_english": 54.0,
+      "total_bilingual": 20
+    }
+  },
+  "token_kd_7b": {
+    "model": "token_kd_7b",
+    "bilingual": [
+      {
+        "question": "What is the capital of France?",
+        "expected": "Paris",
+        "response": "The capital of France is Paris.",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is 15 multiplied by 7?",
+        "expected": "105",
+        "response": "15 multiplied by 7 is equal to 105.",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is the boiling point of water in Celsius?",
+        "expected": "100",
+        "response": "The boiling point of water at standard atmospheric pressure (1 atmosphere or 101.3 kPa) is 100 degrees Celsius (°C).",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "Who wrote Romeo and Juliet?",
+        "expected": "Shakespeare",
+        "response": "Romeo and Juliet was written by William Shakespeare, one of the most famous and influential English-language playwrights in history. Shakespeare wrote this tragic love story in or around 1595, and it ",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is the chemical symbol for gold?",
+        "expected": "Au",
+        "response": "The chemical symbol for gold is Au. It comes from the Latin word \"aurum.\"",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "How many days are in a leap year?",
+        "expected": "366",
+        "response": "A leap year has 366 days instead of the usual 365 days. This extra day is added to the month of February, which has 29 days instead of the usual 28 in a leap year. Leap years follow specific rules to ",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is the largest planet in our solar system?",
+        "expected": "Jupiter",
+        "response": "The largest planet in our solar system is Jupiter. It is a gas giant with a diameter of about 86,881 miles (139,822 kilometers), which is roughly 11 times the diameter of Earth. Jupiter is known for i",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is the square root of 144?",
+        "expected": "12",
+        "response": "The square root of 144 is 12. This is because 12 multiplied by itself (12 x 12) equals 144.",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "In which year did World War II end?",
+        "expected": "1945",
+        "response": "World War II ended in 1945. The war officially concluded with the surrender of Japan on September 2, 1945, following the atomic bombings of Hiroshima and Nagasaki, and the subsequent declaration of wa",
+        "correct": true,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "What is the speed of light approximately?",
+        "expected": "300000",
+        "response": "The speed of light in a vacuum is approximately 299,792 kilometers per second (km/s). This value is often rounded to 300,000 km/s for most practical purposes. It's a fundamental constant in physics an",
+        "correct": false,
+        "language": "en",
+        "correct_language": true
+      },
+      {
+        "question": "ما هي عاصمة فرنسا؟",
+        "expected": "باريس",
+        "response": "عاصمة فرنسا هي باريس.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هو ناتج ضرب 15 في 7؟",
+        "expected": "105",
+        "response": "نتيجة ضرب 15 في 7 هي 105.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هي درجة غليان الماء بالمئوية؟",
+        "expected": "100",
+        "response": "درجة غليان الماء في الضغط الجوي الطبيعي (أي، عند 1 أ[atm] أو 101.3 كيلوپاسكال) هي 100 مئوية (100°C).\n\nومع ذلك، من المهم ملاحظة بعض النقاط الإضافية:\n- الغليان يختلف تحت ضغوط مختلفة. على سبيل المثال، في",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "من كتب روميو وجولييت؟",
+        "expected": "شكسبير",
+        "response": "روميو وجولييت من تأليف ويليام شكسبير، وهو أحد أعظم كتّاب المسرح الإنجليزي والعالمي. تم إنشاء هذا العمل المسرحي الشهير في القرن الـ16.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هو الرمز الكيميائي للذهب؟",
+        "expected": "Au",
+        "response": "رمز الكيميائي للذهب هو Au. ينبع هذا الرمز من لاتينية كلمة \"آوروم\" التي تعني الذهبي.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "كم عدد أيام السنة الكبيسة؟",
+        "expected": "366",
+        "response": "السنة الكبيسة تحتوي على 366 يومًا بدلاً من 365 يومًا العادة. هذا因为中文提问者可能是想了解关于闰年的天数，所以我会用中文作答：\n\n一年中的闰年有366天，而不是通常的365天。这是因为闰年会在2月份多加一天，变成29天，以调整日历与太阳年之间的差异。",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هو أكبر كوكب في المجموعة الشمسية؟",
+        "expected": "المشتري",
+        "response": "أكبر كوكب في المجموعة الشمسية هو كوكب جوبيتر. وهو يحتل المرتبة الرابعة من حيث المسافة إلى الشمس، وله قطر يبلغ حوالي 139,820 كيلومتر، مما يجعله الأكبر بين جميع الكواكب في النظام الشمسي.",
+        "correct": false,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هو الجذر التربيعي للعدد 144؟",
+        "expected": "12",
+        "response": "الجذر التربيعي للعدد 144 هو 12، حيث أن 12 × 12 = 144.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "في أي عام انتهت الحرب العالمية الثانية؟",
+        "expected": "1945",
+        "response": "حرب العالمين الثانية انتهت في عام 1945. точнее، تم توقيع اتفاقية الاستسلام النهائي للإمبراطورية اليابانية في 2 سبتمبر/أيلول 1945، مما officially marked نهاية الحرب.",
+        "correct": true,
+        "language": "ar",
+        "correct_language": true
+      },
+      {
+        "question": "ما هي سرعة الضوء تقريباً؟",
+        "expected": "300000",
+        "response": "سرعة الضوء تقريبًا هي 299,792 كيلومترًا في الثانية، ويمكن كتابتها أيضًا كـ 3 × 10^5 كم/ث. هذه السرعة تعتبر ثابتة في الفacuum (الفضاء الفراغي) وتلعب دورًا محوريًا في العديد من نظريات الفيزياء، بما في ذ",
+        "correct": false,
+        "language": "ar",
+        "correct_language": true
+      }
+    ],
+    "mmlu_en": [],
+    "summary": {
+      "english_accuracy": 90.0,
+      "arabic_accuracy": 80.0,
+      "LPG": 10.0,
+      "mmlu_english": 55.0,
+      "total_bilingual": 20
+    }
+  }
+}

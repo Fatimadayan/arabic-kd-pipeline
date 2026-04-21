@@ -1,0 +1,56 @@
+{
+  "theta_0.0_baseline": {
+    "theta": 0.0,
+    "en_acc": 86.7,
+    "ar_acc": 63.3,
+    "LPG": 23.4,
+    "en_selected_pct": 100.0,
+    "ar_selected_pct": 100.0,
+    "note": "Token-KD without filtering (all tokens selected)"
+  },
+  "theta_0.5": {
+    "theta": 0.5,
+    "en_acc": 100.0,
+    "ar_acc": 60.0,
+    "LPG": 40.0,
+    "en_selected_pct": 0.0,
+    "ar_selected_pct": 2.1,
+    "final_loss": 0.5706
+  },
+  "theta_0.6": {
+    "theta": 0.6,
+    "en_acc": 100.0,
+    "ar_acc": 60.0,
+    "LPG": 40.0,
+    "en_selected_pct": 0.0,
+    "ar_selected_pct": 1.6,
+    "final_loss": 0.5506
+  },
+  "theta_0.7": {
+    "theta": 0.7,
+    "en_acc": 100.0,
+    "ar_acc": 60.0,
+    "LPG": 40.0,
+    "en_selected_pct": 0.0,
+    "ar_selected_pct": 1.2,
+    "final_loss": 0.545
+  },
+  "theta_0.8": {
+    "theta": 0.8,
+    "en_acc": 100.0,
+    "ar_acc": 70.0,
+    "LPG": 30.0,
+    "en_selected_pct": 0.0,
+    "ar_selected_pct": 0.7,
+    "final_loss": 0.5084
+  },
+  "theta_0.9": {
+    "theta": 0.9,
+    "en_acc": 100.0,
+    "ar_acc": 70.0,
+    "LPG": 30.0,
+    "en_selected_pct": 0.0,
+    "ar_selected_pct": 0.3,
+    "final_loss": 0.4471
+  }
+}

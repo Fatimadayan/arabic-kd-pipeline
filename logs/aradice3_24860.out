@@ -1,0 +1,49 @@
+==========================================
+SLURM_CLUSTER_NAME = linux
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = pgstudents
+SLURM_JOB_ID = 24860
+SLURM_JOB_NAME = kd_aradice3
+SLURM_JOB_NODELIST = gpu02
+SLURM_JOB_USER = user151
+SLURM_JOB_UID = 4254
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 4013853
+SLURM_SUBMIT_DIR = /scratch-beegfs/datasets/user151/qwen-arabic-kd
+SLURM_CPUS_ON_NODE = 192
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 4013853
+==========================================
+Loading AraDiCE-Culture Qatar...
+Qatar: 30 samples
+Sample: شنو هي أيام العطل الرسمية في قطر؟
+Option A (correct): عيد الفطر، عيد الأضحى، اليوم الوطني، اليوم الرياضي
+
+==================================================
+Evaluating: base_7b
+==================================================
+  AraDiCE-Culture Qatar: 50.0%
+
+==================================================
+Evaluating: token_kd_7b
+==================================================
+  AraDiCE-Culture Qatar: 46.7%
+
+==================================================
+Evaluating: selectkd_7b
+==================================================
+  AraDiCE-Culture Qatar: 46.7%
+
+
+ARaDiCE-Culture Qatar RESULTS:
+Model             AraDiCE-Qatar%
+-----------------------------------
+base_7b                    50.0%
+token_kd_7b                46.7%
+selectkd_7b                46.7%
+
+Saved to /data/datasets/user151/qwen-arabic-kd/results/aradice_final.json

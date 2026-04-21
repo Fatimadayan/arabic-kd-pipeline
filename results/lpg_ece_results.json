@@ -1,0 +1,726 @@
+{
+  "base_7b": {
+    "summary": {
+      "en_accuracy": 86.7,
+      "ar_accuracy": 80.0,
+      "LPG": 6.7,
+      "CLCS": 80.0,
+      "ECE_english": 12.07,
+      "ECE_arabic": 5.4,
+      "avg_conf_english": 87.0,
+      "avg_conf_arabic": 81.5,
+      "confidence_gap": 5.5,
+      "n_pairs": 15
+    },
+    "details": [
+      {
+        "en_q": "What is the capital of Australia?",
+        "ar_q": "ما هي عاصمة أستراليا؟",
+        "en_response": "The capital of Australia is Canberra. It's located in the Australian Capital Territory and serves as the country's federal capital. While Sydney and Melbourne are larger and more populous cities, Canb",
+        "ar_response": "عاصمة أستراليا هي مدينة كيندريك (Canberra). وهي العاصمة السياسية والدبلوماسية للبلاد، ولكن من المهم ملاحظة أن سيدني هي أكبر مدينة في أستراليا وتعتبر المركز الاقتصادي الرئيسي للبلاد.",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.835,
+        "ar_confidence": 0.7453,
+        "consistent": true
+      },
+      {
+        "en_q": "What is the square root of 169?",
+        "ar_q": "ما هو الجذر التربيعي للعدد 169؟",
+        "en_response": "The square root of 169 is 13, because 13 multiplied by itself (13 × 13) equals 169.",
+        "ar_response": "الجذر التربيعي للعدد 169 هو 13، حيث أن 13 × 13 = 169.",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.9632,
+        "ar_confidence": 0.9743,
+        "consistent": true
+      },
+      {
+        "en_q": "Who wrote the novel 1984?",
+        "ar_q": "من كتب رواية 1984؟",
+        "en_response": "The novel \"1984\" was written by George Orwell. It was published in 1949 and is one of the most famous works of dystopian literature. George Orwell, whose real name was Eric Arthur Blair, was a British",
+        "ar_response": "رواية \"1984\" كتبتها جورج أورويل (George Orwell). صدرت الرواية لأول مرة في عام 1949، وهي من الأعمال الأدبية الشهيرة التي تناولت موضوعات مثل التحكم الحكومي والرقابة على المعلومات.",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.8879,
+        "ar_confidence": 0.7698,
+        "consistent": true
+      },
+      {
+        "en_q": "In which continent is Egypt?",
+        "ar_q": "في أي قارة تقع مصر؟",
+        "en_response": "Egypt is located in Africa. It is situated mostly in the northeastern corner of the continent, with the majority of its land lying within the northern part of the African continent. Egypt also has a s",
+        "ar_response": "مصر تقع في قارة أفريقيا. تحدها البحر الأحمر من الغرب والبحر المتوسط من الشمال.📍",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.7944,
+        "ar_confidence": 0.8147,
+        "consistent": true
+      },
+      {
+        "en_q": "What year did Berlin Wall fall?",
+        "ar_q": "في أي عام سقط جدار برلين؟",
+        "en_response": "The Berlin Wall fell in 1989. Specifically, it happened on November 9, 1989, when the East German government announced that its citizens could visit West Berlin and West Germany, effectively allowing ",
+        "ar_response": "سقط جدار برلين في 9 نوفمبر 1989. هذا الحدث كان نقطة تحول كبيرة في تاريخ أوروبا وأدى إلى توحيد ألمانيا وفتح حدود بين الشرق والغرب.",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.8372,
+        "ar_confidence": 0.7754,
+        "consistent": true
+      },
+      {
+        "en_q": "What is the largest ocean?",
+        "ar_q": "ما هو أكبر محيط في العالم؟",
+        "en_response": "The largest ocean in the world by area is the Pacific Ocean. It covers approximately 63,800,000 square miles (165,250,000 square kilometers), which is about one-third of the Earth's surface and more t",
+        "ar_response": "أكبر محيط في العالم هو المحيط الهادئ (Pacific Ocean). إليك بعض المعلومات عنه:\n\n1. المساحة: يغطي حوالي 63,800,000 ميلاً مربعاً (165,279,000 كيلومتر مربع) من سطح الأرض.\n\n2. العمق: ينحدر إلى أعماق تصل إل",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.9288,
+        "ar_confidence": 0.8331,
+        "consistent": true
+      },
+      {
+        "en_q": "How many bones in human body?",
+        "ar_q": "كم عدد عظام جسم الإنسان؟",
+        "en_response": "The human body typically has 206 bones. This number can vary slightly from person to person and can be affected by factors such as age and any surgical interventions. Some bones, like those in the sku",
+        "ar_response": "عدد عظام الجسم البشري يختلف قليلاً بين الأفراد، لكن العدد المعتاد هو 206 عظمة بالغ بالكامل. هذا العدد يمكن أن يتغير قليلاً من شخص لآخر، حيث قد يفقد بعض الأفراد عظماً أو أكثر بسبب بعض الحالات الطبية أو",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.7943,
+        "ar_confidence": 0.7302,
+        "consistent": true
+      },
+      {
+        "en_q": "What is 17 multiplied by 13?",
+        "ar_q": "ما هو ناتج ضرب 17 في 13؟",
+        "en_response": "17 multiplied by 13 equals 221.",
+        "ar_response": "نتيجة ضرب 17 في 13 هي 221.",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.9657,
+        "ar_confidence": 0.9812,
+        "consistent": true
+      },
+      {
+        "en_q": "What is the chemical formula of water?",
+        "ar_q": "ما الصيغة الكيميائية للماء؟",
+        "en_response": "The chemical formula for water is H₂O. This formula indicates that each water molecule consists of two hydrogen atoms (H₂) bonded to one oxygen atom (O).",
+        "ar_response": "صيغة الماء الكيميائية هي H₂O. هذا يعني أن كل جزيء من الماء يتكون من اثنين من ذرات الهيدروجين مرتبطتين بذرة الأكسجين.",
+        "en_correct": false,
+        "ar_correct": false,
+        "en_confidence": 0.9662,
+        "ar_confidence": 0.8681,
+        "consistent": false
+      },
+      {
+        "en_q": "Speed of a train going 120km in 2h?",
+        "ar_q": "سرعة قطار يقطع 120كم في ساعتين؟",
+        "en_response": "To find the speed of the train, you can use the formula for speed:\n\n\\[ \\text{Speed} = \\frac{\\text{Distance}}{\\text{Time}} \\]\n\nGiven that the distance is 120 km and the time is 2 hours, you can plug th",
+        "ar_response": "لحساب سرعة القطار، نحتاج إلى استخدام الصيغة الأساسية لحساب السرعة، وهي:\n\n\\[ \\text{السرعة} = \\frac{\\text{المسافة}}{\\text{الوقت}} \\]\n\nفي هذه الحالة، المسافة هي 120 كم، والوقت هو 2 ساعة.\n\n\\[ \\text{السرعة",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.9752,
+        "ar_confidence": 0.9291,
+        "consistent": true
+      },
+      {
+        "en_q": "What does CBB stand for in Bahrain?",
+        "ar_q": "ما اختصار CBB في البحرين؟",
+        "en_response": "In the context of Bahrain, CBB stands for Bahrain Central Bank. It is the central bank of the Kingdom of Bahrain, responsible for managing the country's monetary policy and overseeing the financial sy",
+        "ar_response": "في سياق البحرين، اختصار CBB يشير عادة إلى \"Council of Bahrain Banks\". وهو مجلس يمثل البنوك التجارية في مملكة البحرين. هذا المجلس مهم لتنظيم البنوك وضمان التزامها باللوائح والمعايير المصرفية.",
+        "en_correct": true,
+        "ar_correct": false,
+        "en_confidence": 0.8792,
+        "ar_confidence": 0.7097,
+        "consistent": false
+      },
+      {
+        "en_q": "What is IBAN used for?",
+        "ar_q": "ما استخدام رقم IBAN؟",
+        "en_response": "IBAN stands for International Bank Account Number. It is a standardized format for identifying bank accounts across different countries, particularly within the European Union and some non-EU countrie",
+        "ar_response": "رقم IBAN (International Bank Account Number) يستخدم لتسهيل عمليات التحويل المصرفي عبر الحدود. إليك بعض الاستخدامات الرئيسية لرقم IBAN:\n\n1. تحويل الأموال عبر الحدود:\n   - يسهل تحويل الأموال بين البنوك ",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.7823,
+        "ar_confidence": 0.7772,
+        "consistent": true
+      },
+      {
+        "en_q": "What is machine learning?",
+        "ar_q": "ما هو تعلم الآلة؟",
+        "en_response": "Machine learning is a subset of artificial intelligence (AI) that involves the development of algorithms and statistical models that enable computer systems to perform tasks without explicit programmi",
+        "ar_response": "تعلم الآلة هو فرع من فروع الذكاء الاصطناعي يهتم بتطوير الخوارزميات والأساليب التي تتيح للأنظمة التعلم من البيانات. يمكن لتعلم الآلة أن يساعد في اكتشاف الأنماط والأنماط في البيانات الكبيرة، مما يجعله أ",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.8122,
+        "ar_confidence": 0.7308,
+        "consistent": true
+      },
+      {
+        "en_q": "What is artificial intelligence?",
+        "ar_q": "ما هو الذكاء الاصطناعي؟",
+        "en_response": "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think, learn, and perform tasks that typically require human intelligence. This can inclu",
+        "ar_response": "الذكاء الاصطناعي (AI) هو مجال في علوم الحاسوب يهدف إلى إنشاء برامج ونماذج تتيح للحواسيب والأنظمة الإلكترونية القيام بمهام تتطلب الذكاء البشري. يمكن أن يتضمن هذا التعلم الآلي، والتحليل الإحصائي، والتعر",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.8678,
+        "ar_confidence": 0.7838,
+        "consistent": true
+      },
+      {
+        "en_q": "What does 'wayyid' mean in Bahraini?",
+        "ar_q": "ما معنى كلمة وايد في اللهجة البحرينية؟",
+        "en_response": "I apologize, but \"wayyid\" does not appear to be a word in Bahraini Arabic or any other known language. It's possible there may have been a typo or misunderstanding. \n\nIf you meant to ask about a speci",
+        "ar_response": "في اللهجة البحرينية، كلمة \"وايد\" تعني \"كبير\" أو \"كبيرة\". تستخدم هذه الكلمة لوصف شخص أو شيء كبير الحجم أو الأهمية. مثلاً، يمكن استخدامها في الجمل مثل \"وايد باب\" (باب كبير) أو \"وايد سيدة\" (سيدة كبيرة).",
+        "en_correct": false,
+        "ar_correct": false,
+        "en_confidence": 0.7602,
+        "ar_confidence": 0.7991,
+        "consistent": false
+      }
+    ]
+  },
+  "sft_7b": {
+    "summary": {
+      "en_accuracy": 93.3,
+      "ar_accuracy": 80.0,
+      "LPG": 13.3,
+      "CLCS": 80.0,
+      "ECE_english": 13.4,
+      "ECE_arabic": 11.44,
+      "avg_conf_english": 87.5,
+      "avg_conf_arabic": 81.2,
+      "confidence_gap": 6.3,
+      "n_pairs": 15
+    },
+    "details": [
+      {
+        "en_q": "What is the capital of Australia?",
+        "ar_q": "ما هي عاصمة أستراليا؟",
+        "en_response": "The capital of Australia is Canberra.",
+        "ar_response": "عاصمة أستراليا هي كندا. ولكن هذا غير صحيح، فكندا ليست عاصمة أستراليا. العاصمة الأسترالية هي مدينة كانberra (كانبيرا).",
+        "en_correct": true,
+        "ar_correct": false,
+        "en_confidence": 0.9675,
+        "ar_confidence": 0.7373,
+        "consistent": false
+      },
+      {
+        "en_q": "What is the square root of 169?",
+        "ar_q": "ما هو الجذر التربيعي للعدد 169؟",
+        "en_response": "The square root of 169 is 13, because \\(13 \\times 13 = 169\\).",
+        "ar_response": "الجذر التربيعي للعدد 169 هو 13، حيث أن 13 × 13 = 169.",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.973,
+        "ar_confidence": 0.9647,
+        "consistent": true
+      },
+      {
+        "en_q": "Who wrote the novel 1984?",
+        "ar_q": "من كتب رواية 1984؟",
+        "en_response": "The novel \"1984\" was written by George Orwell. It was published in 1949 and is one of his most famous works, known for its depiction of a dystopian society under a totalitarian government.",
+        "ar_response": "رواية \"1984\" كتبتها جورج أورويل (George Orwell). صدرت الرواية لأول مرة في عام 1949 وتعتبر من أشهر الأعمال الأدبية في القرن العشرين.",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.9031,
+        "ar_confidence": 0.848,
+        "consistent": true
+      },
+      {
+        "en_q": "In which continent is Egypt?",
+        "ar_q": "في أي قارة تقع مصر؟",
+        "en_response": "Egypt is located in Africa. It is situated in the northeastern part of the continent and shares borders with Libya to the west, Sudan to the south, and Israel and Gaza Strip (which is part of Palestin",
+        "ar_response": "مصر تقع في قارة أفريقيا.📍✨",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.8198,
+        "ar_confidence": 0.7752,
+        "consistent": true
+      },
+      {
+        "en_q": "What year did Berlin Wall fall?",
+        "ar_q": "في أي عام سقط جدار برلين؟",
+        "en_response": "The Berlin Wall fell in 1989. It was a symbol of the division between East and West Germany during the Cold War era. On November 9, 1989, the wall was opened for the first time since its construction ",
+        "ar_response": "سقط جدار برلين في 9 نوفمبر 1989. هذا الحدث كان نقطة تحول كبيرة في تاريخ أوروبا والعالم، حيث أنهى حقبة من الفصل بين شطري المدينة والبلاد، وأدى إلى توحيد ألمانيا بعد فترة طويلة من الانقسام.",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.8451,
+        "ar_confidence": 0.7149,
+        "consistent": true
+      },
+      {
+        "en_q": "What is the largest ocean?",
+        "ar_q": "ما هو أكبر محيط في العالم؟",
+        "en_response": "The largest ocean in terms of area is the Pacific Ocean. It covers about 30% of the Earth's surface and is the biggest of the five major oceans.",
+        "ar_response": "أكبر محيط في العالم هو المحيط الهادئ (Pacific Ocean). يمتد المحيط الهادئ عبر 169 درجة شرقية و 72 درجة غربية، مما يجعله أكبر محيط في العالم من حيث المساحة.",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.8452,
+        "ar_confidence": 0.8271,
+        "consistent": true
+      },
+      {
+        "en_q": "How many bones in human body?",
+        "ar_q": "كم عدد عظام جسم الإنسان؟",
+        "en_response": "The human body typically has 206 bones. These bones serve various functions including support, protection of organs, and facilitating movement through the muscles attached to them.",
+        "ar_response": "عدد العظام في جسم الإنسان يختلف قليلاً من شخص لآخر، لكن بشكل عام:\n\n- العظام الباطنية (التي لا تظهر من الخارج): حوالي 80 عظمة.\n- العظام الخارجية: حوالي 60 عظمة.\n\nإذًا، يمكننا القول أن عدد العظام في جسم",
+        "en_correct": true,
+        "ar_correct": false,
+        "en_confidence": 0.8147,
+        "ar_confidence": 0.7633,
+        "consistent": false
+      },
+      {
+        "en_q": "What is 17 multiplied by 13?",
+        "ar_q": "ما هو ناتج ضرب 17 في 13؟",
+        "en_response": "17 multiplied by 13 equals 221.",
+        "ar_response": "ناتج ضرب 17 في 13 هو 221.",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.9555,
+        "ar_confidence": 0.9609,
+        "consistent": true
+      },
+      {
+        "en_q": "What is the chemical formula of water?",
+        "ar_q": "ما الصيغة الكيميائية للماء؟",
+        "en_response": "The chemical formula for water is H2O. This indicates that each molecule of water consists of two hydrogen atoms (H) and one oxygen atom (O).",
+        "ar_response": "صيغة الماء الكيميائية هي H2O. هذا يعني أن كل جزيء من الماء يتكون من اثنين من ذرات الهيدروجين (H) وواحدة من ذرة الأكسجين (O).",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.9332,
+        "ar_confidence": 0.8812,
+        "consistent": true
+      },
+      {
+        "en_q": "Speed of a train going 120km in 2h?",
+        "ar_q": "سرعة قطار يقطع 120كم في ساعتين؟",
+        "en_response": "To find the speed of the train, you can use the formula for speed:\n\n\\[ \\text{Speed} = \\frac{\\text{Distance}}{\\text{Time}} \\]\n\nGiven that the distance is 120 km and the time is 2 hours, you can plug th",
+        "ar_response": "إذا كان القطار يقطع 120 كيلومترًا في ساعتين، فإن سرعة القطار هي:\n\n\\[ \\text{السرعة} = \\frac{\\text{مسافة}}{\\text{الوقت}} \\]\n\n\\[ \\text{السرعة} = \\frac{120 \\text{ كم}}{2 \\text{ ساعات}} = 60 \\text{ كم/ساعة",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.9704,
+        "ar_confidence": 0.9233,
+        "consistent": true
+      },
+      {
+        "en_q": "What does CBB stand for in Bahrain?",
+        "ar_q": "ما اختصار CBB في البحرين؟",
+        "en_response": "In the context of Bahrain, CBB stands for Central Bank of Bahrain. It is the central bank responsible for managing the monetary policy and financial stability of Bahrain.",
+        "ar_response": "في البحرين، اختصار CBB يشير إلى \"البنك المركزي البحريني\" (Central Bank of Bahrain). هذا البنك هو الجهة المسؤولة عن إدارة النقد والسياسة المالية في مملكة البحرين.",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.8398,
+        "ar_confidence": 0.8258,
+        "consistent": true
+      },
+      {
+        "en_q": "What is IBAN used for?",
+        "ar_q": "ما استخدام رقم IBAN؟",
+        "en_response": "IBAN (International Bank Account Number) is a standardized format for bank account numbers used in many countries within the European Union and some other countries outside Europe. The primary purpose",
+        "ar_response": "رقم IBAN (International Bank Account Number) هو رقم موحد يُستخدم لتحديد حساب بنكي في أي دولة عضو في الاتحاد الأوروبي أو دول أخرى تشارك في نظام IBAN. يتم استخدام هذا الرقم في عمليات التحويل المصرفي الد",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.7728,
+        "ar_confidence": 0.7308,
+        "consistent": true
+      },
+      {
+        "en_q": "What is machine learning?",
+        "ar_q": "ما هو تعلم الآلة؟",
+        "en_response": "Machine learning is a subset of artificial intelligence (AI) that involves the development of algorithms and statistical models that enable computer systems to improve their performance on a specific ",
+        "ar_response": "تعلم الآلة (Machine Learning) هو فرع من فروع الذكاء الاصطناعي الذي يركز على إنشاء البرمجيات التي يمكنها التعلم من البيانات والتجربة دون أن يتم برمجتها بشكل مباشر. هذا يعني أن هذه البرمجيات تستطيع تحسي",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.8459,
+        "ar_confidence": 0.7571,
+        "consistent": true
+      },
+      {
+        "en_q": "What is artificial intelligence?",
+        "ar_q": "ما هو الذكاء الاصطناعي؟",
+        "en_response": "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. The term can also be applied to any machine th",
+        "ar_response": "الذكاء الاصطناعي (AI) هو مجال في علوم الحاسوب يهدف إلى إنشاء برامج ونماذج يمكنها التعلم والتحسين من خلال الخبرة والبيانات، واتخاذ قرارات أو حل المشكلات بشكل مستقل. يمكن أن يشمل هذا مجموعة متنوعة من ال",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.8465,
+        "ar_confidence": 0.7577,
+        "consistent": true
+      },
+      {
+        "en_q": "What does 'wayyid' mean in Bahraini?",
+        "ar_q": "ما معنى كلمة وايد في اللهجة البحرينية؟",
+        "en_response": "I apologize, but there seems to be an error in your query. \"Wayyid\" is not a recognized word or phrase in any known language, including Bahraini Arabic (which is also referred to as Gulf Arabic). It's",
+        "ar_response": "في اللهجة البحرينية الخليجية، كلمة \"وايد\" تعني \"كبير\" أو \"كبيرة\". وهي تستخدم بشكل شائع في المحادثات اليومية في الكويت والبحرين及其他一些海湾国家。\n\n例句：\n- هذا وايد (هذا كبير)\n- وايد جيد (كبير جيد)\n\n请注意，这种用法可能在不同",
+        "en_correct": false,
+        "ar_correct": false,
+        "en_confidence": 0.7975,
+        "ar_confidence": 0.7101,
+        "consistent": false
+      }
+    ]
+  },
+  "seq_kd_7b": {
+    "summary": {
+      "en_accuracy": 93.3,
+      "ar_accuracy": 80.0,
+      "LPG": 13.3,
+      "CLCS": 80.0,
+      "ECE_english": 6.75,
+      "ECE_arabic": 18.85,
+      "avg_conf_english": 87.2,
+      "avg_conf_arabic": 79.4,
+      "confidence_gap": 7.8,
+      "n_pairs": 15
+    },
+    "details": [
+      {
+        "en_q": "What is the capital of Australia?",
+        "ar_q": "ما هي عاصمة أستراليا؟",
+        "en_response": "The capital of Australia is Canberra.",
+        "ar_response": "عاصمة أستراليا هي كندا. ولكن هذا غير صحيح، ففي الواقع لا يوجد عاصمة رسمية لأستراليا لأنها دولة اتحاد من الولايات والولايات الإقليمية التي لا تملك العاصمة نفسها. الحكومة الفيدرالية لديها مقرها في مدينة",
+        "en_correct": true,
+        "ar_correct": false,
+        "en_confidence": 0.9598,
+        "ar_confidence": 0.6732,
+        "consistent": false
+      },
+      {
+        "en_q": "What is the square root of 169?",
+        "ar_q": "ما هو الجذر التربيعي للعدد 169؟",
+        "en_response": "The square root of 169 is 13, because \\(13 \\times 13 = 169\\).",
+        "ar_response": "الجذر التربيعي للعدد 169 هو 13، لأن 13 × 13 = 169.",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.9804,
+        "ar_confidence": 0.9607,
+        "consistent": true
+      },
+      {
+        "en_q": "Who wrote the novel 1984?",
+        "ar_q": "من كتب رواية 1984؟",
+        "en_response": "The novel \"1984\" was written by George Orwell. It was published in 1949 and is one of his most famous works, known for its depiction of a dystopian society under a totalitarian government.",
+        "ar_response": "رواية \"1984\" كتبتها جورج أورويل (George Orwell). نشرت الرواية لأول مرة في عام 1949، وهي من أشهر الأعمال الأدبية في القرن العشرين. تدور أحداث الرواية حول حكم الدولة الشيوعية القمعية في مستقبل بعيد، وتع",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.9087,
+        "ar_confidence": 0.7182,
+        "consistent": true
+      },
+      {
+        "en_q": "In which continent is Egypt?",
+        "ar_q": "في أي قارة تقع مصر؟",
+        "en_response": "Egypt is located in Africa. It spans both the northeastern corner of Africa and a small part of Asia (the Sinai Peninsula), which is separated from the rest of Africa by the Suez Canal.",
+        "ar_response": "مصر تقع في قارة أفريقيا، وتحديداً في شمال شرق القارة.📍",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.7594,
+        "ar_confidence": 0.7899,
+        "consistent": true
+      },
+      {
+        "en_q": "What year did Berlin Wall fall?",
+        "ar_q": "في أي عام سقط جدار برلين؟",
+        "en_response": "The Berlin Wall fell in 1989. Specifically, on November 9, 1989, the East German government announced that citizens could apply for emigration to West Germany and West Berlin, effectively opening the ",
+        "ar_response": "سُقط جدار برلين في 9 نوفمبر 1989. هذا الحدث كان نقطة تحول كبيرة في تاريخ أوروبا الشرقية والعالم، حيث أنه أدى إلى انهيار النظام السوفياتي وفتح حدود أوروبا الشرقية.",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.7764,
+        "ar_confidence": 0.7546,
+        "consistent": true
+      },
+      {
+        "en_q": "What is the largest ocean?",
+        "ar_q": "ما هو أكبر محيط في العالم؟",
+        "en_response": "The largest ocean in terms of area is the Pacific Ocean. It covers about 63.8 million square miles (165.2 million square kilometers) and spans an area that is roughly one-third of the Earth's surface.",
+        "ar_response": "أكبر محيط في العالم هو المحيط الهادئ (Pacific Ocean). وهو أكبر محيط على كوكب الأرض من حيث المساحة، يغطي حوالي 16% من سطح الأرض ويعادل مساحة حوالي 155 مليون كيلومتر مربع.",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.8587,
+        "ar_confidence": 0.8129,
+        "consistent": true
+      },
+      {
+        "en_q": "How many bones in human body?",
+        "ar_q": "كم عدد عظام جسم الإنسان؟",
+        "en_response": "The human body typically has 206 bones. These bones serve various functions such as providing support for the body, protecting internal organs, and allowing movement through muscles attached to them.",
+        "ar_response": "عدد العظام في جسم الإنسان يختلف قليلاً بين الأفراد، لكن بشكل عام:\n\n- للبالغين البالغين حوالي 206 عظمة.\n- عند الولادة، يوجد حوالي 270 عظمة.\n\nيجب ملاحظة أن هذا العدد يمكن أن يتغير قليلاً من شخص لآخر، وق",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.8017,
+        "ar_confidence": 0.7199,
+        "consistent": true
+      },
+      {
+        "en_q": "What is 17 multiplied by 13?",
+        "ar_q": "ما هو ناتج ضرب 17 في 13؟",
+        "en_response": "To calculate \\(17 \\times 13\\), you can use the standard multiplication method:\n\n\\[17 \\times 13 = (10 + 7) \\times (10 + 3)\\]\n\nUsing the distributive property (also known as the FOIL method for binomial",
+        "ar_response": "نتيجة ضرب 17 في 13 هي 221.",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.9643,
+        "ar_confidence": 0.9627,
+        "consistent": true
+      },
+      {
+        "en_q": "What is the chemical formula of water?",
+        "ar_q": "ما الصيغة الكيميائية للماء؟",
+        "en_response": "The chemical formula for water is H2O. This indicates that each molecule of water consists of two hydrogen atoms (H) and one oxygen atom (O).",
+        "ar_response": "الصيغة الكيميائية للماء هي H2O. هذا يعني أن كل جزيء من الماء يتكون من اثنين من ذرات الهيدروجين (H) وجزء واحد من ذرة الأكسجين (O).",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.9421,
+        "ar_confidence": 0.868,
+        "consistent": true
+      },
+      {
+        "en_q": "Speed of a train going 120km in 2h?",
+        "ar_q": "سرعة قطار يقطع 120كم في ساعتين؟",
+        "en_response": "To find the speed of the train, you can use the formula for speed:\n\n\\[ \\text{Speed} = \\frac{\\text{Distance}}{\\text{Time}} \\]\n\nGiven that the distance is 120 km and the time is 2 hours, you can plug th",
+        "ar_response": "إذا كان القطار يقطع 120 كم في ساعتين، يمكن حساب سرعته المتوسطة باستخدام الصيغة التالية:\n\n\\[ \\text{السرعة} = \\frac{\\text{المسافة}}{\\text{الوقت}} \\]\n\nفي هذه الحالة:\n\n\\[ \\text{السرعة} = \\frac{120 \\text{ ",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.9728,
+        "ar_confidence": 0.9289,
+        "consistent": true
+      },
+      {
+        "en_q": "What does CBB stand for in Bahrain?",
+        "ar_q": "ما اختصار CBB في البحرين؟",
+        "en_response": "In the context of Bahrain, CBB typically stands for Central Bank of Bahrain. This is the central bank responsible for managing the monetary policy and financial stability of Bahrain.",
+        "ar_response": "في البحرين، اختصار CBB يشير عادة إلى \"Council of Bahrain Businessmen\". هذا المجلس هو جمعية تجارية تهدف إلى دعم الأعمال التجارية والاقتصاد في البحرين وتعزيز العلاقات الاقتصادية بين الشركات المحلية والع",
+        "en_correct": true,
+        "ar_correct": false,
+        "en_confidence": 0.8132,
+        "ar_confidence": 0.6958,
+        "consistent": false
+      },
+      {
+        "en_q": "What is IBAN used for?",
+        "ar_q": "ما استخدام رقم IBAN؟",
+        "en_response": "IBAN stands for International Bank Account Number. It is a standardized format for identifying bank accounts across different countries, particularly within the European Union and other countries that",
+        "ar_response": "رقم IBAN (International Bank Account Number) هو رقم موحد يستخدم لتحديد حسابات البنوك في جميع أنحاء العالم. يتم استخدامه بشكل رئيسي للتحويلات المالية عبر الحدود. إليك بعض النقاط الرئيسية حول استخدام IB",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.7707,
+        "ar_confidence": 0.7347,
+        "consistent": true
+      },
+      {
+        "en_q": "What is machine learning?",
+        "ar_q": "ما هو تعلم الآلة؟",
+        "en_response": "Machine learning is a subset of artificial intelligence (AI) that involves the development of algorithms and statistical models that enable computer systems to improve their performance on a specific ",
+        "ar_response": "تعلم الآلة (Machine Learning) هو فرع من فروع الذكاء الاصطناعي الذي يركز على بناء البرمجيات التي يمكنها التعلم من البيانات والتجربة دون أن يتم تعيينها بقواعد بيانات أو التعليمات البرمجية التقليدية. في ",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.8632,
+        "ar_confidence": 0.7027,
+        "consistent": true
+      },
+      {
+        "en_q": "What is artificial intelligence?",
+        "ar_q": "ما هو الذكاء الاصطناعي؟",
+        "en_response": "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. The aim is to make machines smarter and more c",
+        "ar_response": "الذكاء الاصطناعي (AI) هو مجال في علوم الحاسوب يهدف إلى إنشاء برامج ونماذج تتيح للحواسيب القيام بالمهام التي تتطلب ذكاءً بشرياً، مثل التعلم، والفهم، والتفكير، والابتكار. يمكن تصنيف الذكاء الاصطناعي إلى",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.8731,
+        "ar_confidence": 0.797,
+        "consistent": true
+      },
+      {
+        "en_q": "What does 'wayyid' mean in Bahraini?",
+        "ar_q": "ما معنى كلمة وايد في اللهجة البحرينية؟",
+        "en_response": "I apologize, but there seems to be an error in your query. The term \"wayyid\" does not appear to be a recognized word or phrase in any known language, including Bahraini Arabic. It's possible you might",
+        "ar_response": "في اللهجة البحرينية، كلمة \"وايد\" تعني \"كبير\" أو \"عظيم\". وهي تستخدم لوصف شيء ما بأنه كبير أو عظيم في الحجم أو الأهمية.",
+        "en_correct": false,
+        "ar_correct": false,
+        "en_confidence": 0.8377,
+        "ar_confidence": 0.7922,
+        "consistent": false
+      }
+    ]
+  },
+  "token_kd_7b": {
+    "summary": {
+      "en_accuracy": 86.7,
+      "ar_accuracy": 80.0,
+      "LPG": 6.7,
+      "CLCS": 80.0,
+      "ECE_english": 10.49,
+      "ECE_arabic": 15.9,
+      "avg_conf_english": 86.7,
+      "avg_conf_arabic": 81.6,
+      "confidence_gap": 5.1,
+      "n_pairs": 15
+    },
+    "details": [
+      {
+        "en_q": "What is the capital of Australia?",
+        "ar_q": "ما هي عاصمة أستراليا؟",
+        "en_response": "The capital of Australia is Canberra. It's located in the Australian Capital Territory and serves as the country's federal capital. While Sydney and Melbourne are larger and more populous cities, Canb",
+        "ar_response": "عاصمة أستراليا هي مدينة كيندريك (Canberra). وهي العاصمة السياسية وال Administrative لدولة أستراليا. ومع ذلك، من المهم ملاحظة أن مدينة سيدني هي أكبر مدينة في أستراليا وتعتبر المركز الاقتصادي للبلاد.",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.8516,
+        "ar_confidence": 0.7367,
+        "consistent": true
+      },
+      {
+        "en_q": "What is the square root of 169?",
+        "ar_q": "ما هو الجذر التربيعي للعدد 169؟",
+        "en_response": "The square root of 169 is 13, because \\( 13 \\times 13 = 169 \\).",
+        "ar_response": "الجذر التربيعي للعدد 169 هو 13، حيث أن 13 × 13 = 169.",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.9545,
+        "ar_confidence": 0.9748,
+        "consistent": true
+      },
+      {
+        "en_q": "Who wrote the novel 1984?",
+        "ar_q": "من كتب رواية 1984؟",
+        "en_response": "The novel \"1984\" was written by George Orwell. It was published in 1949 and is one of his most famous works, known for its depiction of a dystopian society under totalitarian control.",
+        "ar_response": "رواية \"1984\" كتبتها جورج أورويل (George Orwell). صدرت الرواية لأول مرة في عام 1949، وهي من الأعمال الأدبية الشهيرة التي تناولت موضوعات مثل التحكم الحكومي والرقابة على المعلومات.",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.9083,
+        "ar_confidence": 0.7715,
+        "consistent": true
+      },
+      {
+        "en_q": "In which continent is Egypt?",
+        "ar_q": "في أي قارة تقع مصر؟",
+        "en_response": "Egypt is located in Africa. It is situated mostly in the northeastern corner of the continent, with the majority of its land lying along the Nile River and extending into the eastern Mediterranean Sea",
+        "ar_response": "مصر تقع في قارة أفريقيا. تحدها البحر الأحمر من الشرق والبحر المتوسط من الشمال.📍🌍",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.8032,
+        "ar_confidence": 0.8108,
+        "consistent": true
+      },
+      {
+        "en_q": "What year did Berlin Wall fall?",
+        "ar_q": "في أي عام سقط جدار برلين؟",
+        "en_response": "The Berlin Wall fell in 1989. Specifically, the night of November 9, 1989, is when the wall effectively fell as East German authorities attempted to implement travel restrictions between East and West",
+        "ar_response": "سقط جدار برلين في 9 نوفمبر 1989. هذا الحدث كان نقطة تحول كبيرة في تاريخ أوروبا وأثر على العلاقات الدولية بشكل كبير.",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.7877,
+        "ar_confidence": 0.7911,
+        "consistent": true
+      },
+      {
+        "en_q": "What is the largest ocean?",
+        "ar_q": "ما هو أكبر محيط في العالم؟",
+        "en_response": "The largest ocean in the world by area is the Pacific Ocean. It covers approximately 63,800,000 square miles (165,250,000 square kilometers), which is about one-third of the Earth's surface and more t",
+        "ar_response": "أكبر محيط في العالم هو المحيط الهادئ (Pacific Ocean). إليك بعض المعلومات عنه:\n\n1. المساحة: يغطي حوالي 63,800,000 ميلاً مربعاً (165,279,000 كيلومتر مربع) من سطح الأرض.\n\n2. العمق: ينحدر إلى أعماق تصل إل",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.9223,
+        "ar_confidence": 0.8307,
+        "consistent": true
+      },
+      {
+        "en_q": "How many bones in human body?",
+        "ar_q": "كم عدد عظام جسم الإنسان؟",
+        "en_response": "The human body typically has 206 bones. This number can vary slightly from person to person and can be affected by factors such as age and any surgical interventions. Some bones, like those in the sku",
+        "ar_response": "عدد عظام الجسم البشري يختلف قليلاً بين الأفراد، لكن العدد المعتاد هو 206 عظمة بالغ بالكامل. هذا العدد يمكن أن يتغير قليلاً من شخص لآخر، حيث قد يفقد بعض الأفراد عظماً أو أكثر بسبب بعض الحالات الطبية أو",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.7863,
+        "ar_confidence": 0.727,
+        "consistent": true
+      },
+      {
+        "en_q": "What is 17 multiplied by 13?",
+        "ar_q": "ما هو ناتج ضرب 17 في 13؟",
+        "en_response": "17 multiplied by 13 equals 221.",
+        "ar_response": "نتيجة ضرب 17 في 13 هي 221.",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.9664,
+        "ar_confidence": 0.979,
+        "consistent": true
+      },
+      {
+        "en_q": "What is the chemical formula of water?",
+        "ar_q": "ما الصيغة الكيميائية للماء؟",
+        "en_response": "The chemical formula for water is H₂O. This formula indicates that each water molecule consists of two hydrogen atoms (H₂) bonded to one oxygen atom (O).",
+        "ar_response": "صيغة الماء الكيميائية هي H₂O. هذا يعني أن كل جزيء من الماء يتكون من اثنين من ذرات الهيدروجين مرتبطتين بذرة الأكسجين.",
+        "en_correct": false,
+        "ar_correct": false,
+        "en_confidence": 0.9652,
+        "ar_confidence": 0.8668,
+        "consistent": false
+      },
+      {
+        "en_q": "Speed of a train going 120km in 2h?",
+        "ar_q": "سرعة قطار يقطع 120كم في ساعتين؟",
+        "en_response": "To find the speed of the train, you can use the formula for speed:\n\n\\[ \\text{Speed} = \\frac{\\text{Distance}}{\\text{Time}} \\]\n\nGiven that the distance is 120 km and the time is 2 hours, you can plug th",
+        "ar_response": "لحساب سرعة القطار، نحتاج إلى استخدام الصيغة الأساسية لحساب السرعة، وهي:\n\n\\[ \\text{السرعة} = \\frac{\\text{المسافة}}{\\text{الوقت}} \\]\n\nفي هذه الحالة، المسافة هي 120 كم، والوقت هو 2 ساعة.\n\n\\[ \\text{السرعة",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.9752,
+        "ar_confidence": 0.93,
+        "consistent": true
+      },
+      {
+        "en_q": "What does CBB stand for in Bahrain?",
+        "ar_q": "ما اختصار CBB في البحرين؟",
+        "en_response": "In the context of Bahrain, CBB stands for Bahrain Central Bank. It is the central bank of the Kingdom of Bahrain, responsible for managing the country's monetary policy and overseeing the financial sy",
+        "ar_response": "في سياق البحرين، اختصار CBB يشير عادة إلى \"Council of Bahrain Banks\". وهو مجلس يمثل البنوك التجارية في مملكة البحرين. هذا المجلس مهم لتنظيم البنوك وضمان التزامها باللوائح والمعايير المصرفية.",
+        "en_correct": true,
+        "ar_correct": false,
+        "en_confidence": 0.8766,
+        "ar_confidence": 0.7066,
+        "consistent": false
+      },
+      {
+        "en_q": "What is IBAN used for?",
+        "ar_q": "ما استخدام رقم IBAN؟",
+        "en_response": "IBAN stands for International Bank Account Number. It is a standardized format for identifying bank accounts across different countries, particularly within the European Union and some non-EU countrie",
+        "ar_response": "رقم IBAN (International Bank Account Number) يستخدم لتسهيل عمليات التحويل المصرفي الدولية. إليك بعض الاستخدامات الرئيسية لرقم IBAN:\n\n1. تحويل الأموال عبر الحدود:\n   - يسهل تحويل الأموال بين البنوك في ",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.7675,
+        "ar_confidence": 0.7771,
+        "consistent": true
+      },
+      {
+        "en_q": "What is machine learning?",
+        "ar_q": "ما هو تعلم الآلة؟",
+        "en_response": "Machine learning is a subset of artificial intelligence (AI) that involves the development of algorithms and statistical models that enable computer systems to improve their performance on a specific ",
+        "ar_response": "تعلم الآلة هو فرع من فروع الذكاء الاصطناعي يهتم بتطوير الخوارزميات والأساليب التي تتيح للأنظمة التعلم من البيانات. إليك بعض النقاط الرئيسية حول تعلم الآلة:\n\n1. التعريف العام: هو عملية تعليم الأنظمة ال",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.8334,
+        "ar_confidence": 0.7562,
+        "consistent": true
+      },
+      {
+        "en_q": "What is artificial intelligence?",
+        "ar_q": "ما هو الذكاء الاصطناعي؟",
+        "en_response": "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think, learn, and perform tasks that typically require human intelligence. This can inclu",
+        "ar_response": "الذكاء الاصطناعي (Artificial Intelligence، AI) هو مجال في علوم الحاسوب يهدف إلى إنشاء برامج ونماذج تتيح للحواسيب والأنظمة الإلكترونية القيام بمهام تتطلب الذكاء البشري. هذه المهام قد تشمل التعلم من الب",
+        "en_correct": true,
+        "ar_correct": true,
+        "en_confidence": 0.8473,
+        "ar_confidence": 0.7741,
+        "consistent": true
+      },
+      {
+        "en_q": "What does 'wayyid' mean in Bahraini?",
+        "ar_q": "ما معنى كلمة وايد في اللهجة البحرينية؟",
+        "en_response": "I apologize, but \"wayyid\" does not appear to be a word in Bahraini Arabic or any other known language. It's possible there might have been a typo or misunderstanding. \n\nIf you meant \"wāyyid\" (which is",
+        "ar_response": "في اللهجة البحرينية، كلمة \"وايد\" تعني \"كبير\" أو \"كبيرة\". تستخدم هذه الكلمة لوصف شخص أو شيء كبير الحجم أو الأهمية. مثلاً، يمكن استخدامها في الجمل مثل \"وايد باب\" (باب كبير) أو \"وايد سيدة\" (سيدة كبيرة).",
+        "en_correct": false,
+        "ar_correct": false,
+        "en_confidence": 0.7522,
+        "ar_confidence": 0.8012,
+        "consistent": false
+      }
+    ]
+  }
+}

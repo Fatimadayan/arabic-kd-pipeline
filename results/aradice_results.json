@@ -1,0 +1,38 @@
+{
+  "base_7b": {
+    "aradice_qatar": null,
+    "aradice_egypt": null,
+    "dialect_overall": 60.0,
+    "dialect_comp": 100.0,
+    "dialect_meaning": 0.0,
+    "cultural": 100.0,
+    "code_switch": 100.0,
+    "normalization": 33.3,
+    "dialect_id": 33.3,
+    "gcc_domain": 100.0
+  },
+  "token_kd_7b": {
+    "aradice_qatar": null,
+    "aradice_egypt": null,
+    "dialect_overall": 55.0,
+    "dialect_comp": 66.7,
+    "dialect_meaning": 0.0,
+    "cultural": 100.0,
+    "code_switch": 100.0,
+    "normalization": 33.3,
+    "dialect_id": 33.3,
+    "gcc_domain": 100.0
+  },
+  "selectkd_7b": {
+    "aradice_qatar": null,
+    "aradice_egypt": null,
+    "dialect_overall": 65.0,
+    "dialect_comp": 33.3,
+    "dialect_meaning": 50.0,
+    "cultural": 100.0,
+    "code_switch": 100.0,
+    "normalization": 66.7,
+    "dialect_id": 33.3,
+    "gcc_domain": 100.0
+  }
+}

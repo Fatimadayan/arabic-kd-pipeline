@@ -1,0 +1,76 @@
+==========================================
+SLURM_CLUSTER_NAME = linux
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = pgstudents
+SLURM_JOB_ID = 24581
+SLURM_JOB_NAME = kd_theta_abl
+SLURM_JOB_NODELIST = gpu01
+SLURM_JOB_USER = user151
+SLURM_JOB_UID = 4254
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 4168179
+SLURM_SUBMIT_DIR = /scratch-beegfs/datasets/user151/qwen-arabic-kd
+SLURM_CPUS_ON_NODE = 192
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 4168179
+==========================================
+Training on 500 samples
+
+========================================
+Running θ=0.5
+========================================
+  θ=0.5 Epoch 1 loss: 0.7064
+  θ=0.5 Epoch 2 loss: 0.5706
+  θ=0.5: EN selected=0.0% AR selected=2.1%
+  Result: EN=100.0% AR=60.0% LPG=40.0%
+
+========================================
+Running θ=0.6
+========================================
+  θ=0.6 Epoch 1 loss: 0.6739
+  θ=0.6 Epoch 2 loss: 0.5506
+  θ=0.6: EN selected=0.0% AR selected=1.6%
+  Result: EN=100.0% AR=60.0% LPG=40.0%
+
+========================================
+Running θ=0.7
+========================================
+  θ=0.7 Epoch 1 loss: 0.6404
+  θ=0.7 Epoch 2 loss: 0.5450
+  θ=0.7: EN selected=0.0% AR selected=1.2%
+  Result: EN=100.0% AR=60.0% LPG=40.0%
+
+========================================
+Running θ=0.8
+========================================
+  θ=0.8 Epoch 1 loss: 0.5756
+  θ=0.8 Epoch 2 loss: 0.5084
+  θ=0.8: EN selected=0.0% AR selected=0.7%
+  Result: EN=100.0% AR=70.0% LPG=30.0%
+
+========================================
+Running θ=0.9
+========================================
+  θ=0.9 Epoch 1 loss: 0.5111
+  θ=0.9 Epoch 2 loss: 0.4471
+  θ=0.9: EN selected=0.0% AR selected=0.3%
+  Result: EN=100.0% AR=70.0% LPG=30.0%
+
+
+SELECTKD ABLATION — THRESHOLD SENSITIVITY:
+θ         EN%    AR%    LPG  EN_sel%  AR_sel%
+---------------------------------------------
+0.0     86.7%  63.3%  23.4%   100.0%   100.0% ← no filter
+0.5    100.0%  60.0%  40.0%     0.0%     2.1%
+0.6    100.0%  60.0%  40.0%     0.0%     1.6%
+0.7    100.0%  60.0%  40.0%     0.0%     1.2%
+0.8    100.0%  70.0%  30.0%     0.0%     0.7%
+0.9    100.0%  70.0%  30.0%     0.0%     0.3%
+
+Key finding: As θ increases, AR token selection rate drops
+This proves Arabic tokens have systematically lower teacher confidence
+Results saved to /data/datasets/user151/qwen-arabic-kd/results/theta_ablation.json

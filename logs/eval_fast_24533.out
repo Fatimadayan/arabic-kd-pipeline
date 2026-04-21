@@ -1,0 +1,70 @@
+==========================================
+SLURM_CLUSTER_NAME = linux
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = pgstudents
+SLURM_JOB_ID = 24533
+SLURM_JOB_NAME = kd_eval_fast
+SLURM_JOB_NODELIST = gpu01
+SLURM_JOB_USER = user151
+SLURM_JOB_UID = 4254
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 3284954
+SLURM_SUBMIT_DIR = /scratch-beegfs/datasets/user151/qwen-arabic-kd
+SLURM_CPUS_ON_NODE = 192
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 3284954
+==========================================
+
+==================================================
+Evaluating: base_7b
+==================================================
+  EN=86.7% AR=63.3% LPG=23.4% CLCS=60.0%
+  ECE_EN=6.88% ECE_AR=19.78%
+  Conf EN=89.1% AR=81.3% Gap=7.8%
+
+==================================================
+Evaluating: sft_7b
+==================================================
+  EN=86.7% AR=80.0% LPG=6.7% CLCS=73.3%
+  ECE_EN=8.2% ECE_AR=3.6%
+  Conf EN=88.6% AR=82.1% Gap=6.5%
+
+==================================================
+Evaluating: seq_kd_7b
+==================================================
+  EN=83.3% AR=76.7% LPG=6.6% CLCS=66.7%
+  ECE_EN=14.26% ECE_AR=16.16%
+  Conf EN=89.9% AR=81.3% Gap=8.6%
+
+==================================================
+Evaluating: token_kd_7b
+==================================================
+  EN=86.7% AR=63.3% LPG=23.4% CLCS=60.0%
+  ECE_EN=7.68% ECE_AR=19.53%
+  Conf EN=89.1% AR=81.0% Gap=8.1%
+
+==================================================
+Evaluating: selectkd_7b
+==================================================
+  EN=86.7% AR=86.7% LPG=0.0% CLCS=80.0%
+  ECE_EN=8.49% ECE_AR=5.24%
+  Conf EN=89.3% AR=81.4% Gap=7.9%
+
+
+FINAL TABLE:
+Model               EN%    AR%    LPG   CLCS  ECE_EN  ECE_AR  Conf_Gap
+----------------------------------------------------------------------
+base_7b           86.7%  63.3%  23.4%  60.0%   6.88%  19.78%      7.8%
+sft_7b            86.7%  80.0%   6.7%  73.3%    8.2%    3.6%      6.5%
+seq_kd_7b         83.3%  76.7%   6.6%  66.7%  14.26%  16.16%      8.6%
+token_kd_7b       86.7%  63.3%  23.4%  60.0%   7.68%  19.53%      8.1%
+selectkd_7b       86.7%  86.7%   0.0%  80.0%   8.49%   5.24%      7.9%
+
+Key finding:
+  Base LPG: 23.4%  Token-KD LPG: 23.4%
+  SelecTKD LPG: 0.0%
+  Hypothesis: SelecTKD reduces LPG further

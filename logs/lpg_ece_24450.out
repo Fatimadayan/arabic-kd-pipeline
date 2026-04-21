@@ -1,0 +1,92 @@
+==========================================
+SLURM_CLUSTER_NAME = linux
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = pgstudents
+SLURM_JOB_ID = 24450
+SLURM_JOB_NAME = kd_lpg_ece
+SLURM_JOB_NODELIST = gpu02
+SLURM_JOB_USER = user151
+SLURM_JOB_UID = 4254
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 3972937
+SLURM_SUBMIT_DIR = /scratch-beegfs/datasets/user151/qwen-arabic-kd
+SLURM_CPUS_ON_NODE = 192
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 3972937
+==========================================
+
+=======================================================
+Evaluating: base_7b
+=======================================================
+
+  English accuracy:      86.7%
+  Arabic accuracy:       80.0%
+  LPG:                   6.7%
+  CLCS:                  80.0%
+  ECE English:           12.07%
+  ECE Arabic:            5.4%
+  Avg confidence EN:     87.0%
+  Avg confidence AR:     81.5%
+  Confidence gap EN-AR:  5.5%
+
+=======================================================
+Evaluating: sft_7b
+=======================================================
+
+  English accuracy:      93.3%
+  Arabic accuracy:       80.0%
+  LPG:                   13.3%
+  CLCS:                  80.0%
+  ECE English:           13.4%
+  ECE Arabic:            11.44%
+  Avg confidence EN:     87.5%
+  Avg confidence AR:     81.2%
+  Confidence gap EN-AR:  6.3%
+
+=======================================================
+Evaluating: seq_kd_7b
+=======================================================
+
+  English accuracy:      93.3%
+  Arabic accuracy:       80.0%
+  LPG:                   13.3%
+  CLCS:                  80.0%
+  ECE English:           6.75%
+  ECE Arabic:            18.85%
+  Avg confidence EN:     87.2%
+  Avg confidence AR:     79.4%
+  Confidence gap EN-AR:  7.8%
+
+=======================================================
+Evaluating: token_kd_7b
+=======================================================
+
+  English accuracy:      86.7%
+  Arabic accuracy:       80.0%
+  LPG:                   6.7%
+  CLCS:                  80.0%
+  ECE English:           10.49%
+  ECE Arabic:            15.9%
+  Avg confidence EN:     86.7%
+  Avg confidence AR:     81.6%
+  Confidence gap EN-AR:  5.1%
+
+
+=================================================================
+FINAL TABLE — LPG + ECE + CLCS + Confidence Analysis:
+Model              EN%   AR%   LPG   CLCS  ECE_EN  ECE_AR  Conf_Gap
+-----------------------------------------------------------------
+base_7b          86.7% 80.0%  6.7%  80.0%  12.07%    5.4%      5.5%
+sft_7b           93.3% 80.0% 13.3%  80.0%   13.4%  11.44%      6.3%
+seq_kd_7b        93.3% 80.0% 13.3%  80.0%   6.75%  18.85%      7.8%
+token_kd_7b      86.7% 80.0%  6.7%  80.0%  10.49%   15.9%      5.1%
+
+Key insight — Confidence Gap shows why Arabic is harder:
+Higher confidence_gap = model less certain on Arabic tokens
+This motivates SelecTKD: filter low-confidence Arabic tokens
+
+Results saved to /data/datasets/user151/qwen-arabic-kd/results/lpg_ece_results.json

@@ -1,0 +1,17 @@
+{
+  "base_7b": {
+    "MMLU_EN": 56.0,
+    "ArabicMMLU": 0.0,
+    "GSM8K": 50.0
+  },
+  "token_kd_7b": {
+    "MMLU_EN": 55.0,
+    "ArabicMMLU": 0.0,
+    "GSM8K": 52.0
+  },
+  "selectkd_7b": {
+    "MMLU_EN": 57.0,
+    "ArabicMMLU": 0.0,
+    "GSM8K": 42.0
+  }
+}

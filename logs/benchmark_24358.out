@@ -1,0 +1,83 @@
+==========================================
+SLURM_CLUSTER_NAME = linux
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = pgstudents
+SLURM_JOB_ID = 24358
+SLURM_JOB_NAME = kd_benchmark
+SLURM_JOB_NODELIST = gpu02
+SLURM_JOB_USER = user151
+SLURM_JOB_UID = 4254
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 3884938
+SLURM_SUBMIT_DIR = /scratch-beegfs/datasets/user151/qwen-arabic-kd
+SLURM_CPUS_ON_NODE = 192
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 3884938
+==========================================
+Starting benchmark evaluation at: Sun Apr  5 00:02:21 +03 2026
+Loading benchmarks...
+ArabicMMLU not available — using custom Arabic QA
+
+==================================================
+Evaluating: base_7b
+==================================================
+Running bilingual test (20 prompts)...
+Running MMLU English (100 samples)...
+
+Results for base_7b:
+  English accuracy: 90.0%
+  Arabic accuracy:  80.0%
+  LPG:              10.0%
+  MMLU English:     56.0%
+
+==================================================
+Evaluating: sft_7b
+==================================================
+Running bilingual test (20 prompts)...
+Running MMLU English (100 samples)...
+
+Results for sft_7b:
+  English accuracy: 90.0%
+  Arabic accuracy:  80.0%
+  LPG:              10.0%
+  MMLU English:     55.0%
+
+==================================================
+Evaluating: seq_kd_7b
+==================================================
+Running bilingual test (20 prompts)...
+Running MMLU English (100 samples)...
+
+Results for seq_kd_7b:
+  English accuracy: 90.0%
+  Arabic accuracy:  80.0%
+  LPG:              10.0%
+  MMLU English:     54.0%
+
+==================================================
+Evaluating: token_kd_7b
+==================================================
+Running bilingual test (20 prompts)...
+Running MMLU English (100 samples)...
+
+Results for token_kd_7b:
+  English accuracy: 90.0%
+  Arabic accuracy:  80.0%
+  LPG:              10.0%
+  MMLU English:     55.0%
+
+
+DONE! Results saved to /data/datasets/user151/qwen-arabic-kd/results/benchmark_results.json
+
+============================================================
+FINAL COMPARISON TABLE:
+Model                  EN Acc   AR Acc      LPG    MMLU-EN
+------------------------------------------------------------
+base_7b                 90.0%    80.0%    10.0%      56.0%
+sft_7b                  90.0%    80.0%    10.0%      55.0%
+seq_kd_7b               90.0%    80.0%    10.0%      54.0%
+token_kd_7b             90.0%    80.0%    10.0%      55.0%

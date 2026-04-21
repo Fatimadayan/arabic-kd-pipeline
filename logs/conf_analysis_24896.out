@@ -1,0 +1,43 @@
+==========================================
+SLURM_CLUSTER_NAME = linux
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = pgstudents
+SLURM_JOB_ID = 24896
+SLURM_JOB_NAME = kd_conf_analysis
+SLURM_JOB_NODELIST = gpu01
+SLURM_JOB_USER = user151
+SLURM_JOB_UID = 4254
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 1026028
+SLURM_SUBMIT_DIR = /scratch-beegfs/datasets/user151/qwen-arabic-kd
+SLURM_CPUS_ON_NODE = 192
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 1026028
+==========================================
+Loading data...
+AR samples: 50, EN samples: 50
+Loading teacher model...
+Computing token confidences...
+
+==================================================
+CONFIDENCE DISTRIBUTION ANALYSIS
+==================================================
+Metric                             Arabic    English        Gap
+-----------------------------------------------------------------
+Mean confidence                    70.94%     76.54%       5.6%
+Median confidence                  80.47%      87.5%
+% tokens above 0.5                 71.12%     79.33%
+% tokens above 0.7 (selected)      57.46%     64.09%      6.62%
+% tokens above 0.9                  41.6%     47.27%
+
+EN/AR selection ratio at θ=0.7: 1.12×
+
+KEY FINDING FOR PAPER:
+Arabic tokens are 1.12× less likely to exceed θ=0.7
+Mean confidence gap: 5.6% (EN higher than AR)
+
+Saved to /data/datasets/user151/qwen-arabic-kd/results/confidence_analysis.json

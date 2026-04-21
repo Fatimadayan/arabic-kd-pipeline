@@ -1,0 +1,45 @@
+==========================================
+SLURM_CLUSTER_NAME = linux
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = pgstudents
+SLURM_JOB_ID = 24897
+SLURM_JOB_NAME = kd_eval_fast
+SLURM_JOB_NODELIST = gpu02
+SLURM_JOB_USER = user151
+SLURM_JOB_UID = 4254
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 5023
+SLURM_SUBMIT_DIR = /scratch-beegfs/datasets/user151/qwen-arabic-kd
+SLURM_CPUS_ON_NODE = 192
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 5023
+==========================================
+
+==================================================
+Evaluating: base_7b
+==================================================
+  EN=86.7% AR=63.3% LPG=23.4% CLCS=60.0%
+  ECE_EN=6.88% ECE_AR=19.78%
+  Conf EN=89.1% AR=81.3% Gap=7.8%
+
+==================================================
+Evaluating: sft_7b
+==================================================
+  EN=86.7% AR=80.0% LPG=6.7% CLCS=73.3%
+  ECE_EN=8.2% ECE_AR=3.6%
+  Conf EN=88.6% AR=82.1% Gap=6.5%
+
+==================================================
+Evaluating: seq_kd_7b
+==================================================
+  EN=83.3% AR=76.7% LPG=6.6% CLCS=66.7%
+  ECE_EN=14.26% ECE_AR=16.16%
+  Conf EN=89.9% AR=81.3% Gap=8.6%
+
+==================================================
+Evaluating: token_kd_7b
+==================================================

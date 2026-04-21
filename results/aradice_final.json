@@ -1,0 +1,125 @@
+{
+  "base_7b": {
+    "aradice_qatar": 50.0,
+    "n_samples": 30,
+    "details": [
+      {
+        "question": "شنو هي أيام العطل الرسمية في قطر؟",
+        "correct_option": "عيد الفطر، عيد الأضحى، اليوم الوطني، اليوم الرياضي",
+        "response": "أ",
+        "correct": true,
+        "confidence": 0.9952
+      },
+      {
+        "question": "متى عيد الاستقلال في قطر؟",
+        "correct_option": "٣ سبتمبر",
+        "response": "أ",
+        "correct": true,
+        "confidence": 0.9518
+      },
+      {
+        "question": "شنو الأعياد اللي يحتفلون فيها الناس في قطر؟",
+        "correct_option": "عيد الفطر، عيد الأضحى",
+        "response": "أ",
+        "correct": true,
+        "confidence": 0.9953
+      },
+      {
+        "question": "شنو أشهر الطبخات في قطر؟",
+        "correct_option": "المجبوس، المندي، الجريش، الهريس، العصيدة، الثريد، الصالونة، ",
+        "response": "أ",
+        "correct": true,
+        "confidence": 0.9945
+      },
+      {
+        "question": "شنو الحلويات المشهورة في قطر؟",
+        "correct_option": "الخنفروش، اللقيمات، المهلبية، البسبوسة، عش السرايا، أم علي، ",
+        "response": "أ",
+        "correct": true,
+        "confidence": 0.8293
+      }
+    ]
+  },
+  "token_kd_7b": {
+    "aradice_qatar": 46.7,
+    "n_samples": 30,
+    "details": [
+      {
+        "question": "شنو هي أيام العطل الرسمية في قطر؟",
+        "correct_option": "عيد الفطر، عيد الأضحى، اليوم الوطني، اليوم الرياضي",
+        "response": "أ",
+        "correct": true,
+        "confidence": 0.9938
+      },
+      {
+        "question": "متى عيد الاستقلال في قطر؟",
+        "correct_option": "٣ سبتمبر",
+        "response": "أ",
+        "correct": true,
+        "confidence": 0.946
+      },
+      {
+        "question": "شنو الأعياد اللي يحتفلون فيها الناس في قطر؟",
+        "correct_option": "عيد الفطر، عيد الأضحى",
+        "response": "أ",
+        "correct": true,
+        "confidence": 0.9946
+      },
+      {
+        "question": "شنو أشهر الطبخات في قطر؟",
+        "correct_option": "المجبوس، المندي، الجريش، الهريس، العصيدة، الثريد، الصالونة، ",
+        "response": "أ",
+        "correct": true,
+        "confidence": 0.994
+      },
+      {
+        "question": "شنو الحلويات المشهورة في قطر؟",
+        "correct_option": "الخنفروش، اللقيمات، المهلبية، البسبوسة، عش السرايا، أم علي، ",
+        "response": "أ",
+        "correct": true,
+        "confidence": 0.855
+      }
+    ]
+  },
+  "selectkd_7b": {
+    "aradice_qatar": 46.7,
+    "n_samples": 30,
+    "details": [
+      {
+        "question": "شنو هي أيام العطل الرسمية في قطر؟",
+        "correct_option": "عيد الفطر، عيد الأضحى، اليوم الوطني، اليوم الرياضي",
+        "response": "أ",
+        "correct": true,
+        "confidence": 0.9969
+      },
+      {
+        "question": "متى عيد الاستقلال في قطر؟",
+        "correct_option": "٣ سبتمبر",
+        "response": "أ",
+        "correct": true,
+        "confidence": 0.875
+      },
+      {
+        "question": "شنو الأعياد اللي يحتفلون فيها الناس في قطر؟",
+        "correct_option": "عيد الفطر، عيد الأضحى",
+        "response": "أ",
+        "correct": true,
+        "confidence": 0.9978
+      },
+      {
+        "question": "شنو أشهر الطبخات في قطر؟",
+        "correct_option": "المجبوس، المندي، الجريش، الهريس، العصيدة، الثريد، الصالونة، ",
+        "response": "أ",
+        "correct": true,
+        "confidence": 0.9985
+      },
+      {
+        "question": "شنو الحلويات المشهورة في قطر؟",
+        "correct_option": "الخنفروش، اللقيمات، المهلبية، البسبوسة، عش السرايا، أم علي، ",
+        "response": "ج",
+        "correct": false,
+        "confidence": 0.9546
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+==========================================
+SLURM_CLUSTER_NAME = linux
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = pgstudents
+SLURM_JOB_ID = 24540
+SLURM_JOB_NAME = kd_mmlu
+SLURM_JOB_NODELIST = gpu01
+SLURM_JOB_USER = user151
+SLURM_JOB_UID = 4254
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 3392343
+SLURM_SUBMIT_DIR = /scratch-beegfs/datasets/user151/qwen-arabic-kd
+SLURM_CPUS_ON_NODE = 192
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 3392343
+==========================================
+Loading MMLU (100 samples)...
+Loading ArabicMMLU (100 samples)...
+ArabicMMLU not available: Config name is missing.
+Please pick one among the available configs: ['All', 'Islamic Studies', 'Islamic Studies (Middle School)', 'Islamic Studies (Primary School)', 'Islamic Studies (High School)', 'Driving Test', 'Natural Science (Middle School)', 'Natural Science (Primary School)', 'History (Middle School)', 'History (Primary School)', 'History (High School)', 'General Knowledge', 'General Knowledge (Middle School)', 'General Knowledge (Primary School)', 'Law (Professional)', 'Physics (High School)', 'Social Science (Middle School)', 'Social Science (Primary School)', 'Management (University)', 'Arabic Language (Middle School)', 'Arabic Language (Primary School)', 'Arabic Language (High School)', 'Political Science (University)', 'Philosophy (High School)', 'Accounting (University)', 'Computer Science (Middle School)', 'Computer Science (Primary School)', 'Computer Science (High School)', 'Computer Science (University)', 'Geography (Middle School)', 'Geography (Primary School)', 'Geography (High School)', 'Math (Primary School)', 'Biology (High School)', 'Economics (Middle School)', 'Economics (High School)', 'Economics (University)', 'Arabic Language (General)', 'Arabic Language (Grammar)', 'Civics (Middle School)', 'Civics (High School)']
+Example of usage:
+	`load_dataset('MBZUAI/ArabicMMLU', 'All')`
+Loading GSM8K (50 samples)...
+
+==================================================
+Evaluating: base_7b
+==================================================
+Running MMLU English...
+  MMLU-EN: 56.0%
+Running GSM8K...
+  GSM8K: 50.0%
+
+==================================================
+Evaluating: token_kd_7b
+==================================================
+Running MMLU English...
+  MMLU-EN: 55.0%
+Running GSM8K...
+  GSM8K: 52.0%
+
+==================================================
+Evaluating: selectkd_7b
+==================================================
+Running MMLU English...
+  MMLU-EN: 57.0%
+Running GSM8K...
+  GSM8K: 42.0%
+
+
+LAYER 1 — STANDARD BENCHMARKS TABLE:
+Model             MMLU-EN  ArabicMMLU   GSM8K
+----------------------------------------------
+base_7b             56.0%          —%   50.0%
+token_kd_7b         55.0%          —%   52.0%
+selectkd_7b         57.0%          —%   42.0%
+
+Results saved to /data/datasets/user151/qwen-arabic-kd/results/layer1_benchmarks.json

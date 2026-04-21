@@ -1,0 +1,26 @@
+{
+  "T1.0": {
+    "AR_mean": 70.94,
+    "EN_mean": 76.54,
+    "AR_sel_pct": 57.46,
+    "EN_sel_pct": 64.09,
+    "ratio_EN_over_AR": 1.12,
+    "mean_gap": 5.6
+  },
+  "T2.0": {
+    "AR_mean": 18.9,
+    "EN_mean": 49.38,
+    "AR_sel_pct": 7.41,
+    "EN_sel_pct": 33.88,
+    "ratio_EN_over_AR": 4.57,
+    "mean_gap": 30.48
+  },
+  "T4.0": {
+    "AR_mean": 0.22,
+    "EN_mean": 1.62,
+    "AR_sel_pct": 0.0,
+    "EN_sel_pct": 0.0,
+    "ratio_EN_over_AR": 0.0,
+    "mean_gap": 1.39
+  }
+}

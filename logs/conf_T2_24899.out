@@ -1,0 +1,38 @@
+==========================================
+SLURM_CLUSTER_NAME = linux
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = pgstudents
+SLURM_JOB_ID = 24899
+SLURM_JOB_NAME = kd_conf_T2
+SLURM_JOB_NODELIST = gpu01
+SLURM_JOB_USER = user151
+SLURM_JOB_UID = 4254
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 1029397
+SLURM_SUBMIT_DIR = /scratch-beegfs/datasets/user151/qwen-arabic-kd
+SLURM_CPUS_ON_NODE = 192
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 1029397
+==========================================
+AR: 50, EN: 50
+
+T=1.0: AR_sel=57.5% EN_sel=64.1% ratio=1.12x gap=5.6%
+
+T=2.0: AR_sel=7.4% EN_sel=33.9% ratio=4.57x gap=30.48%
+
+T=4.0: AR_sel=0.0% EN_sel=0.0% ratio=0.00x gap=1.39%
+
+============================================================
+TEMPERATURE EFFECT ON CONFIDENCE GAP:
+T        AR sel%   EN sel%    Ratio     Gap%
+---------------------------------------------
+T1.0      57.46%    64.09%    1.12x     5.6%
+T2.0       7.41%    33.88%    4.57x   30.48%
+T4.0        0.0%      0.0%     0.0x    1.39%
+
+Key: T=2 matches SelecTKD training configuration
+Saved to /data/datasets/user151/qwen-arabic-kd/results/confidence_analysis_T2.json

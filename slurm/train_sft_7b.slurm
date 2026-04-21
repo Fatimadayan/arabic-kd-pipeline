@@ -3,7 +3,7 @@
 #SBATCH --output=/data/datasets/user151/qwen-arabic-kd/logs/sft_7b_%j.out
 #SBATCH --error=/data/datasets/user151/qwen-arabic-kd/logs/sft_7b_%j.err
 #SBATCH --partition=gpu
-#SBATCH --time=12:00:00
+#SBATCH --time=24:00:00
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=80G
@@ -26,7 +26,7 @@ from trl import SFTTrainer
 from datasets import Dataset
 
 TOKEN = os.environ["HF_TOKEN"]
-DATA  = "/data/datasets/user151/qwen-arabic-kd/data/teacher_32b_responses.jsonl"
+DATA  = "/data/datasets/user151/qwen-arabic-kd/data/final_combined.jsonl"
 OUT   = "/data/datasets/user151/qwen-arabic-kd/checkpoints/sft_7b"
 os.makedirs(OUT, exist_ok=True)
 

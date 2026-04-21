@@ -1,0 +1,29 @@
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<00:42,  8.02it/s]Loading weights:   1%|          | 2/339 [00:00<00:54,  6.23it/s]Loading weights:   1%|          | 4/339 [00:00<00:33,  9.90it/s]Loading weights:   2%|▏         | 6/339 [00:00<00:32, 10.26it/s]Loading weights:   3%|▎         | 9/339 [00:00<00:21, 15.16it/s]Loading weights:   4%|▎         | 12/339 [00:00<00:19, 16.45it/s]Loading weights:   5%|▍         | 16/339 [00:01<00:17, 18.93it/s]Loading weights:   5%|▌         | 18/339 [00:01<00:21, 15.22it/s]Loading weights:   6%|▌         | 21/339 [00:01<00:17, 17.88it/s]Loading weights:   7%|▋         | 24/339 [00:01<00:17, 17.90it/s]Loading weights:   8%|▊         | 28/339 [00:01<00:14, 20.86it/s]Loading weights:  11%|█         | 38/339 [00:01<00:08, 37.47it/s]Loading weights:  13%|█▎        | 43/339 [00:01<00:07, 40.22it/s]Loading weights:  28%|██▊       | 96/339 [00:02<00:01, 162.68it/s]Loading weights:  47%|████▋     | 161/339 [00:02<00:00, 288.80it/s]Loading weights:  58%|█████▊    | 197/339 [00:02<00:01, 90.44it/s] 
+Traceback (most recent call last):
+  File "<stdin>", line 129, in <module>
+  File "<stdin>", line 103, in load_model
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 374, in from_pretrained
+    return model_class.from_pretrained(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4137, in from_pretrained
+    loading_info, disk_offload_index = cls._load_pretrained_model(model, state_dict, checkpoint_files, load_config)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4256, in _load_pretrained_model
+    loading_info, disk_offload_index = convert_and_load_state_dict_in_model(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/core_model_loading.py", line 1212, in convert_and_load_state_dict_in_model
+    realized_value = mapping.convert(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/core_model_loading.py", line 678, in convert
+    collected_tensors = self.materialize_tensors()
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/core_model_loading.py", line 654, in materialize_tensors
+    tensors = [future.result() for future in tensors if future.result() is not None]
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/core_model_loading.py", line 654, in <listcomp>
+    tensors = [future.result() for future in tensors if future.result() is not None]
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/core_model_loading.py", line 800, in _job
+    return _materialize_copy(tensor, device, dtype)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/core_model_loading.py", line 789, in _materialize_copy
+    tensor = tensor.to(device=device, dtype=dtype)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 130.00 MiB. GPU 0 has a total capacity of 39.49 GiB of which 50.31 MiB is free. Process 1976179 has 1.68 GiB memory in use. Process 2017210 has 920.00 MiB memory in use. Process 2021814 has 920.00 MiB memory in use. Process 2021969 has 920.00 MiB memory in use. Process 2026588 has 920.00 MiB memory in use. Process 2031457 has 920.00 MiB memory in use. Process 2338746 has 920.00 MiB memory in use. Process 2369411 has 1.91 GiB memory in use. Process 2886458 has 21.21 GiB memory in use. Including non-PyTorch memory, this process has 9.14 GiB memory in use. Of the allocated memory 8.62 GiB is allocated by PyTorch, and 38.27 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

@@ -1,0 +1,12 @@
+{
+  "ar": {
+    "tokens_total": 3722124,
+    "tokens_selected": 66282,
+    "correct": 0
+  },
+  "en": {
+    "tokens_total": 3830967,
+    "tokens_selected": 571922,
+    "correct": 0
+  }
+}

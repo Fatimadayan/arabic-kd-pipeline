@@ -1,0 +1,46 @@
+Could not extract SentencePiece model from /data/datasets/user151/.cache/huggingface/hub/models--humain-ai--ALLaM-7B-Instruct-preview/snapshots/a28dd1e67420cde72d3629c8633a974cf7d9c366/tokenizer.model using sentencepiece library due to 
+SentencePieceExtractor requires the protobuf library but it was not found in your environment. Check out the instructions on the
+installation page of its repo: https://github.com/protocolbuffers/protobuf/tree/master/python#installation and follow the ones
+that match your environment. Please note that you may need to restart your runtime after installation.
+. Falling back to TikToken extractor.
+Traceback (most recent call last):
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/tokenization_utils_tokenizers.py", line 195, in convert_to_native_format
+    extractor = SentencePieceExtractor(vocab_file)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/convert_slow_tokenizer.py", line 153, in __init__
+    requires_backends(self, "protobuf")
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/utils/import_utils.py", line 1930, in requires_backends
+    raise ImportError("".join(failed))
+ImportError: 
+SentencePieceExtractor requires the protobuf library but it was not found in your environment. Check out the instructions on the
+installation page of its repo: https://github.com/protocolbuffers/protobuf/tree/master/python#installation and follow the ones
+that match your environment. Please note that you may need to restart your runtime after installation.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/tiktoken/load.py", line 168, in load_tiktoken_bpe
+    token, rank = line.split()
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<stdin>", line 31, in <module>
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 749, in from_pretrained
+    return tokenizer_class.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 1721, in from_pretrained
+    return cls._from_pretrained(
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 1907, in _from_pretrained
+    init_kwargs = cls.convert_to_native_format(**init_kwargs)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/tokenization_utils_tokenizers.py", line 248, in convert_to_native_format
+    local_kwargs["tokenizer_object"] = converter.converted()
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/convert_slow_tokenizer.py", line 1935, in converted
+    tokenizer = self.tokenizer()
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/convert_slow_tokenizer.py", line 1928, in tokenizer
+    vocab_scores, merges = self.extract_vocab_merges_from_model(self.vocab_file)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/transformers/convert_slow_tokenizer.py", line 1904, in extract_vocab_merges_from_model
+    bpe_ranks = load_tiktoken_bpe(tiktoken_url)
+  File "/data/datasets/user151/conda-envs/kd_env/lib/python3.10/site-packages/tiktoken/load.py", line 171, in load_tiktoken_bpe
+    raise ValueError(f"Error parsing line {line!r} in {tiktoken_bpe_file}") from e
+ValueError: Error parsing line b'\x0e' in /data/datasets/user151/.cache/huggingface/hub/models--humain-ai--ALLaM-7B-Instruct-preview/snapshots/a28dd1e67420cde72d3629c8633a974cf7d9c366/tokenizer.model
