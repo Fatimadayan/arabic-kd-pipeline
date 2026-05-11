@@ -12,7 +12,7 @@ source /data/software/miniconda3/etc/profile.d/conda.sh
 conda activate /data/datasets/user151/conda-envs/kd_env
 
 export HF_HOME=/data/datasets/user151/.cache/huggingface
-export HF_TOKEN=$(grep HF_TOKEN /home/nfs/202200527/.bashrc | head -1 | cut -d'=' -f2)
+export HF_TOKEN=""
 
 nvidia-smi
 python -c "import torch; print('CUDA:', torch.cuda.is_available()); print('GPU:', torch.cuda.get_device_name(0))"

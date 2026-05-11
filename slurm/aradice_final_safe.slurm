@@ -16,7 +16,7 @@ source /data/software/miniconda3/etc/profile.d/conda.sh
 conda activate /data/datasets/user151/conda-envs/kd_env || { echo "Conda failed"; exit 1; }
 
 export HF_HOME=/data/datasets/user151/.cache/huggingface
-export HF_TOKEN=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
+export HF_TOKEN=""
 export PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:128  # Anti-OOM
 
 python3 - << 'PYEOF'

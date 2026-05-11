@@ -13,7 +13,7 @@ conda activate /data/datasets/user151/conda-envs/kd_env
 
 export HF_HOME=/data/datasets/user151/.cache/huggingface
 export TRANSFORMERS_CACHE=/data/datasets/user151/.cache/huggingface/transformers
-export HF_TOKEN=PASTE_NEW_TOKEN_HERE
+export HF_TOKEN=""
 export SCRATCH=/data/datasets/user151
 export OUTPUT=/data/datasets/user151/qwen-arabic-kd/data
 

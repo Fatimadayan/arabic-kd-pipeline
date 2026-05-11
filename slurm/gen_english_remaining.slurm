@@ -14,7 +14,7 @@ conda activate /data/datasets/user151/conda-envs/kd_env
 
 export HF_HOME=/data/datasets/user151/.cache/huggingface
 export PYTORCH_ALLOC_CONF=expandable_segments:True
-export HF_TOKEN=HF_TOKEN_REMOVED
+export HF_TOKEN=""
 
 nvidia-smi
 echo "Generating remaining English samples at: $(date)"

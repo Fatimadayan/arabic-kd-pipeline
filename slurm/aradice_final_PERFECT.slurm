@@ -11,7 +11,7 @@
 source /data/software/miniconda3/etc/profile.d/conda.sh
 conda activate /data/datasets/user151/conda-envs/kd_env
 
-export HF_TOKEN=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
+export HF_TOKEN=""
 export HF_HOME=/data/datasets/user151/.cache/huggingface
 
 python3 - << 'PYEOF'
