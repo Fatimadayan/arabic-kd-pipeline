@@ -1,0 +1,402 @@
+[
+  {
+    "cat": "code_switch",
+    "q": "وايد clean الكود"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "وايد حار اليوم"
+  },
+  {
+    "cat": "code_switch",
+    "q": "الحين نبدأ testing"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: شلون المشروع"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "وايد صعب الموضوع"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "الحين خل نحل المشكلة"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "الحين نبدأ الشغل"
+  },
+  {
+    "cat": "code_switch",
+    "q": "شلون الsecurity؟"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: وايد زحمة"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: الحين بنشوف"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: الحين نحل المشكلة"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: وايد صعب الموضوع"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: شلون الشغل"
+  },
+  {
+    "cat": "code_switch",
+    "q": "الحين نعمل test case"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: شلون الدراسة"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: الحين نخلص"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "الحين خل نبدأ"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: وايد تعبان"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "الحين عندي شغل"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "شلونك الحين؟"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "وايد غالي السعر"
+  },
+  {
+    "cat": "code_switch",
+    "q": "في bug في الكود لازم fix"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "وايد تعبان"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "وايد مبسوط اليوم"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "شلون الأمور؟"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "الحين بنشوف الحل"
+  },
+  {
+    "cat": "code_switch",
+    "q": "في مشكلة في system لازم نحلها"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "الحين الجو تغير"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "وايد ممتاز"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: شلونك الحين"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "وايد تعبنا اليوم"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "شلونك من زمان؟"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: الحين خلصنا"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "الحين نراجع"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "شلون الشغل؟"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: وايد صعب"
+  },
+  {
+    "cat": "code_switch",
+    "q": "في latency عالي"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: شلون كان الامتحان"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: وايد مبسوط"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: الحين بروح"
+  },
+  {
+    "cat": "code_switch",
+    "q": "شلون الAPI يشتغل؟"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "شلون الصحة؟"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: الحين نبدأ"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "شلون المشروع؟"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: شلونك"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "شلون الدراسة معاك؟"
+  },
+  {
+    "cat": "code_switch",
+    "q": "شلون الdatabase متصل؟"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "الحين بروح البحر"
+  },
+  {
+    "cat": "code_switch",
+    "q": "شلون الbackend؟"
+  },
+  {
+    "cat": "code_switch",
+    "q": "شلون الfrontend؟"
+  },
+  {
+    "cat": "code_switch",
+    "q": "وايد safe التطبيق"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "الحين نخلص ونمشي"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "وايد زحمة الشارع"
+  },
+  {
+    "cat": "code_switch",
+    "q": "في مشكلة في server"
+  },
+  {
+    "cat": "code_switch",
+    "q": "وايد stable النظام"
+  },
+  {
+    "cat": "code_switch",
+    "q": "الحين نpush التحديث"
+  },
+  {
+    "cat": "code_switch",
+    "q": "الحين نعمل deploy جديد"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: الحين خل نبدأ"
+  },
+  {
+    "cat": "code_switch",
+    "q": "في error في البرنامج"
+  },
+  {
+    "cat": "code_switch",
+    "q": "الحين نعمل update للنظام"
+  },
+  {
+    "cat": "code_switch",
+    "q": "الحين نعمل debug"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: شلون الأمور"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "الحين خلصنا"
+  },
+  {
+    "cat": "code_switch",
+    "q": "في problem في network"
+  },
+  {
+    "cat": "code_switch",
+    "q": "شلون الperformance مال التطبيق؟"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "شلون الأهل؟"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: وايد سريع"
+  },
+  {
+    "cat": "code_switch",
+    "q": "الحين نdeploy النسخة"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: الحين بروح السوق"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: الحين الوقت مناسب"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "وايد واضح"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: وايد ممتاز"
+  },
+  {
+    "cat": "code_switch",
+    "q": "وايد good النتيجة"
+  },
+  {
+    "cat": "code_switch",
+    "q": "شلون الdesign؟"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: شلون الصحة"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: شلونك من زمان"
+  },
+  {
+    "cat": "code_switch",
+    "q": "في crash في النظام"
+  },
+  {
+    "cat": "code_switch",
+    "q": "وايد fast النظام"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "شلونك اليوم؟"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: وايد واضح"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: الحين نراجع"
+  },
+  {
+    "cat": "code_switch",
+    "q": "وايد slow الresponse"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "الحين الوقت مناسب"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: وايد حار"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "شلون الوضع؟"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "وايد سريع الإنترنت"
+  },
+  {
+    "cat": "code_switch",
+    "q": "في bug في API"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: شلون الوضع"
+  },
+  {
+    "cat": "code_switch",
+    "q": "الحين نعمل restart"
+  },
+  {
+    "cat": "code_switch",
+    "q": "شلون الUI؟"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: الحين نبدأ الشغل"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: وايد حلو"
+  },
+  {
+    "cat": "code_switch",
+    "q": "وايد responsive الموقع"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "وايد حلو المكان"
+  },
+  {
+    "cat": "code_switch",
+    "q": "وايد smooth الأداء"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: شلونك اليوم"
+  },
+  {
+    "cat": "normalize",
+    "q": "حول للفصحى: وايد غالي"
+  },
+  {
+    "cat": "code_switch",
+    "q": "في issue في login"
+  },
+  {
+    "cat": "code_switch",
+    "q": "الحين نقدر deploy النظام؟"
+  },
+  {
+    "cat": "dialect_id",
+    "q": "شلون كان الامتحان؟"
+  }
+]

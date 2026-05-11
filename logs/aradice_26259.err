@@ -1,0 +1,4 @@
+  File "<stdin>", line 59
+    return None    """Extract A/B/C/D from prediction"""
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax

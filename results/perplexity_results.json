@@ -1,0 +1,14 @@
+{
+  "base_7b": {
+    "perplexity": 5.19,
+    "avg_nll": 1.6465
+  },
+  "token_kd_7b": {
+    "perplexity": 5.2,
+    "avg_nll": 1.6495
+  },
+  "selectkd_7b": {
+    "perplexity": 5.34,
+    "avg_nll": 1.6751
+  }
+}

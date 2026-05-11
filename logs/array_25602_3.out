@@ -1,0 +1,20 @@
+==========================================
+SLURM_CLUSTER_NAME = linux
+SLURM_ARRAY_JOB_ID = 25602
+SLURM_ARRAY_TASK_ID = 3
+SLURM_ARRAY_TASK_COUNT = 500
+SLURM_ARRAY_TASK_MAX = 499
+SLURM_ARRAY_TASK_MIN = 0
+SLURM_JOB_ACCOUNT = pgstudents
+SLURM_JOB_ID = 25606
+SLURM_JOB_NAME = array_eval.slurm
+SLURM_JOB_NODELIST = gpu02
+SLURM_JOB_USER = user151
+SLURM_JOB_UID = 4254
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 3452031
+SLURM_SUBMIT_DIR = /scratch-beegfs/datasets/user151/qwen-arabic-kd
+SLURM_CPUS_ON_NODE = 192
+SLURM_NTASKS = 
+SLURM_TASK_PID = 3452031
+==========================================

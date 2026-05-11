@@ -1,0 +1,10 @@
+Could not extract SentencePiece model from /data/datasets/user151/.cache/huggingface/hub/models--humain-ai--ALLaM-7B-Instruct-preview/snapshots/a28dd1e67420cde72d3629c8633a974cf7d9c366/tokenizer.model using sentencepiece library due to 
+SentencePieceExtractor requires the protobuf library but it was not found in your environment. Check out the instructions on the
+installation page of its repo: https://github.com/protocolbuffers/protobuf/tree/master/python#installation and follow the ones
+that match your environment. Please note that you may need to restart your runtime after installation.
+. Falling back to TikToken extractor.
+Could not extract SentencePiece model from /data/datasets/user151/.cache/huggingface/hub/models--humain-ai--ALLaM-7B-Instruct-preview/snapshots/a28dd1e67420cde72d3629c8633a974cf7d9c366/tokenizer.model using sentencepiece library due to 
+SentencePieceExtractor requires the protobuf library but it was not found in your environment. Check out the instructions on the
+installation page of its repo: https://github.com/protocolbuffers/protobuf/tree/master/python#installation and follow the ones
+that match your environment. Please note that you may need to restart your runtime after installation.
+. Falling back to TikToken extractor.

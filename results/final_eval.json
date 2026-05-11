@@ -1,57 +1,14 @@
 {
   "base_7b": {
-    "en_accuracy": 86.7,
-    "ar_accuracy": 63.3,
-    "LPG": 23.4,
-    "CLCS": 60.0,
-    "ECE_en": 6.88,
-    "ECE_ar": 19.78,
-    "conf_en": 89.1,
-    "conf_ar": 81.3,
-    "conf_gap": 7.8
-  },
-  "sft_7b": {
-    "en_accuracy": 86.7,
-    "ar_accuracy": 80.0,
-    "LPG": 6.7,
-    "CLCS": 73.3,
-    "ECE_en": 8.2,
-    "ECE_ar": 3.6,
-    "conf_en": 88.6,
-    "conf_ar": 82.1,
-    "conf_gap": 6.5
-  },
-  "seq_kd_7b": {
-    "en_accuracy": 83.3,
-    "ar_accuracy": 76.7,
-    "LPG": 6.6,
-    "CLCS": 66.7,
-    "ECE_en": 14.26,
-    "ECE_ar": 16.16,
-    "conf_en": 89.9,
-    "conf_ar": 81.3,
-    "conf_gap": 8.6
+    "AraDiCE_MCq": 53.3,
+    "Bahraini_Custom": 16.7
   },
   "token_kd_7b": {
-    "en_accuracy": 86.7,
-    "ar_accuracy": 63.3,
-    "LPG": 23.4,
-    "CLCS": 60.0,
-    "ECE_en": 7.68,
-    "ECE_ar": 19.53,
-    "conf_en": 89.1,
-    "conf_ar": 81.0,
-    "conf_gap": 8.1
+    "AraDiCE_MCq": 56.7,
+    "Bahraini_Custom": 16.7
   },
   "selectkd_7b": {
-    "en_accuracy": 86.7,
-    "ar_accuracy": 86.7,
-    "LPG": 0.0,
-    "CLCS": 80.0,
-    "ECE_en": 8.49,
-    "ECE_ar": 5.24,
-    "conf_en": 89.3,
-    "conf_ar": 81.4,
-    "conf_gap": 7.9
+    "AraDiCE_MCq": 50.0,
+    "Bahraini_Custom": 33.3
   }
 }

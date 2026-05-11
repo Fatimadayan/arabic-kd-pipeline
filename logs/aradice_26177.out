@@ -1,0 +1,29 @@
+==========================================
+SLURM_CLUSTER_NAME = linux
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = pgstudents
+SLURM_JOB_ID = 26177
+SLURM_JOB_NAME = aradice_final_eval
+SLURM_JOB_NODELIST = gpu02
+SLURM_JOB_USER = user151
+SLURM_JOB_UID = 4254
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 3539210
+SLURM_SUBMIT_DIR = /scratch-beegfs/datasets/user151/qwen-arabic-kd
+SLURM_CPUS_ON_NODE = 192
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 3539210
+==========================================
+
+===== base_7b =====
+Culture_Qatar: 30 samples
+Culture_Qatar = 66.67%
+TruthfulQA_msa: 500 samples
+TruthfulQA_msa = 0.0%
+PIQA_msa: 500 samples
+PIQA_msa = 45.2%
+HellaSwag_msa: 500 samples

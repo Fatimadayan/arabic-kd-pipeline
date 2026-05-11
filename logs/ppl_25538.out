@@ -1,0 +1,80 @@
+==========================================
+SLURM_CLUSTER_NAME = linux
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = pgstudents
+SLURM_JOB_ID = 25538
+SLURM_JOB_NAME = kd_ppl
+SLURM_JOB_NODELIST = gpu01
+SLURM_JOB_USER = user151
+SLURM_JOB_UID = 4254
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 3770898
+SLURM_SUBMIT_DIR = /scratch-beegfs/datasets/user151/qwen-arabic-kd
+SLURM_CPUS_ON_NODE = 192
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 3770898
+==========================================
+AR test: 50, EN test: 50
+
+==================================================
+Evaluating: base_7b
+==================================================
+Computing perplexity...
+  PPL Arabic:  7.53 (loss=2.019)
+  PPL English: 2.51 (loss=0.9188)
+Computing task performance...
+  factual_ar: 80.0%
+  factual_en: 100.0%
+  reasoning_ar: 66.7%
+  reasoning_en: 100.0%
+
+==================================================
+Evaluating: sft_7b
+==================================================
+Computing perplexity...
+  PPL Arabic:  2.49 (loss=0.9107)
+  PPL English: 1.89 (loss=0.6356)
+Computing task performance...
+  factual_ar: 80.0%
+  factual_en: 100.0%
+  reasoning_ar: 100.0%
+  reasoning_en: 100.0%
+
+==================================================
+Evaluating: token_kd_7b
+==================================================
+Computing perplexity...
+  PPL Arabic:  7.41 (loss=2.0034)
+  PPL English: 2.5 (loss=0.9151)
+Computing task performance...
+  factual_ar: 80.0%
+  factual_en: 100.0%
+  reasoning_ar: 66.7%
+  reasoning_en: 100.0%
+
+==================================================
+Evaluating: selectkd_7b
+==================================================
+Computing perplexity...
+  PPL Arabic:  2.27 (loss=0.8219)
+  PPL English: 1.89 (loss=0.639)
+Computing task performance...
+  factual_ar: 80.0%
+  factual_en: 100.0%
+  reasoning_ar: 100.0%
+  reasoning_en: 100.0%
+
+
+PERPLEXITY AND TASK PERFORMANCE TABLE:
+Model              PPL_AR   PPL_EN   Ratio   Fact_AR   Fact_EN   Reas_AR   Reas_EN
+--------------------------------------------------------------------------------
+base_7b                 7.5      2.5    3.00×     80.0%    100.0%     66.7%    100.0%
+sft_7b                  2.5      1.9    1.32×     80.0%    100.0%    100.0%    100.0%
+token_kd_7b             7.4      2.5    2.96×     80.0%    100.0%     66.7%    100.0%
+selectkd_7b ★           2.3      1.9    1.20×     80.0%    100.0%    100.0%    100.0%
+
+Saved to /data/datasets/user151/qwen-arabic-kd/results/perplexity_results.json

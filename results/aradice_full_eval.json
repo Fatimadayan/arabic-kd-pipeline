@@ -1,0 +1,44 @@
+{
+  "base_7b": {
+    "Culture_Qatar": {
+      "acc": 66.7,
+      "n": 30
+    },
+    "PIQA_msa": {
+      "acc": 45.2,
+      "n": 500
+    },
+    "HellaSwag_msa": {
+      "acc": 40.2,
+      "n": 500
+    }
+  },
+  "token_kd_7b": {
+    "Culture_Qatar": {
+      "acc": 63.3,
+      "n": 30
+    },
+    "PIQA_msa": {
+      "acc": 44.4,
+      "n": 500
+    },
+    "HellaSwag_msa": {
+      "acc": 40.2,
+      "n": 500
+    }
+  },
+  "selectkd_7b": {
+    "Culture_Qatar": {
+      "acc": 53.3,
+      "n": 30
+    },
+    "PIQA_msa": {
+      "acc": 31.4,
+      "n": 500
+    },
+    "HellaSwag_msa": {
+      "acc": 38.0,
+      "n": 500
+    }
+  }
+}

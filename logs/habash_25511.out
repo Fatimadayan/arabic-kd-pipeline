@@ -1,0 +1,68 @@
+==========================================
+SLURM_CLUSTER_NAME = linux
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = pgstudents
+SLURM_JOB_ID = 25511
+SLURM_JOB_NAME = kd_habash
+SLURM_JOB_NODELIST = gpu02
+SLURM_JOB_USER = user151
+SLURM_JOB_UID = 4254
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 3356326
+SLURM_SUBMIT_DIR = /scratch-beegfs/datasets/user151/qwen-arabic-kd
+SLURM_CPUS_ON_NODE = 192
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 3356326
+==========================================
+Loaded: 300 prompts total
+GPU memory free: 39.1GB / 39.5GB
+
+=======================================================
+Evaluating: base_7b
+=======================================================
+  GPU free before load: 39.1GB
+  GPU free after load:  25.3GB
+
+  Dialect ID:   94.0%  (94/100)
+  Normalize:    68.0%  (68/100)
+  Code-Switch:  71.0%  (71/100)
+  Overall:      77.7%
+  CJK failures: 18/300 (6.0%)
+
+=======================================================
+Evaluating: token_kd_7b
+=======================================================
+  GPU free before load: 35.6GB
+  GPU free after load:  22.1GB
+
+  Dialect ID:   95.0%  (95/100)
+  Normalize:    70.0%  (70/100)
+  Code-Switch:  68.0%  (68/100)
+  Overall:      77.7%
+  CJK failures: 21/300 (7.0%)
+
+=======================================================
+Evaluating: selectkd_7b
+=======================================================
+  GPU free before load: 32.4GB
+  GPU free after load:  18.9GB
+
+  Dialect ID:   80.0%  (80/100)
+  Normalize:    53.0%  (53/100)
+  Code-Switch:  79.0%  (79/100)
+  Overall:      70.7%
+  CJK failures: 22/300 (7.3%)
+
+
+FINAL TABLE — Habash Corpus (100 real Bahraini sentences/task, CJK-filtered):
+Model               Dialect%  Normalize%  Code-Switch%  Overall%    CJK%
+------------------------------------------------------------------------
+base_7b                  94.0%       68.0%         71.0%     77.7%    6.0%
+token_kd_7b              95.0%       70.0%         68.0%     77.7%    7.0%
+selectkd_7b *            80.0%       53.0%         79.0%     70.7%    7.3%
+
+Saved: /data/datasets/user151/qwen-arabic-kd/results/habash_eval_results.json

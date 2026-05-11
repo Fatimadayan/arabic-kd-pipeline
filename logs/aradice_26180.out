@@ -1,0 +1,72 @@
+==========================================
+SLURM_CLUSTER_NAME = linux
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = pgstudents
+SLURM_JOB_ID = 26180
+SLURM_JOB_NAME = aradice_final_eval
+SLURM_JOB_NODELIST = gpu02
+SLURM_JOB_USER = user151
+SLURM_JOB_UID = 4254
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 3539755
+SLURM_SUBMIT_DIR = /scratch-beegfs/datasets/user151/qwen-arabic-kd
+SLURM_CPUS_ON_NODE = 192
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 3539755
+==========================================
+
+===== base_7b =====
+Culture_Qatar: 30 samples
+  → Culture_Qatar = 66.67%
+TruthfulQA_msa: 500 samples
+  → TruthfulQA_msa = 0.0%
+PIQA_msa: 500 samples
+  → PIQA_msa = 45.2%
+HellaSwag_msa: 500 samples
+  ❌ ERROR in HellaSwag_msa: 'question'
+
+===== token_kd_7b =====
+Culture_Qatar: 30 samples
+  → Culture_Qatar = 63.33%
+TruthfulQA_msa: 500 samples
+  → TruthfulQA_msa = 0.0%
+PIQA_msa: 500 samples
+  → PIQA_msa = 44.4%
+HellaSwag_msa: 500 samples
+  ❌ ERROR in HellaSwag_msa: 'question'
+
+===== selectkd_7b =====
+Culture_Qatar: 30 samples
+  → Culture_Qatar = 53.33%
+TruthfulQA_msa: 500 samples
+  → TruthfulQA_msa = 0.0%
+PIQA_msa: 500 samples
+  → PIQA_msa = 31.4%
+HellaSwag_msa: 500 samples
+  ❌ ERROR in HellaSwag_msa: 'question'
+
+======================================================================
+FINAL RESULTS TABLE
+======================================================================
+
+base_7b:
+  Culture_Qatar       :  66.67% (N=30)
+  TruthfulQA_msa      :   0.00% (N=500)
+  PIQA_msa            :  45.20% (N=500)
+
+token_kd_7b:
+  Culture_Qatar       :  63.33% (N=30)
+  TruthfulQA_msa      :   0.00% (N=500)
+  PIQA_msa            :  44.40% (N=500)
+
+selectkd_7b:
+  Culture_Qatar       :  53.33% (N=30)
+  TruthfulQA_msa      :   0.00% (N=500)
+  PIQA_msa            :  31.40% (N=500)
+
+✅ Saved JSON: /data/datasets/user151/qwen-arabic-kd/results/aradice_full_eval.json
+✅ Saved predictions: /data/datasets/user151/qwen-arabic-kd/results/aradice_full_predictions.jsonl
